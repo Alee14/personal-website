@@ -1,5 +1,124 @@
+@media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } 
+
 body{
-    font-family: 'Roboto', sans-serif, Arial;
+    font-family: 'Roboto', sans-serif;
     background: #333;
+    color: white
+}
+a {
     color: white;
 }
+.iframe {
+    display: block;
+}
+.subtitle {
+    font-size: 40px;
+    text-align: center;
+}
+
+.answer {
+    font-style: italic;
+    padding: 0;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+
+#title{
+    border: solid white 5px;
+}
+
+#navigation{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 15px;
+    margin: -1px;
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li.list-blog{
+    text-decoration: none;
+    display: block;
+}
+
+li.logo{
+    font-weight: bold;
+    color: white;
+}
+li.nav {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a.nav{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gray;
+}
+
+.active {
+    background-color: #1f8e42;
+    color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.Question {
+    padding: 0;
+
+}
+
+.nav .icon {
+    display: none;
+}
+
+ 
+ 

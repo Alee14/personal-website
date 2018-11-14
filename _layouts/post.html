@@ -1,0 +1,19 @@
+---
+---
+
+<HTML>
+  <HEAD>
+    {% include heading.html %}
+    <TITLE>{{ page.title }} | Andrew's Website Blog</TITLE>
+  </HEAD>
+<BODY>
+  {% include navigator.html %}
+
+  <h1>{{ page.title }}</h1>
+  <p><b>{{ page.date | date_to_string }} | By: {{ page.author }}</b></p>
+
+  {{ content }}
+
+  {% include footer.html %}
+</BODY>
+</HTML>

@@ -1,0 +1,25 @@
+---
+project: Andrew's Website
+---
+
+<HTML>
+  <HEAD>
+    {% include heading.html %}
+    <TITLE>Andrew's Website Blog</TITLE>
+  </HEAD>
+<BODY>
+  {% include navigator.html %}
+  <h1>Latest Posts</h1>
+
+<ul>
+  {% for post in site.posts %}
+    <li class="list-blog">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p><b>{{ post.date | date_to_string }} | By: {{ post.author }}</b></p>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
+  {% include footer.html %}
+</BODY>
+</HTML>
