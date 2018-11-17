@@ -1,15 +1,14 @@
 ---
-project: Andrew's Website
 ---
 
 <HTML>
   <HEAD>
     {% include heading.html %}
-    <TITLE>About | Andrew Lee</TITLE>
+    <TITLE>About | {{ site.title }}</TITLE>
   </HEAD>
 <BODY>
   {% include navigator.html %}
-<h1 class ="title">About Andrew</h1>
+<h1 class ="title">About {{ site.title }}</h1>
 <h2>Contact me</h2>
 <p>Email Address: {{ site.email }}</p>
 <p>GitHub: <a href="https://github.com/Alee14">Alee14</a></p>
