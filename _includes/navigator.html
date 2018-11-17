@@ -1,6 +1,6 @@
 <div id="navigation">
     <ul class="navbar">
-      <li class="nav logo">Andrew's Website</li>
+      <li class="nav logo">{{ site.title }}</li>
       <li class="nav" {% if page.url == "/" %}style="background-color: #1f8e42;"{% endif %}><a class="nav" href="/">HOME</a></li>
       <li class="nav" {% if page.url == "/project.html" %}style="background-color: #1f8e42;"{% endif %}><a class="nav"href="/project.html">PROJECTS</a></li>
       <li class="nav" {% if page.url == "/blog.html" %}style="background-color: #1f8e42;"{% endif %}><a class="nav" href="/blog.html">BLOG</a></li>
