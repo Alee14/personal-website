@@ -178,6 +178,12 @@ li a:hover {
     width: 95%;
     margin: auto;
     overflow: hidden;
+    border: 1px solid white;
+    padding: 9px;
+    position: relative;
+    top: -30px;
+    width: 800px;
+    left: calc(50vw - 420px);
 }
 
 .container-blog a {
