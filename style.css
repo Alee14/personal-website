@@ -154,9 +154,8 @@ li a:hover {
 }
 
 .container-blog {
-    width:50%;
+    width:100%;
     margin:auto;
-    background-color: black;
     overflow:hidden;
 }
 
