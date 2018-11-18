@@ -3,25 +3,37 @@ project: Andrew Lee
 ---
 <!DOCTYPE HTML>
 <HTML>
-  <HEAD>
-    {% include heading.html %}
-    <TITLE>Home | {{ site.title }}</TITLE>
-  </HEAD>
+
+<HEAD>
+  {% include heading.html %}
+  <TITLE>Home | {{ site.title }}</TITLE>
+</HEAD>
+
 <BODY>
   {% include navigator.html %}
-<div class="jumbotron">
-    <h1 class ="title">{{ site.title }} Homepage</h1>
-    <h2><center><b>{{ site.description }}</b></center></h2>
-</div>
-<div class="container">
-<h3>What is this website?</h3>
-<p>This is website my own personal website.</p>
-<h3>Who am I?</h3>
-<p>My name is Andrew Lee and I live in Montreal and I like program things such as C# and JavaScript.</p>
-<h3>When did I start programming?</h3>
-<p>Well.. I started back in 2016 when I made my first VB program which is a HTML Editor.</p>
+  <div class="jumbotron">
+    <h1 class="title">{{ site.title }} Homepage</h1>
+    <h2>
+      <center><b>{{ site.description }}</b></center>
+    </h2>
+  </div>
+  <div class="container">
+    <div class="row-column">
+      <div class="column">
+        <h3>What is this website?</h3>
+        <p>This is website my own personal website.</p>
+      </div>
+      <div class="column">
+        <h3>Who am I?</h3>
+        <p>My name is Andrew Lee and I live in Montreal and I like program things such as C# and JavaScript.</p>
+      </div>
+      <div class="column"></div>
 
-</div>
+      <h3>When did I start to program?</h3>
+      <p>Well.. I started back in 2016 when I made my first VB program which is a HTML Editor.</p>
+    </div>
+  </div>
   {% include footer.html %}
 </BODY>
+
 </HTML>

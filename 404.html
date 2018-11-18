@@ -2,19 +2,28 @@
 ---
 <!DOCTYPE HTML>
 <HTML>
-  <HEAD>
-  {% include heading.html %}
-    <TITLE>404 | {{ site.title }}</TITLE>
-  </HEAD>
-<BODY>
-    {% include navigator.html %}
-    <div class="container">
-  <h1 class ="title">404</h1>
 
-  <p><center><strong>Page not found :(</strong></center></p>
-  <p><center><b>Uh Oh!</b> The requested page could not be found.</center></p>
-  <p><center>You may need to go back to the <a href ="/">homepage</a>.</center></p>
-</div>
+<HEAD>
+  {% include heading.html %}
+  <TITLE>404 | {{ site.title }}</TITLE>
+</HEAD>
+
+<BODY>
+  {% include navigator.html %}
+  <div class="container">
+    <h1 class="title">404</h1>
+
+    <p>
+      <center><strong>Page not found :(</strong></center>
+    </p>
+    <p>
+      <center><b>Uh Oh!</b> The requested page could not be found.</center>
+    </p>
+    <p>
+      <center>You may need to go back to the <a href="/">homepage</a>.</center>
+    </p>
+  </div>
   {% include footer.html %}
 </BODY>
+
 </HTML>

@@ -2,19 +2,24 @@
 ---
 <!DOCTYPE HTML>
 <HTML>
-  <HEAD>
-    {% include heading.html %}
-    <TITLE>{{ page.title }} | {{ site.title }}</TITLE>
-  </HEAD>
+
+<HEAD>
+  {% include heading.html %}
+  <TITLE>{{ page.title }} | {{ site.title }}</TITLE>
+</HEAD>
+
 <BODY>
-    {% include navigator.html %}
-    <div class="jumbotron">
-        <h1 class ="title">{{ page.title }}</h1>
-        <h2><center>{{ page.description }}</center></h2>
-    </div>
-    <div class="container">
+  {% include navigator.html %}
+  <div class="jumbotron">
+    <h1 class="title">{{ page.title }}</h1>
+    <h2>
+      <center>{{ page.description }}</center>
+    </h2>
+  </div>
+  <div class="container">
     {{ content }}
-      </div>
+  </div>
   {% include footer.html %}
 </BODY>
+
 </HTML>

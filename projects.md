@@ -4,7 +4,7 @@ title: Projects
 description: These are the projects i'm currently working on
 ---
 
- <div class="row">
+ <div class="row-cards">
  <div class="card">
   <img src="./assets/AleeBot.png" alt="Logo" style="width:100%">
   <div class="container-card">
