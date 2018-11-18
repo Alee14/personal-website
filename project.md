@@ -1,20 +1,10 @@
 ---
-project: Andrew's Website
+layout: default
+title: Projects
 ---
 
-<HTML>
-  <HEAD>
-    {% include heading.html %}
-    <TITLE>Projects | Andrew Lee</TITLE>
-  </HEAD>
-<BODY>
-  {% include navigator.html %}
 <h1 class ="title">Andrew's Projects</h1>
 <h2>These are the projects i'm currently working on:</h2>
 <p><a href="https://silicon-linux.net">Silicon Linux</a></p>
 <p><a href="https://github.com/AleeCorp/AleeBot">AleeBot</a></p>
 <p><a href="https://github.com/UniverseDevGroup/Project-Silicon">Project: Silicon</a></p>
-
-  {% include footer.html %}
-</BODY>
-</HTML>
