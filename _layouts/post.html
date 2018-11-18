@@ -8,12 +8,12 @@
   </HEAD>
 <BODY>
   {% include navigator.html %}
-
+  <div class="container">
   <h1>{{ page.title }}</h1>
   <p><b>{{ page.date | date_to_string }} | By: {{ page.author }}</b></p>
 
   {{ content }}
-
+  </div>
   {% include footer.html %}
 </BODY>
 </HTML>

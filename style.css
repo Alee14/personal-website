@@ -1,3 +1,9 @@
+.container {
+    width:95%;
+    margin:auto;
+    overflow:hidden;
+}
+
 @media screen and (max-width: 600px) {
     .nav a:not(:first-child) {display: none;}
     .nav a.icon {
@@ -23,6 +29,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
     background: #333;
     color: white
 }
@@ -38,11 +46,10 @@ a {
 }
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
+    padding:20px;
+    margin-top:20px;
+    color:white;
+    background-color: #1f8e42;
     text-align: center;
 }
 
@@ -111,5 +118,13 @@ li a:hover {
     display: none;
 }
 
- 
- 
+
+.btn {
+    border: none; 
+    font-size: 14px;
+    color: white; 
+    padding: 14px 30px; 
+}
+
+.default {background-color: #348d43; color: white;}
+.default:hover {background: #ddd;}
