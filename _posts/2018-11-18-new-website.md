@@ -2,6 +2,7 @@
 layouts: post
 author: Andrew Lee
 ---
+<p>
 Hey everyone,
 Welcome to the new Alee14 website!
 As you know this the alee14 website has gone thru lot of things...
@@ -10,3 +11,4 @@ There will be a lot of updates in the future!
 
 Thanks,
 Andrew
+</p>
