@@ -153,6 +153,13 @@ li a:hover {
     margin: 10px;
 }
 
+.container-blog {
+    width:50%;
+    margin:auto;
+    background-color: black;
+    overflow:hidden;
+}
+
 
 .row-cards {
   display: -ms-flexbox;
