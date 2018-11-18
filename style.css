@@ -175,9 +175,6 @@ li a:hover {
 }
 
 .container-blog {
-    width: 95%;
-    margin: auto;
-    overflow: hidden;
     border: 1px solid white;
     padding: 9px;
     position: relative;
