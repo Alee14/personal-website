@@ -110,10 +110,6 @@ li a:hover {
     color: white;
 }
 
-.center {
-    text-align: center;
-}
-
 .nav .icon {
     display: none;
 }
@@ -124,7 +120,45 @@ li a:hover {
     font-size: 14px;
     color: white; 
     padding: 14px 30px; 
+    text-decoration: none;
 }
 
 .default {background-color: #348d43; color: white;}
 .default:hover {background: #ddd;}
+
+
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #1f8e42;
+  }
+  
+  @media (min-width: 576px) {
+    .jumbotron {
+      padding: 4rem 2rem;
+    }
+  }
+  
+  .jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+  }
+
+  .card {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

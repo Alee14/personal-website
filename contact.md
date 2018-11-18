@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Contact
+description: You can contact me thru these links.
 ---
-<h1 class ="title">Contact Me</h1>
 
 <p><b>Email Address: {{ site.email }}</b></p>
 <p><b>GitHub: <a href="https://github.com/Alee14">Alee14</a></b></p>
