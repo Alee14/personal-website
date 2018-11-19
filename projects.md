@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Projects
-description: These are the projects i'm currently working on
+description: These are the projects I used to and currently working on
 ---
 
  <div class="row-cards">
@@ -34,4 +34,23 @@ description: These are the projects i'm currently working on
      <a href="https://github.com/UniverseDevGroup/Project-Silicon" class="btn default"><i class="fab fa-github"></i> GitHub</a>
   </div>
 </div> 
+<div class="card">
+  <img src="./assets/silicon-linux.png" alt="Logo" style="width:100%">
+  <div class="container-card">
+    <h4><b>First Website</b></h4>
+    <p>This is my first ever website "I" made back in 2013</p>
+    <br>
+     <a href="https://d157rqmxrxj6ey.cloudfront.net/aleetest12/36578/" class="btn default">Website</a>
+  </div>
+</div> 
+<div class="card">
+  <img src="./assets/silicon-linux.png" alt="Logo" style="width:100%">
+  <div class="container-card">
+    <h4><b>Weather Web Page</b></h4>
+    <p>My second website that I worked on (Started in 2016)</p>
+    <br>
+     <a href="https://thimbleprojects.org/aleetest12/30865/" class="btn default">Website</a>
+  </div>
+</div> 
+
 </div>
