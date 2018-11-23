@@ -40,7 +40,7 @@ description: These are the projects I used to and currently working on
     <h4><b>First Website</b></h4>
     <p>This is my first ever website "I" made back in 2013</p>
     <br>
-     <a href="https://d157rqmxrxj6ey.cloudfront.net/aleetest12/36578/" class="btn default">Website</a>
+     <a href="http://alee14.ml/first-website" class="btn default">Website</a>
   </div>
 </div> 
 <div class="card">
