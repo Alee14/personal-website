@@ -58,6 +58,7 @@ a {
 .footer {
     padding: 20px;
     margin-top: 20px;
+    position: fixed; bottom: 0px; left: 0px; right: 0px;
     color: white;
     background-color: #1f8e42;
     text-align: center;
