@@ -113,8 +113,8 @@ a.nav {
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: gray;
+li.nav:hover{
+    background-color: grey;
 }
 
 .active {
