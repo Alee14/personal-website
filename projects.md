@@ -49,7 +49,7 @@ description: These are the projects I used to and currently working on
     <h4><b>Weather Web Page</b></h4>
     <p>My second website that I worked on (Started in 2016)</p>
     <br>
-     <a href="https://thimbleprojects.org/aleetest12/30865/" class="btn default">Website</a>
+     <a href="http://alee14.ml/weather-website" class="btn default">Website</a>
   </div>
 </div> 
 
