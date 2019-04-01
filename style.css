@@ -112,6 +112,10 @@ li.nav {
     text-decoration: none;
 }
 
+i {
+    font-size: 30px;
+}
+
 .footer-a {
     text-decoration: none;
 }
