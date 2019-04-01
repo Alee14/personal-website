@@ -6,10 +6,10 @@ description: Things about me.
 <center>
 <h1>Contact Me</h1>
 <p><b>Email Address: {{ site.email }}</b></p>
-<p><b>GitHub: <a href="https://github.com/Alee14">Alee14</a></b></p>
-<p><b>Twitter: <a href="https://twitter.com/Alee14498">Alee14498</a></b></p>
-<p><b>YouTube: <a href="https://youtube.com/user/Andrew14Lee/">Andrew Lee</a></b></p>
-<p><b>Discord: <a href="https://discord.gg/EFhRDqG">Alee's Community</a></b></p>
+<p><b><a href="https://github.com/Alee14">GitHub</a></b></p>
+<p><b><a href="https://twitter.com/Alee14498">Twitter</a></b></p>
+<p><b><a href="https://youtube.com/user/Andrew14Lee/">YouTube</a></b></p>
+<p><b><a href="https://discord.gg/EFhRDqG">Discord</a></b></p>
 
 <h1>My Computer Specs</h1>
 <table class="pcpp-part-list">
