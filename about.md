@@ -3,7 +3,7 @@ layout: default
 title: About
 description: Things about me.
 ---
-
+<center>
 <h1>Contact Me</h1>
 <p><b>Email Address: {{ site.email }}</b></p>
 <p><b>GitHub: <a href="https://github.com/Alee14">Alee14</a></b></p>
@@ -64,3 +64,4 @@ description: Things about me.
     </tr>
   </tbody>
 </table>
+</center>
