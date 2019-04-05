@@ -13,26 +13,28 @@ project: Andrew Lee
 <BODY>
   {% include navigator.html %}
   <div class="jumbotron">
-    <h1 class="title">{{ site.title }} Homepage</h1>
-    <h2>
+    <h1><center>{{ site.title }} Homepage</center></h1>
+    <h3>
       <center><b>{{ site.description }}</b></center>
-    </h2>
+    </h3>
   </div>
   <div class="container">
-    <div class="row-column">
-      <div class="column">
-        <h3>What is this website?</h3>
-        <p>This is my personal website.</p>
+    <div class="row">
+      <div class="col s12">
+          <h2>What is this website?</h2>
+          <h4>This is my personal website.</h4>
       </div>
-      <div class="column">
-        <h3>Who am I?</h3>
-        <p>My name is Andrew Lee and I live in Montreal and I like program things such as C# and JavaScript.</p>
+      <div class="col s12">
+          <h2>Who am I?</h2>
+          <h4>This is my personal website.</h4>
       </div>
-      <div class="column"></div>
-      <h3>When did I start to program?</h3>
-      <p>Well.. I started back in 2016 when I made my first VB program which is a HTML Editor.</p>
+      <div class="col s12">
+          <h2>When did I start to get interest on programming?</h2>
+          <h4>Well.. I started back in 2016 when I made my first VB program which is a HTML Editor.</h4>
+      </div>
     </div>
   </div>
+  {% include footing.html %}
   {% include footer.html %}
 </BODY>
 
