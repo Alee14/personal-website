@@ -8,7 +8,7 @@ description: Things about me.
 <p><b>Email Address: {{ site.email }}</b></p>
 
 <h1>My Computer Specs</h1>
-<table class="pcpp-part-list">
+<table class="pcpp-part-list table white-text">
   <thead>
     <tr>
       <th>Type</th>
