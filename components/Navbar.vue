@@ -1,18 +1,26 @@
 <template>
-    <div>
-        <b-navbar toggleable="lg" type="dark" variant="dark">
-            <b-navbar-brand href="/">Andrew Lee</b-navbar-brand>
-            <b-navbar-nav>
-                <b-nav-item href="/">Home</b-nav-item>
-            </b-navbar-nav>
-        </b-navbar>
-    </div>
+        <v-card>
+            <v-toolbar dark>
+                <v-toolbar-title>Andrew Lee</v-toolbar-title>
+                <v-spacer/>
+                <v-btn to="/" text>
+                    Home
+                </v-btn>
+                <v-btn to="/blog" text>
+                    Blog
+                </v-btn>
+                <v-btn to="/projects" text>
+                    Projects
+                </v-btn>
+            </v-toolbar>
+        </v-card>
 </template>
 
 <script>
-    export default {
-        name: "Navbar"
-    }
+export default {
+  name: 'Navbar'
+}
+
 </script>
 
 <style scoped>
