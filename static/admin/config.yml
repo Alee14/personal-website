@@ -1,7 +1,7 @@
 backend:
   name: github
   branch: master
-  repo: your_repo_name
+  repo: Alee14/personal-website
 publish_mode: editorial_workflow
 logo_url: /assets/img/Alee.png
 media_folder: "static/uploads"
