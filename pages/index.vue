@@ -1,5 +1,9 @@
 <template>
     <div>
+        <v-alert dismissible>
+            Please note that this website is under active development.<br>
+            If you see any problems please report them <a href="https://github.com/alee14/personal-website/issues">here</a>.
+        </v-alert>
         <!-- Animation goes here -->
         <div class="landing-page">
             <v-card>
