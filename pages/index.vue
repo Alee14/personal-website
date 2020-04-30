@@ -1,7 +1,7 @@
 <template>
     <div>
-        <v-alert dismissible>
-            Please note that this website is under active development.<br>
+        <v-alert>
+            Please note that this website is under active development.
             If you see any problems please report them <a href="https://github.com/alee14/personal-website/issues">here</a>.
         </v-alert>
         <!-- Animation goes here -->
