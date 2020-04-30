@@ -1,8 +1,20 @@
 <template>
     <div>
-            <v-card-title>Blog</v-card-title>
-            <v-card-text>This is where I will be posting my stuff</v-card-text>
-        <h1>Hello</h1>
+        <v-card>
+            <header id="showcase">
+                <h1 class="display-3">Blog</h1>
+                <h1>This is where I post stuff here.</h1>
+            </header>
+        </v-card>
+        <v-container>
+            <v-col cols="6">
+                <v-card to="/">
+                    <v-card-title>Blog Post Title</v-card-title>
+                    <v-card-text>Content</v-card-text>
+                </v-card>
+                <br>
+            </v-col>
+        </v-container>
     </div>
 </template>
 
@@ -13,8 +25,19 @@ export default {
     title: 'Blog'
   }
 }
+
 </script>
 
 <style scoped>
-
+    #showcase {
+        background-image:url("../../assets/img/landing_page.png");
+        background-size: cover;
+        background-position: center;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+    }
 </style>

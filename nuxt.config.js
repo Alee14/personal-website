@@ -6,8 +6,16 @@ module.exports = {
     titleTemplate: '%s - Andrew Lee',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-    ]
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Andrew\'s Personal Website' }
+    ],
+    link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: 'favicon.ico',
+        }
+      ]
   },
   /*
      ** Customize the progress-bar color
@@ -54,6 +62,7 @@ module.exports = {
       }
     }
   },
+
   /*
    ** Build configuration
    */
