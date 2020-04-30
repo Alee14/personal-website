@@ -1,9 +1,9 @@
 backend:
-  name: github
+  name: git-gateway
   branch: master
   repo: Alee14/personal-website
 publish_mode: editorial_workflow
-logo_url: /assets/img/Alee.png
+logo_url: ../../assets/img/Alee.png
 media_folder: "static/uploads"
 public_folder: "/uploads"
 collections:
