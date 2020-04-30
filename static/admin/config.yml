@@ -1,22 +1,22 @@
 backend:
-  name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
-
-  publish_mode: editorial_workflow
-  media_folder: "static/images/uploads"
-  public_folder: "/images/uploads"
-
-  collections:
-    - name: 'blog'
-      label: 'Blog'
-
-      folder: 'assets/content/blog'
-      create: true
-      slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-      editor:
-        preview: false
-      fields:
-        - { label: 'Title', name: 'title', widget: 'string' }
-        - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-        - { label: 'Description', name: 'description', widget: 'string' }
-        - { label: 'Body', name: 'body', widget: 'markdown' }
+  name: github
+  branch: master
+  repo: your_repo_name
+publish_mode: editorial_workflow
+logo_url: /assets/img/Alee.png
+media_folder: "static/uploads"
+public_folder: "/uploads"
+collections:
+  - name: 'blog'
+    label: 'Blog'
+    format: 'json'
+    folder: '/assets/content/blog'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
