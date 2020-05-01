@@ -1,0 +1,6 @@
+{
+  "date": "2020-05-01T17:53:00.000Z",
+  "title": "Website Overhaul",
+  "body": "Hello, so it's been a while. I have been busy with other projects and just recently I have fully rewritten the website using Nuxt and Vuetify as you're looking right now.\n\nAs you know, the previous website didn't really have much content but here I have redid a lot of the layout so it looks much better and also it was very broken so it was a good time to rewrite the entire thing.\n\nSo what will this blog page will be exactly? Well, this will be the page where I will post rants, project updates and possibly personal stuff.\n\nI am hoping to post here often to give you guys what I'm doing in life.\n\nThanks,\n\nAndrew Lee",
+  "description": "This will tell you why this website has been rewritten and the future of this page."
+}
