@@ -3,7 +3,7 @@ backend:
   branch: master
   repo: Alee14/personal-website
 logo_url: /assets/img/Alee.png
-media_folder: "static/uploads"
+media_folder: "../static/uploads"
 public_folder: "/uploads"
 collections:
   - name: 'blog'
