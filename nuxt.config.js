@@ -11,12 +11,12 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Andrew\'s Personal Website' }
     ],
     link: [
-        {
-          rel: 'icon',
-          type: 'image/x-icon',
-          href: 'favicon.ico',
-        }
-      ]
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: 'favicon.ico'
+      }
+    ]
   },
   /*
      ** Customize the progress-bar color
@@ -41,7 +41,25 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: ['@nuxtjs/pwa', '@nuxtjs/markdownit'],
+
+  markdownit: {
+    injected: true
+  },
+
+  generate: {
+    routes: function () {
+      const fs = require('fs')
+      const path = require('path')
+      return fs.readdirSync('static/content/blog').map(file => {
+        return {
+          route: `/blog/${path.parse(file).name}`, // Return the slug
+          payload: require(`static/content/blog/${file}`)
+        }
+      })
+    }
+  },
+
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

@@ -7,13 +7,13 @@
             </header>
         </v-card>
         <v-container>
-            <v-col cols="6">
-                <v-card to="/">
-                    <v-card-title>Blog Post Title</v-card-title>
-                    <v-card-text>Content</v-card-text>
+            <div v-for="post in blogPosts" :key="post.title">
+                <v-card :to="'/blog/' + post.slug">
+                    <v-card-title>{{ post.title }}</v-card-title>
+                    <v-card-subtitle>Created on {{post.date}}</v-card-subtitle>
+                    <v-card-text>{{ post.description }}</v-card-text>
                 </v-card>
-                <br>
-            </v-col>
+            </div>
         </v-container>
     </div>
 </template>
@@ -23,6 +23,11 @@ export default {
   name: 'blog',
   head: {
     title: 'Blog'
+  },
+  computed: {
+    blogPosts () {
+      return this.$store.state.blogPosts
+    }
   }
 }
 
