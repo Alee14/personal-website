@@ -3,10 +3,10 @@
         <v-card>
             <v-card-title>{{blogPost.title}}</v-card-title>
             <v-card-subtitle>{{blogPost.description}}</v-card-subtitle>
-            <v-card-text :to="'/blog'">Back to posts</v-card-text>
+            <v-card-text><nuxt-link :to="'/blog'" class="text--white">Back to posts</nuxt-link></v-card-text>
             <v-divider/>
             <br/>
-            <v-card-text v-html="$md.render(blogPost.body)" />
+            <v-card-text class="text--white" v-html="$md.render(blogPost.body)" />
         </v-card>
     </v-container>
 </template>
@@ -15,13 +15,13 @@
 export default {
   name: '_blog',
   head: {
-    title: '{{blogpost.title}}'
+    title: 'Blog'
   },
   async asyncData ({ params, payload }) {
     if (payload) return { blogPost: payload }
     else {
       return {
-        blogPost: await require(`~/assets/content/blog/${params.blog}.json`)
+        blogPost: await require(`../../assets/content/blog/${params.blog}.json`)
       }
     }
   }

@@ -1,19 +1,13 @@
 <template>
     <div>
-        <v-alert>
-            Please note that this website is under active development.
-            If you see any problems please report them <a href="https://github.com/alee14/personal-website/issues">here</a>.
-        </v-alert>
-        <!-- Animation goes here -->
         <div class="landing-page">
             <v-card>
-                <header id="showcase">
-                    <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" />
+                <header id="showcase" class="animated fadeIn">
+                    <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" class="animated fadeIn" />
                     <br/>
-                    <h1 class="display-4">Hello, I'm Andrew Lee!</h1>
+                    <h1 class="display-4 animated zoomIn">Hello, I'm Andrew Lee!</h1>
                     <br/>
-                    <h1 class="display-1">Welcome to my personal website.</h1>
-                    <h1>Note to Andrew: Replace this background</h1>
+                    <h1 class="display-1 animated zoomIn">Welcome to my personal website.</h1>
                 </header>
             </v-card>
         </div>
@@ -22,7 +16,7 @@
                 <v-card flat color="green darken-3" dark>
                     <v-container>
                         <h1>About Me</h1>
-                        <p><b>Hello, I'm Andrew Lee and I'm currently 15 years old.</b></p>
+                        <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old.</b></p>
                         <h1>Timeline</h1>
                         <p> 2014: Created my first YouTube channel The Alee Diamond<br>
                             2015: First got into programming and learned HTML and Batch.<br>

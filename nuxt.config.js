@@ -25,7 +25,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['./assets/css/animate.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -46,19 +46,19 @@ module.exports = {
   markdownit: {
     injected: true
   },
-
+/*
   generate: {
     routes: function () {
       const fs = require('fs')
       const path = require('path')
-      return fs.readdirSync('static/content/blog').map(file => {
+      return fs.readdirSync('./assets/content/blog').map(file => {
         return {
           route: `/blog/${path.parse(file).name}`, // Return the slug
-          payload: require(`static/content/blog/${file}`)
+          payload: require(`./assets/content/blog/${file}`)
         }
       })
     }
-  },
+  },*/
 
   /*
    ** vuetify module configuration
