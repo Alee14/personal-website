@@ -7,14 +7,46 @@
                 <v-container>
                         <v-row>
                                 <v-col cols="12">
-                                        <v-card class="green darken-4">
-                                                <v-card-title>Hello world</v-card-title>
-                                                <v-card-text>Hello world 2</v-card-text>
+                                        <v-card class="blue darken-4">
+                                                <v-card-title>Alee Productions</v-card-title>
+                                                <v-card-text>A future company that I'm planning on running.</v-card-text>
+                                                <v-card-actions>
+                                                        <v-btn text normal href="https://alee-productions.xyz">Website</v-btn>
+                                                        <v-btn text normal href="https://github.com/aleeproductions">GitHub</v-btn>
+                                                        <v-btn text normal href="https://twitter.com/aleeproductions">Twitter</v-btn>
+                                                </v-card-actions>
                                         </v-card>
                                         <br>
-                                        <v-card>
-                                                <v-card-title>Hello world</v-card-title>
-                                                <v-card-text>Hello world 2</v-card-text>
+                                        <v-card class="blue darken-4">
+                                                <v-card-title>AleeBot</v-card-title>
+                                                <v-card-text>An all-in-one bot that's made from the Discord.JS api.</v-card-text>
+                                                <v-card-actions>
+                                                        <v-btn text normal href="https://github.com/aleeproductions/AleeBot">GitHub</v-btn>
+                                                </v-card-actions>
+                                        </v-card>
+                                        <br>
+                                        <v-card class="blue darken-4">
+                                                <v-card-title>DLMP3</v-card-title>
+                                                <v-card-text>A Discord bot that plays local mp3 audio tracks.</v-card-text>
+                                                <v-card-actions>
+                                                        <v-btn text normal href="https://github.com/Alee14/DLMP3">GitHub</v-btn>
+                                                </v-card-actions>
+                                        </v-card>
+                                        <br>
+                                        <v-card class="blue darken-4">
+                                                <v-card-title>First Website</v-card-title>
+                                                <v-card-text>The first website that "I" in 2013.</v-card-text>
+                                                <v-card-actions>
+                                                        <v-btn text normal href="https://alee14.github.io/first-website">Website</v-btn>
+                                                </v-card-actions>
+                                        </v-card>
+                                        <br>
+                                        <v-card class="blue darken-4">
+                                                <v-card-title>Weather Web Page</v-card-title>
+                                                <v-card-text>The second website that I worked on as an assignment. Originally hosted in Mozilla Thimble and started in 2016.</v-card-text>
+                                                <v-card-actions>
+                                                        <v-btn text normal href="https://alee14.github.io/weather-website">Website</v-btn>
+                                                </v-card-actions>
                                         </v-card>
                                 </v-col>
                         </v-row>

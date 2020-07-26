@@ -45,51 +45,49 @@
                     </v-container>
                 </v-card>
             </div>
-            <div class="projects">
-                <!-- This might get removed -->
-            </div>
-            <div class="blog">
-                <h1>Blog here</h1>
-            </div>
             <div class="aleepc-specs">
                 <h1>AleePC Parts</h1>
                 <v-simple-table>
-                    <tr>
-                        <th>Part Type</th>
-                        <th>Part Name</th>
-                    </tr>
-                    <tr>
-                        <td>CPU</td>
-                        <td>AMD - Ryzen 3 2200G 3.5 GHz Quad-Core Processor</td>
-                    </tr>
-                    <tr>
-                        <td>CPU Cooler</td>
-                        <td>Cooler Master - Hyper T2 54.8 CFM Sleeve Bearing CPU Cooler</td>
-                    </tr>
-                    <tr>
-                        <td>Motherboard</td>
-                        <td>ASRock - B450M-HDV Micro ATX AM4</td>
-                    </tr>
-                    <tr>
-                        <td>Memory</td>
-                        <td>Corsair - Vengeance LPX 16 GB (2 x 8 GB) DDR4-2400</td>
-                    </tr>
-                    <tr>
-                        <td>Main Storage</td>
-                        <td>Western Digital Blue 250 GB M.2-2280 Solid State Drive</td>
-                    </tr>
-                    <tr>
-                        <td>Second Storage</td>
-                        <td>Western Digital Blue 2 TB 3.5" 5400RPM Internal Hard Drive</td>
-                    </tr>
-                    <tr>
-                        <td>Case</td>
-                        <td>Rosewill - FBM-X1 MicroATX Mini Tower Case</td>
-                    </tr>
-                    <tr>
-                        <td>Power Supply</td>
-                        <td>EVGA - 500 W 80+ Certified ATX Power Supply</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Part Type</th>
+                            <th>Part Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>CPU</td>
+                            <td>AMD - Ryzen 3 2200G 3.5 GHz Quad-Core Processor</td>
+                        </tr>
+                        <tr>
+                            <td>CPU Cooler</td>
+                            <td>Cooler Master - Hyper T2 54.8 CFM Sleeve Bearing CPU Cooler</td>
+                        </tr>
+                        <tr>
+                            <td>Memory</td>
+                            <td>Corsair - Vengeance LPX 16 GB (2 x 8 GB) DDR4-2400</td>
+                        </tr>
+                        <tr>
+                            <td>Main Storage</td>
+                            <td>Western Digital Blue 250 GB M.2-2280 Solid State Drive</td>
+                        </tr>
+                        <tr>
+                            <td>Second Storage</td>
+                            <td>Western Digital Blue 2 TB 3.5" 5400RPM Internal Hard Drive</td>
+                        </tr>
+                        <tr>
+                            <td>Motherboard</td>
+                            <td>ASRock - B450M-HDV Micro ATX AM4</td>
+                        </tr>
+                        <tr>
+                            <td>Case</td>
+                            <td>Rosewill - FBM-X1 MicroATX Mini Tower Case</td>
+                        </tr>
+                        <tr>
+                            <td>Power Supply</td>
+                            <td>EVGA - 500 W 80+ Certified ATX Power Supply</td>
+                        </tr>
+                    </tbody>
                 </v-simple-table>
             </div>
         </v-container>
