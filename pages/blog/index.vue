@@ -40,6 +40,7 @@ export default {
         background-position: center;
         height: 30vh;
         display: flex;
+        text-shadow: 0px 0px 10px #000000;
         flex-direction: column;
         justify-content: center;
         align-items: center;

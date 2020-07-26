@@ -5,6 +5,7 @@
                 <header id="showcase" class="animated fadeIn">
                     <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" class="animated fadeIn" />
                     <br/>
+                    <!-- Add text outline -->
                     <h1 class="display-4 animated zoomIn">Hello, I'm Andrew Lee!</h1>
                     <br/>
                     <h1 class="display-1 animated zoomIn">Welcome to my personal website.</h1>
@@ -16,9 +17,9 @@
                 <v-card flat color="green darken-3" dark>
                     <v-container>
                         <h1>About Me</h1>
-                        <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old.</b></p>
+                        <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old. I like to program and play some games sometimes.</b></p>
                         <h1>Timeline</h1>
-                        <p> 2014: Created my first YouTube channel The Alee Diamond<br>
+                        <p> 2014: Created my first YouTube channel The Alee Diamond.<br>
                             2015: First got into programming and learned HTML and Batch.<br>
                             2016: Learned a bit of VB, The Alee Diamond rebranded into Andrew Lee and AleeTechyPlays is born.<br>
                             2017: Learned JavaScript and C#.</p>
@@ -114,6 +115,7 @@ export default {
         background-position: center;
         height: 100vh;
         display: flex;
+        text-shadow: 0px 0px 10px #000000;
         flex-direction: column;
         justify-content: center;
         align-items: center;
