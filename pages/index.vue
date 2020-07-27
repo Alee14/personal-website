@@ -2,19 +2,18 @@
     <div>
         <div class="landing-page">
             <v-card>
-                <header id="showcase" class="animated fadeIn">
-                    <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" class="animated fadeIn" />
+                <header id="showcase" class="animate__animated animate__fadeIn">
+                    <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" class="animate__animated animate__fadeIn" />
                     <br/>
-                    <!-- Add text outline -->
-                    <h1 class="display-4 animated zoomIn">Hello, I'm Andrew Lee!</h1>
+                    <h1 class="display-4 animate__animated animate__zoomIn">Hello, I'm Andrew Lee!</h1>
                     <br/>
-                    <h1 class="display-1 animated zoomIn">Welcome to my personal website.</h1>
+                    <h1 class="display-1 animate__animated animate__zoomIn">Welcome to my personal website.</h1>
                 </header>
             </v-card>
         </div>
         <v-container>
             <div class="about">
-                <v-card flat color="green darken-3" dark>
+                <v-card flat color="green darken-4" dark>
                     <v-container>
                         <h1>About Me</h1>
                         <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old. I like to program and play some games sometimes.</b></p>
@@ -42,6 +41,28 @@
                             <li>Software Inc</li>
                             <li>Hacknet</li>
                         </ul>
+                        <h1>Platforms</h1>
+                        <v-btn target="_blank" href="https://discord.gg/EFhRDqG" icon>
+                            <v-icon>mdi-discord</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://github.com/Alee14" icon>
+                            <v-icon>mdi-github</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://lbry.tv/@Alee:4" icon>
+                            <v-icon>mdi-video</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://twitter.com/Alee14498" icon>
+                            <v-icon>mdi-twitter</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://www.youtube.com/channel/UCNRn4YDPCCWSEl3CT7eWorA" icon>
+                            <v-icon>mdi-youtube</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://www.instagram.com/alee14498" icon>
+                            <v-icon>mdi-instagram</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://www.reddit.com/user/alee1449" icon>
+                            <v-icon>mdi-reddit</v-icon>
+                        </v-btn>
                     </v-container>
                 </v-card>
             </div>
