@@ -48,6 +48,14 @@
                                                         <v-btn text normal target="_blank" href="https://alee14.github.io/weather-website">Website</v-btn>
                                                 </v-card-actions>
                                         </v-card>
+                                        <br>
+                                        <v-card class="blue darken-4">
+                                                <v-card-title>Raspberry Pi OS Menu</v-card-title>
+                                                <v-card-text>A full screen menu. Programmed for the Raspberry Pi.</v-card-text>
+                                                <v-card-actions>
+                                                        <v-btn text normal target="_blank" href="https://github.com/Alee14/RPi-Menu">GitHub</v-btn>
+                                                </v-card-actions>
+                                        </v-card>
                                 </v-col>
                         </v-row>
                 </v-container>

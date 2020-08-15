@@ -29,6 +29,7 @@
                             <li>JavaScript</li>
                             <li>HTML</li>
                             <li>Vue</li>
+                            <li>Python</li>
                         </ul>
                         <h1>My favorite games</h1>
                         <ul>
