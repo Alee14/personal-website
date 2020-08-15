@@ -112,6 +112,10 @@
                     </tbody>
                 </v-simple-table>
             </div>
+            <div class="contact">
+                <h1>Contact me</h1>
+                <p>If you want to ask me questions or just want to contact me. Contact me at <a href="mailto:andrew@alee14.me">andrew@alee14.me</a>.</p>
+            </div>
         </v-container>
     </div>
 </template>
