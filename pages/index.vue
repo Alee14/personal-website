@@ -13,10 +13,30 @@
         </div>
         <v-container>
             <div class="about">
-                <v-card flat color="green darken-4" dark>
-                    <v-container>
-                        <h1>About Me</h1>
+                 <h1>About Me</h1>
                         <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old. I like to program and play some games sometimes.</b></p>
+                        <h1>Platforms</h1>
+                        <v-btn target="_blank" href="https://discord.gg/EFhRDqG" icon>
+                            <v-icon>mdi-discord</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://github.com/Alee14" icon>
+                            <v-icon>mdi-github</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://lbry.tv/@Alee:4" icon>
+                            <v-icon>mdi-video</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://twitter.com/Alee14498" icon>
+                            <v-icon>mdi-twitter</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://www.youtube.com/channel/UCNRn4YDPCCWSEl3CT7eWorA" icon>
+                            <v-icon>mdi-youtube</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://www.instagram.com/alee14498" icon>
+                            <v-icon>mdi-instagram</v-icon>
+                        </v-btn>
+                        <v-btn target="_blank" href="https://www.reddit.com/user/alee1449" icon>
+                            <v-icon>mdi-reddit</v-icon>
+                        </v-btn>
                         <h1>Timeline</h1>
                         <p> 2014: Created my first YouTube channel The Alee Diamond.<br>
                             2015: First got into programming and learned HTML and Batch.<br>
@@ -42,30 +62,6 @@
                             <li>Software Inc</li>
                             <li>Hacknet</li>
                         </ul>
-                        <h1>Platforms</h1>
-                        <v-btn target="_blank" href="https://discord.gg/EFhRDqG" icon>
-                            <v-icon>mdi-discord</v-icon>
-                        </v-btn>
-                        <v-btn target="_blank" href="https://github.com/Alee14" icon>
-                            <v-icon>mdi-github</v-icon>
-                        </v-btn>
-                        <v-btn target="_blank" href="https://lbry.tv/@Alee:4" icon>
-                            <v-icon>mdi-video</v-icon>
-                        </v-btn>
-                        <v-btn target="_blank" href="https://twitter.com/Alee14498" icon>
-                            <v-icon>mdi-twitter</v-icon>
-                        </v-btn>
-                        <v-btn target="_blank" href="https://www.youtube.com/channel/UCNRn4YDPCCWSEl3CT7eWorA" icon>
-                            <v-icon>mdi-youtube</v-icon>
-                        </v-btn>
-                        <v-btn target="_blank" href="https://www.instagram.com/alee14498" icon>
-                            <v-icon>mdi-instagram</v-icon>
-                        </v-btn>
-                        <v-btn target="_blank" href="https://www.reddit.com/user/alee1449" icon>
-                            <v-icon>mdi-reddit</v-icon>
-                        </v-btn>
-                    </v-container>
-                </v-card>
             </div>
             <div class="aleepc-specs">
                 <h1>AleePC Parts</h1>
