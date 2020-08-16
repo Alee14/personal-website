@@ -44,8 +44,8 @@ export default {
       drawer: false,
       items: [
         { title: 'Home', link: '/', icon: 'home' },
-        { title: 'Blog', link: 'blog', icon: 'blog' },
-        { title: 'Projects', link: 'projects', icon: 'projects' }
+        { title: 'Blog', link: '/blog', icon: 'blog' },
+        { title: 'Projects', link: '/projects', icon: 'projects' }
       ]
     }
   }
