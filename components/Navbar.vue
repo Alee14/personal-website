@@ -1,26 +1,20 @@
 <template>
     <div>
         <v-app-bar>
-            <v-toolbar-title>Andrew Lee</v-toolbar-title>
-            <v-spacer/>
+          <v-toolbar-title>Andrew Lee</v-toolbar-title>
+          <v-spacer/>
 
-            <span class="hidden-sm-and-up">
-            <v-btn @click.stop="drawer = !drawer">Menu</v-btn>
-            </span>
-
-            <v-toolbar-items class="hidden-xs-only">
-            <v-btn to="/" text>
-                Home
-            </v-btn>
-            <v-btn to="/blog" text>
-                Blog
-            </v-btn>
-            <v-btn to="/projects" text>
-                Projects
-            </v-btn>
-            </v-toolbar-items>
+          <!-- Mobile Only -->
+          <span class="hidden-sm-and-up">
+          <v-btn @click.stop="drawer = !drawer">Menu</v-btn>
+          </span>
+          <!-- Desktop + Tablets Only -->
+          <v-toolbar-items class="hidden-xs-only">
+          <v-btn v-for="item in items" :key="item.title" :to="item.link" text>{{ item.title }}</v-btn>
+          </v-toolbar-items>
         </v-app-bar>
 
+        <!-- Mobile Only -->
         <v-navigation-drawer v-model="drawer" absolute temporary left>
           <v-list dense>
           <v-list-item v-for="item in items" :key="item.title" :to="item.link" link>
