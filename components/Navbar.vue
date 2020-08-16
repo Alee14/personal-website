@@ -6,7 +6,7 @@
 
           <!-- Mobile Only -->
           <span class="hidden-sm-and-up">
-          <v-btn @click.stop="drawer = !drawer">Menu</v-btn>
+          <v-btn @click.stop="drawer = !drawer"><v-icon>mdi-menu</v-icon></v-btn>
           </span>
           <!-- Desktop + Tablets Only -->
           <v-toolbar-items class="hidden-xs-only">
@@ -16,12 +16,17 @@
 
         <!-- Mobile Only -->
         <v-navigation-drawer v-model="drawer" absolute temporary left>
+          <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title class="title">Andrew Lee</v-list-item-title>
+          </v-list-item-content>
+          </v-list-item>
+          <v-divider></v-divider>
           <v-list dense>
           <v-list-item v-for="item in items" :key="item.title" :to="item.link" link>
           <v-list-item-icon>
             <v-icon>mdi-{{ item.icon }}</v-icon>
           </v-list-item-icon>
-
           <v-list-item-content>
               <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
