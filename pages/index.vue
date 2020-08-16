@@ -51,7 +51,7 @@
                             <li>Vue</li>
                             <li>Python</li>
                         </ul>
-                        <h1>My favorite games</h1>
+                        <h1>Favorite Games</h1>
                         <ul>
                             <li>Splatoon 2</li>
                             <li>Animal Crossing: New Horizons</li>
@@ -109,7 +109,7 @@
                 </v-simple-table>
             </div>
             <div class="contact">
-                <h1>Contact me</h1>
+                <h1>Contact Me</h1>
                 <p>If you want to ask me questions or just want to contact me. Contact me at <a href="mailto:andrew@alee14.me">andrew@alee14.me</a>.</p>
             </div>
         </v-container>

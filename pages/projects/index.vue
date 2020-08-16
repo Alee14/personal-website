@@ -7,7 +7,7 @@
                 <v-container>
                         <v-row>
                                 <v-col cols="12">
-                                        <v-card class="blue darken-4">
+                                        <v-card class="green darken-4">
                                                 <v-card-title>Alee Productions</v-card-title>
                                                 <v-card-text>A future company that I'm planning on running.</v-card-text>
                                                 <v-card-actions>
@@ -17,7 +17,7 @@
                                                 </v-card-actions>
                                         </v-card>
                                         <br>
-                                        <v-card class="blue darken-4">
+                                        <v-card class="green darken-4">
                                                 <v-card-title>AleeBot</v-card-title>
                                                 <v-card-text>An all-in-one bot that's made from the Discord.JS api.</v-card-text>
                                                 <v-card-actions>
@@ -25,7 +25,7 @@
                                                 </v-card-actions>
                                         </v-card>
                                         <br>
-                                        <v-card class="blue darken-4">
+                                        <v-card class="green darken-4">
                                                 <v-card-title>DLMP3</v-card-title>
                                                 <v-card-text>A Discord bot that plays local mp3 audio tracks.</v-card-text>
                                                 <v-card-actions>
@@ -33,7 +33,7 @@
                                                 </v-card-actions>
                                         </v-card>
                                         <br>
-                                        <v-card class="blue darken-4">
+                                        <v-card class="green darken-4">
                                                 <v-card-title>First Website</v-card-title>
                                                 <v-card-text>The first website that "I" in 2013.</v-card-text>
                                                 <v-card-actions>
@@ -41,7 +41,7 @@
                                                 </v-card-actions>
                                         </v-card>
                                         <br>
-                                        <v-card class="blue darken-4">
+                                        <v-card class="green darken-4">
                                                 <v-card-title>Weather Web Page</v-card-title>
                                                 <v-card-text>The second website that I worked on as an assignment. Originally hosted in Mozilla Thimble and started in 2016.</v-card-text>
                                                 <v-card-actions>
@@ -49,7 +49,7 @@
                                                 </v-card-actions>
                                         </v-card>
                                         <br>
-                                        <v-card class="blue darken-4">
+                                        <v-card class="green darken-4">
                                                 <v-card-title>Raspberry Pi OS Menu</v-card-title>
                                                 <v-card-text>A full screen menu. Programmed for the Raspberry Pi.</v-card-text>
                                                 <v-card-actions>
