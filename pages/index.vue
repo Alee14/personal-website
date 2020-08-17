@@ -108,6 +108,11 @@
                     </tbody>
                 </v-simple-table>
             </div>
+            <div class="credits">
+                <h1>Credits</h1>
+                <p>Website is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0</a>.</p>
+                <p>Created using <a href="https://vuejs.org">Vue.JS</a>, <a href="https://nuxtjs.org">NuxtJS</a> and <a href="https://vuetifyjs.com">Vuetify</a>. Hosted on <a href="https://netlify.com">Netlify</a>.</p>
+            </div>
             <div class="contact">
                 <h1>Contact Me</h1>
                 <p>If you want to ask me questions or just want to contact me. Contact me at <a href="mailto:andrew@alee14.me">andrew@alee14.me</a>.</p>
