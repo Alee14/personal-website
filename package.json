@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "description": "Andrew Lee's Personal Website",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Andrew Lee",
