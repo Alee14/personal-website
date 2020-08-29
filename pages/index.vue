@@ -62,6 +62,9 @@
                             <li>Software Inc</li>
                             <li>Hacknet</li>
                         </ul>
+              <h1>Badges</h1>
+              <img src="http://www.hackthebox.eu/badge/image/391735" alt="Hack The Box">
+              <img src="https://tryhackme-badges.s3.amazonaws.com/Alee.png" alt="TryHackMe">
             </div>
             <div class="aleepc-specs">
                 <h1>AleePC Parts</h1>
