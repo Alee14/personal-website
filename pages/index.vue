@@ -16,26 +16,26 @@
                  <h1>About Me</h1>
                         <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old. I like to program and play some games sometimes.</b></p>
                         <h1>Platforms</h1>
-                        <v-btn target="_blank" href="https://discord.gg/EFhRDqG" icon>
-                            <v-icon>mdi-discord</v-icon>
+                        <v-btn target="_blank" href="https://www.youtube.com/channel/UCNRn4YDPCCWSEl3CT7eWorA" color="red">
+                          <v-icon>mdi-youtube</v-icon>&nbsp;Youtube
                         </v-btn>
-                        <v-btn target="_blank" href="https://github.com/Alee14" icon>
-                            <v-icon>mdi-github</v-icon>
+                        <v-btn target="_blank" href="https://twitter.com/Alee14498" color="light-blue">
+                          <v-icon>mdi-twitter</v-icon>&nbsp;Twitter
                         </v-btn>
-                        <v-btn target="_blank" href="https://lbry.tv/@Alee:4" icon>
-                            <v-icon>mdi-video</v-icon>
+                        <v-btn target="_blank" href="https://discord.gg/EFhRDqG" color="#2C2F33">
+                            <v-icon>mdi-discord</v-icon>&nbsp;Discord Server
                         </v-btn>
-                        <v-btn target="_blank" href="https://twitter.com/Alee14498" icon>
-                            <v-icon>mdi-twitter</v-icon>
+                        <v-btn target="_blank" href="https://github.com/Alee14" color="black">
+                            <v-icon>mdi-github</v-icon>&nbsp;GitHub
                         </v-btn>
-                        <v-btn target="_blank" href="https://www.youtube.com/channel/UCNRn4YDPCCWSEl3CT7eWorA" icon>
-                            <v-icon>mdi-youtube</v-icon>
+                        <v-btn target="_blank" href="https://lbry.tv/@Alee:4">
+                            <v-icon>mdi-video</v-icon>&nbsp;IBRY
                         </v-btn>
-                        <v-btn target="_blank" href="https://www.instagram.com/alee14498" icon>
-                            <v-icon>mdi-instagram</v-icon>
+                        <v-btn target="_blank" href="https://www.instagram.com/alee14498" color="pink">
+                            <v-icon>mdi-instagram</v-icon>&nbsp;Instagram
                         </v-btn>
-                        <v-btn target="_blank" href="https://www.reddit.com/user/alee1449" icon>
-                            <v-icon>mdi-reddit</v-icon>
+                        <v-btn target="_blank" href="https://www.reddit.com/user/alee1449" color="orange darken-3">
+                            <v-icon>mdi-reddit</v-icon>&nbsp;Reddit
                         </v-btn>
                         <h1>Timeline</h1>
                         <p> 2014: Created my first YouTube channel The Alee Diamond.<br>

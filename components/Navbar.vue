@@ -6,7 +6,7 @@
 
           <!-- Mobile Only -->
           <span class="hidden-sm-and-up">
-          <v-btn @click.stop="drawer = !drawer"><v-icon>mdi-menu</v-icon></v-btn>
+          <v-btn @click.stop="drawer = !drawer" icon><v-icon>mdi-menu</v-icon></v-btn>
           </span>
           <!-- Desktop + Tablets Only -->
           <v-toolbar-items class="hidden-xs-only">
