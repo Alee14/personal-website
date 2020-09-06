@@ -13,6 +13,7 @@
   "ProgrammingLanguagesTitle": "Programming Languages",
   "FavouriteGamesTitle": "Favourite Games",
   "BadgesTitle": "Badges",
+  "CommunitiesTitle": "Communities",
   "AleePCPartsTitle": "AleePC Parts",
   "AleePCPartsTypeText": "Part Type",
   "AleePCPartsNameText": "Part Name",
@@ -44,6 +45,8 @@
   "VideosText": "Videos",
   "VideosSubtitle": "This is where you see my videos.",
   "VideosButton": "View more videos here",
+  "AleeLogoText": "Alee Logo",
+  "AleeLogoSubtitle": "Where you see the history of my logos that I made or a friend made.",
   "Footer": "Footer",
   "FooterCopyright": "© Copyright 2018-2020 Andrew Lee. All rights reserved."
 }

@@ -50,19 +50,28 @@
                         </ul>
                         <h1>{{ $t('FavouriteGamesTitle') }}</h1>
                         <ul>
-                            <li>Splatoon 2</li>
-                            <li>Animal Crossing: New Horizons</li>
-                            <li>Minecraft</li>
-                            <li>Super Mario Maker 2</li>
-                            <li>Super Mario Odyssey</li>
-                            <li>PC Building Simulator</li>
-                            <li>Software Inc</li>
-                            <li>Hacknet</li>
+                          <li>Splatoon 2</li>
+                          <li>Minecraft</li>
+                          <li>Animal Crossing: New Horizons</li>
+                          <li>Super Mario Maker 2</li>
+                          <li>Super Mario Odyssey</li>
+                          <li>Mario & Luigi Bowser's Inside Story</li>
+                          <li>Club Penguin: Elite Penguin Force</li>
+                          <li>Software Inc</li>
+                          <li>PC Building Simulator</li>
+                          <li>Hacknet</li>
                         </ul>
               <h1>{{ $t('BadgesTitle') }}</h1>
               <img src="http://www.hackthebox.eu/badge/image/391735" alt="Hack The Box">
               <img src="https://tryhackme-badges.s3.amazonaws.com/Alee.png" alt="TryHackMe">
             </div>
+          <div class="communities">
+            <h1>{{ $t('CommunitiesTitle') }}</h1>
+            <ul>
+              <li><a href="https://www.bnbdiscord.net">bits & Bytes</a></li>
+              <li><a href="https://discord.gg/nTQM7h4">TheEdgeNK</a></li>
+            </ul>
+          </div>
             <div class="aleepc-specs">
                 <h1>{{ $t('AleePCPartsTitle') }}</h1>
                 <v-simple-table>

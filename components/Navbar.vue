@@ -56,6 +56,7 @@ export default {
         { title: 'BlogText', link: '/blog' },
         { title: 'ProjectsText', link: '/projects' },
         { title: 'VideosText', link: '/videos' }
+        // { title: 'AleeLogoText', link: '/alee-logo' }
       ]
     }
   },
