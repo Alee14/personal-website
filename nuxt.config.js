@@ -1,4 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
+import i18n from './config/i18n'
 
 module.exports = {
   mode: 'universal',
@@ -14,7 +15,7 @@ module.exports = {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: 'favicon.ico'
+        href: '/favicon.ico'
       }
     ]
   },
@@ -36,14 +37,36 @@ module.exports = {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify'
+    '@nuxtjs/vuetify',
+
   ],
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa', '@nuxtjs/markdownit'],
+  modules: [
+      '@nuxtjs/markdownit',
+      [
+      'nuxt-i18n',
+      {
+        defaultLocale: 'en',
+        locales: [
+          {
+            code: 'en',
+            iso: 'en-US',
+            name: 'English'
+          },
+          {
+            code: 'fr',
+            iso: 'fr-FR',
+            name: 'Français'
+          }
+        ],
+        vueI18n: i18n
+      }
+]
+  ],
 
-  markdownit: {
+  markdown: {
     injected: true
   },
 
@@ -60,7 +83,7 @@ module.exports = {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
+          info: colors.teal.darken1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3

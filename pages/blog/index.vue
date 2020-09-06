@@ -2,8 +2,8 @@
     <div>
         <v-card>
             <header id="showcase">
-                <h1 class="display-3 animate__animated animate__fadeIn">Blog</h1>
-                <h1 class="animate__animated animate__fadeIn">This is where I post stuff here.</h1>
+                <h1 class="display-3 animate__animated animate__fadeIn">{{ $t('BlogText') }}</h1>
+                <h1 class="animate__animated animate__fadeIn">{{ $t('BlogSubtitle') }}</h1>
             </header>
         </v-card>
         <v-container>

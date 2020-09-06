@@ -5,17 +5,17 @@
                 <header id="showcase" class="animate__animated animate__fadeIn">
                     <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" class="animate__animated animate__fadeIn" />
                     <br/>
-                    <h1 class="display-4 animate__animated animate__zoomIn">Hello, I'm Andrew Lee!</h1>
+                    <h1 class="display-4 animate__animated animate__zoomIn">{{ $t('WelcomeTitle') }}</h1>
                     <br/>
-                    <h1 class="display-1 animate__animated animate__zoomIn">Welcome to my personal website.</h1>
+                    <h1 class="display-1 animate__animated animate__zoomIn">{{ $t('WelcomeSubtitle') }}</h1>
                 </header>
             </v-card>
         </div>
         <v-container>
             <div class="about">
-                 <h1>About Me</h1>
-                        <p><b>Hello, I'm Andrew Lee and I'm currently 16 years old. I like to program and play some games sometimes.</b></p>
-                        <h1>Platforms</h1>
+                 <h1>{{ $t('AboutMe') }}</h1>
+                        <p><b>{{ $t('AboutMeText') }}</b></p>
+                        <h1>{{ $t('PlatformsTitle') }}</h1>
                         <v-btn target="_blank" href="https://www.youtube.com/channel/UCNRn4YDPCCWSEl3CT7eWorA" color="red">
                           <v-icon>mdi-youtube</v-icon>&nbsp;Youtube
                         </v-btn>
@@ -37,12 +37,9 @@
                         <v-btn target="_blank" href="https://www.reddit.com/user/alee1449" color="orange darken-3">
                             <v-icon>mdi-reddit</v-icon>&nbsp;Reddit
                         </v-btn>
-                        <h1>Timeline</h1>
-                        <p> 2014: Created my first YouTube channel The Alee Diamond.<br>
-                            2015: First got into programming and learned HTML and Batch.<br>
-                            2016: Learned a bit of VB, The Alee Diamond rebranded into Andrew Lee and AleeTechyPlays is born.<br>
-                            2017: Learned JavaScript and C#.</p>
-                        <h1>Programming Languages</h1>
+                        <h1>{{ $t('TimelineTitle') }}</h1>
+                        <p>{{ $t('TimelineContent2014') }}<br>{{ $t('TimelineContent2015') }}<br>{{ $t('TimelineContent2016') }}<br>{{ $t('TimelineContent2017') }}</p>
+                        <h1>{{ $t('ProgrammingLanguagesTitle') }}</h1>
                         <ul>
                             <li>C#</li>
                             <li>C++</li>
@@ -51,7 +48,7 @@
                             <li>Vue</li>
                             <li>Python</li>
                         </ul>
-                        <h1>Favorite Games</h1>
+                        <h1>{{ $t('FavouriteGamesTitle') }}</h1>
                         <ul>
                             <li>Splatoon 2</li>
                             <li>Animal Crossing: New Horizons</li>
@@ -62,63 +59,63 @@
                             <li>Software Inc</li>
                             <li>Hacknet</li>
                         </ul>
-              <h1>Badges</h1>
+              <h1>{{ $t('BadgesTitle') }}</h1>
               <img src="http://www.hackthebox.eu/badge/image/391735" alt="Hack The Box">
               <img src="https://tryhackme-badges.s3.amazonaws.com/Alee.png" alt="TryHackMe">
             </div>
             <div class="aleepc-specs">
-                <h1>AleePC Parts</h1>
+                <h1>{{ $t('AleePCPartsTitle') }}</h1>
                 <v-simple-table>
                     <thead>
                         <tr>
-                            <th>Part Type</th>
-                            <th>Part Name</th>
+                            <th>{{ $t('AleePCPartsTypeText') }}</th>
+                            <th>{{ $t('AleePCPartsNameText') }}</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>CPU</td>
+                            <td>{{ $t('AleePCPartsCPU') }}</td>
                             <td>AMD - Ryzen 3 2200G 3.5 GHz Quad-Core Processor</td>
                         </tr>
                         <tr>
-                            <td>CPU Cooler</td>
+                            <td>{{ $t('AleePCPartsCPUCooler') }}</td>
                             <td>Cooler Master - Hyper T2 54.8 CFM Sleeve Bearing CPU Cooler</td>
                         </tr>
                         <tr>
-                            <td>Memory</td>
+                            <td>{{ $t('AleePCPartsMemory') }}</td>
                             <td>Corsair - Vengeance LPX 16 GB (2 x 8 GB) DDR4-2400</td>
                         </tr>
                         <tr>
-                            <td>Main Storage</td>
+                            <td>{{ $t('AleePCPartsMainStorage') }}</td>
                             <td>Western Digital Blue 250 GB M.2-2280 Solid State Drive</td>
                         </tr>
                         <tr>
-                            <td>Second Storage</td>
+                            <td>{{ $t('AleePCPartsSecondStorage') }}</td>
                             <td>Western Digital Blue 2 TB 3.5" 5400RPM Internal Hard Drive</td>
                         </tr>
                         <tr>
-                            <td>Motherboard</td>
+                            <td>{{ $t('AleePCPartsMotherboard') }}</td>
                             <td>ASRock - B450M-HDV Micro ATX AM4</td>
                         </tr>
                         <tr>
-                            <td>Case</td>
+                            <td>{{ $t('AleePCPartsCase') }}</td>
                             <td>Rosewill - FBM-X1 MicroATX Mini Tower Case</td>
                         </tr>
                         <tr>
-                            <td>Power Supply</td>
+                            <td>{{ $t('AleePCPartsPowerSupply') }}</td>
                             <td>EVGA - 500 W 80+ Certified ATX Power Supply</td>
                         </tr>
                     </tbody>
                 </v-simple-table>
             </div>
             <div class="credits">
-                <h1>Credits</h1>
-                <p>Website is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0</a>.</p>
-                <p>Created using <a href="https://vuejs.org">Vue.JS</a>, <a href="https://nuxtjs.org">NuxtJS</a> and <a href="https://vuetifyjs.com">Vuetify</a>. Hosted on <a href="https://netlify.com">Netlify</a>.</p>
+                <h1>{{ $t('CreditsTitle') }}</h1>
+                <p>{{ $t('CreditsGPLText') }} <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPL-3.0</a>.</p>
+              <p>{{ $t('CreditsContent1') }} <a href="https://vuejs.org" target="_blank">Vue.JS</a>, <a href="https://nuxtjs.org" target="_blank">NuxtJS</a> & <a href="https://vuetifyjs.com" target="_blank">Vuetify</a>. {{ $t('CreditsContent2') }} <a href="https://netlify.com" target="_blank">Netlify</a>.</p>
             </div>
             <div class="contact">
-                <h1>Contact Me</h1>
-                <p>If you want to ask me questions or just want to contact me. Contact me at <a href="mailto:andrew@alee14.me">andrew@alee14.me</a>.</p>
+                <h1>{{ $t('ContactMeTitle') }}</h1>
+                <p>{{ $t('ContactMeText') }} <a href="mailto:andrew@alee14.me">andrew@alee14.me</a>.</p>
             </div>
         </v-container>
     </div>

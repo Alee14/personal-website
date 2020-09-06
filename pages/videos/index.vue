@@ -2,15 +2,15 @@
   <div>
     <v-card>
       <header id="showcase">
-        <h1 class="display-3 animate__animated animate__fadeIn">Videos</h1>
-        <h1 class="animate__animated animate__fadeIn">This is where you see my videos.</h1>
+        <h1 class="display-3 animate__animated animate__fadeIn">{{ $t('VideosText') }}</h1>
+        <h1 class="animate__animated animate__fadeIn">{{ $t('VideosSubtitle') }}</h1>
       </header>
     </v-card>
     <v-container>
       <rssapp-wall id="0YnuB7ETra9EU2An"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
       <br/>
       <div class="text-center">
-        <v-btn color="green" align="center" href="https://www.youtube.com/user/Andrew14Lee/videos">View more videos here</v-btn>
+        <v-btn color="green" align="center" href="https://www.youtube.com/user/Andrew14Lee/videos">{{ $t('VideosButton') }}</v-btn>
       </div>
     </v-container>
   </div>
