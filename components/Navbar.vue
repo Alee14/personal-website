@@ -10,10 +10,7 @@
           </span>
           <!-- Desktop + Tablets Only -->
           <v-toolbar-items class="hidden-xs-only">
-            <v-btn :to="localePath('/')" text>{{ $t('HomeText') }}</v-btn>
-            <v-btn :to="localePath('/blog')" text>{{ $t('BlogText') }}</v-btn>
-            <v-btn :to="localePath('/projects')" text>{{ $t('ProjectsText') }}</v-btn>
-            <v-btn :to="localePath('/videos')" text>{{ $t('VideosText') }}</v-btn>
+            <v-btn v-for="item in items" :key="item.title" :to="localePath(item.link)" text>{{ $t(item.title) }}</v-btn>
             <!--<v-btn :to="localePath('#')" text>Alee Logo</v-btn>-->
             <v-divider class="mx-4" vertical></v-divider>
             <v-btn v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)" text>{{ locale.name }}</v-btn>
@@ -32,24 +29,9 @@
           </v-list-item>
           <v-divider></v-divider>
           <v-list dense>
-            <v-list-item :to="localePath('/')">
+            <v-list-item v-for="item in items" :key="item.title" :to="localePath(item.link)" link>
               <v-list-item-content>
-                <v-list-item-title>{{ $t('HomeText') }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item :to="localePath('/blog')">
-              <v-list-item-content>
-                <v-list-item-title>{{ $t('BlogText') }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item :to="localePath('/projects')">
-              <v-list-item-content>
-                <v-list-item-title>{{ $t('ProjectsText') }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item :to="localePath('/videos')">
-              <v-list-item-content>
-                <v-list-item-title>{{ $t('VideosText') }}</v-list-item-title>
+                <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
             <v-divider class="mx-4"></v-divider>
@@ -68,7 +50,13 @@ export default {
   name: 'Navbar',
   data () {
     return {
-      drawer: false
+      drawer: false,
+      items: [
+        { title: 'HomeText', link: '/' },
+        { title: 'BlogText', link: '/blog' },
+        { title: 'ProjectsText', link: '/projects' },
+        { title: 'VideosText', link: '/videos' }
+      ]
     }
   },
   computed: {
