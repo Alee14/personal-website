@@ -9,10 +9,9 @@
         <v-col cols="12">
           <v-card class="green darken-4">
             <v-card-title>Philip Adams Software Archive</v-card-title>
-            <v-card-text>This is the ultimate software collection of Philip Adams' software. (OSFirstTimer, 12padams, AstralPhaser, ShiftOS).<br>These software require .NET Framework 3.5, 4.0 and/or 4.5 to function.<br>Warning some of the software in this pack has a jumpscare, and if you have epilepsy please be cautious with this pack.<br>Also be sure to disable the antivirus if you want to try out Mitosis.</v-card-text>
+            <v-card-text>The ultimate software collection of Philip Adams' software.</v-card-text>
             <v-card-actions>
-              <v-btn text normal href="/uploads/OSFT-Software-Archive.tar.gz">Download</v-btn>
-              <v-btn text normal href="/uploads/OSFT-Software-Archive.tar.gz.md5">Download MD5</v-btn>
+              <v-btn text normal href="/downloads/osft-software-archive">More Information</v-btn>
             </v-card-actions>
           </v-card>
         </v-col>
