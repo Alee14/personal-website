@@ -25,6 +25,12 @@
   "AleePCPartsMotherboard": "Motherboard",
   "AleePCPartsCase": "Case",
   "AleePCPartsPowerSupply": "Power Supply",
+  "SoftwareInformationText": "Software Information",
+  "OperatingSystemText": "Operating System/Linux Distro:",
+  "DesktopEnvironmentText": "Desktop Environment:",
+  "WindowManagerText": "Window Manager:",
+  "DockText": "Dock:",
+  "IconPackText": "Icon Pack:",
   "CreditsTitle": "Credits",
   "CreditsGPLText": "Website is licensed under",
   "CreditsContent1": "Created using",
@@ -47,6 +53,8 @@
   "VideosButton": "View more videos here",
   "AleeLogoText": "Alee Logo",
   "AleeLogoSubtitle": "Where you see the history of my logos that I made or a friend made.",
+  "DownloadsText": "Downloads",
+  "DownloadsSubtitle": "Where you download stuff I uploaded here.",
   "Footer": "Footer",
   "FooterCopyright": "© Copyright 2018-2020 Andrew Lee. All rights reserved."
 }
