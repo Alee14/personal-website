@@ -55,6 +55,7 @@ export default {
         { title: 'HomeText', link: '/' },
         { title: 'BlogText', link: '/blog' },
         { title: 'ProjectsText', link: '/projects' },
+        { title: 'DownloadsText', link: '/downloads' },
         { title: 'VideosText', link: '/videos' }
         // { title: 'AleeLogoText', link: '/alee-logo' }
       ]
