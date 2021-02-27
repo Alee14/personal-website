@@ -3,7 +3,7 @@
         <div class="landing-page">
             <v-card>
                 <header id="showcase" class="animate__animated animate__fadeIn">
-                    <v-img :src="require('../assets/img/Alee.png')" max-height="200px" max-width="200px" class="animate__animated animate__fadeIn" />
+                    <v-img :src="require('../assets/img/Alee.svg')" max-height="200px" max-width="200px" class="animate__animated animate__fadeIn" />
                     <br/>
                     <h1 class="display-4 animate__animated animate__zoomIn">{{ $t('WelcomeTitle') }}</h1>
                     <br/>
@@ -47,6 +47,7 @@
                             <li>HTML</li>
                             <li>Vue</li>
                             <li>Python</li>
+                            <li>Bash</li>
                         </ul>
                         <h1>{{ $t('FavouriteGamesTitle') }}</h1>
                         <ul>
@@ -117,6 +118,17 @@
                     </tbody>
                 </v-simple-table>
             </div>
+          <div class="software-information">
+            <h1>{{ $t('SoftwareInformationText') }}</h1>
+            <!--<v-img src="/assets/img/desktop.png" style="height: 10%; width: 10%;"/>-->
+            <ul>
+              <li>{{ $t('OperatingSystemText') }} <a href="https://archlinux.org" target="_blank">Arch Linux</a></li>
+              <li>{{ $t('DesktopEnvironmentText') }} <a href="https://kde.org" target="_blank">KDE Plasma 5</a></li>
+              <li>{{ $t('WindowManagerText') }} <a href="https://userbase.kde.org/KWin" target="_blank">KWin</a></li>
+              <li>{{ $t('DockText') }} <a href="https://github.com/ricotz/plank" target="_blank">Plank</a></li>
+              <li>{{ $t('IconPackText') }} <a href="https://github.com/vinceliuice/Tela-icon-theme" target="_blank">Tela Green</a></li>
+            </ul>
+          </div>
             <div class="credits">
                 <h1>{{ $t('CreditsTitle') }}</h1>
                 <p>{{ $t('CreditsGPLText') }} <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPL-3.0</a>.</p>

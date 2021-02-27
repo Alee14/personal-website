@@ -16,9 +16,9 @@
             <v-btn v-for="locale in availableLocales" :key="locale.code" :to="switchLocalePath(locale.code)" text>{{ locale.name }}</v-btn>
           </v-toolbar-items>
         </v-app-bar>
-      <v-alert type="info" dismissible>
+      <!--<v-alert type="info" dismissible>
         Hey there! This is just a temporary message saying that the french option is in beta! If you see some problems with my french, be sure to make a <a href="https://github.com/Alee14/personal-website" target="_blank">pull request or point it out on my issues page</a>!
-      </v-alert>
+      </v-alert> -->
 
         <!-- Mobile Only -->
         <v-navigation-drawer v-model="drawer" absolute temporary left>
@@ -53,10 +53,9 @@ export default {
       drawer: false,
       items: [
         { title: 'HomeText', link: '/' },
-        { title: 'BlogText', link: '/blog' },
         { title: 'ProjectsText', link: '/projects' },
-        { title: 'DownloadsText', link: '/downloads' },
-        { title: 'VideosText', link: '/videos' }
+        { title: 'DownloadsText', link: '/downloads' }
+        // { title: 'VideosText', link: '/videos' }
         // { title: 'AleeLogoText', link: '/alee-logo' }
       ]
     }

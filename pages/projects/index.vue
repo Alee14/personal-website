@@ -1,5 +1,5 @@
 <template>
-        <v-card>
+        <div>
                 <header id="showcase">
                         <h1 class="display-3 animate__animated animate__fadeIn">{{ $t('ProjectsText') }}</h1>
                         <h1 class="animate__animated animate__fadeIn">{{ $t('ProjectsSubtitle') }}</h1>
@@ -59,7 +59,7 @@
                                 </v-col>
                         </v-row>
                 </v-container>
-        </v-card>
+        </div>
 </template>
 
 <script>

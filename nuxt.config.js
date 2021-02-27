@@ -2,7 +2,6 @@ import colors from 'vuetify/es5/util/colors'
 import i18n from './config/i18n'
 
 module.exports = {
-  mode: 'universal',
   head: {
     titleTemplate: '%s - Andrew Lee',
     meta: [
@@ -37,15 +36,14 @@ module.exports = {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
 
   ],
   /*
    ** Nuxt.js modules
    */
   modules: [
-      '@nuxtjs/markdownit',
-      [
+    [
       'nuxt-i18n',
       {
         defaultLocale: 'en',
@@ -63,12 +61,9 @@ module.exports = {
         ],
         vueI18n: i18n
       }
-]
+    ]
   ],
 
-  markdown: {
-    injected: true
-  },
 
   /*
    ** vuetify module configuration
