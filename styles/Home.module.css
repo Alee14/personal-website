@@ -8,3 +8,8 @@
   background-size: cover;
   background-image: url("/temp-landing.png")
 }
+
+.title {
+  font-size: 200%;
+  text-align: center;
+}

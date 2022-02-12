@@ -3,6 +3,8 @@ body {
   padding: 0;
   margin: 0;
   height: 100%;
+  background-color: #484848;
+  color: #FFFFFF;
   font-family: Hack;
   src: url("/ttf/Hack-Regular.ttf");
 
