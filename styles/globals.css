@@ -1,3 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Hack", sans-serif;
+        src: url("../public/ttf/Hack-Regular.ttf");
+    }
+
+    @font-face {
+        font-family: "Hack", sans-serif;
+        src: url("../public/ttf/Hack-Italic.ttf");
+        font-style: italic;
+    }
+    @font-face {
+        font-family: "Hack", sans-serif;
+        src: url("../public/ttf/Hack-Bold.ttf");
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: "Hack", sans-serif;
+        src: url("../public/ttf/Hack-BoldItalic.ttf");
+        font-weight: 700;
+    }
+
+}
+
+/*
 html,
 body {
   padding: 0;
@@ -8,4 +37,4 @@ body {
   font-family: Hack;
   src: url("/ttf/Hack-Regular.ttf");
 
-}
+}*/

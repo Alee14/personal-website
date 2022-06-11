@@ -1,6 +1,8 @@
+/*
 .container {
   padding: 0 2rem;
 }
+
 .landing {
   height: 100%;
   background-position: center;
@@ -9,7 +11,22 @@
   background-image: url("/temp-landing.png")
 }
 
-.title {
-  font-size: 200%;
+
+.landing {
   text-align: center;
 }
+
+.title {
+  font-size: 200%;
+}
+
+.description {
+}
+
+.contact {
+}
+
+.text-center {
+  text-align: center;
+}
+*/

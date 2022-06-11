@@ -12,7 +12,7 @@ export default function ToS() {
             </Head>
             <div className={styles.container}>
 				<div id="top"/>
-				<h1 className="text-center display-5 mt-3">Andrew Lee Projects Terms of Service</h1>
+				<h1 className="text-center">Andrew Lee Projects Terms of Service</h1>
 				<p>These terms of service are set in place to ensure you have a great time being part of our community/services.</p>
 				<div id="community-guidelines">
 				<h1>Community Guidelines</h1>
