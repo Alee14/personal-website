@@ -9,7 +9,11 @@ module.exports = {
     fontFamily: {
       'hack': ['Hack', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      colors: {
+        'material-gray': '#212121',
+      },
+    },
   },
   plugins: [],
 }
