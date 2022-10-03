@@ -13,6 +13,9 @@ module.exports = {
       colors: {
         'material-gray': '#212121',
       },
+      backgroundImage: {
+        'landing': "url('/temp-landing.png')",
+      }
     },
   },
   plugins: [],
