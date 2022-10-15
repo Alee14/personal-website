@@ -27,7 +27,7 @@ const Meta = ({title, description, keywords}) => {
             <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png"/>
             <meta name="theme-color" content="#0e8106"/>
 
-            <title>{title} - Andrew Lee</title>
+            <title>{`${title} - Andrew Lee`}</title>
         </Head>
     )
 }
