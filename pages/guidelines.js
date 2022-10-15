@@ -83,10 +83,10 @@ export default function Guidelines() {
 						<h2 className="text-2xl font-bold">Threads</h2>
 						<p>Threads is a new Discord feature which allows you to make subchannels. We have set a policy to not allow to make threads with little to no value, if you made a thread in which has little to no value, it is considered to be spam and we will remove it. If caught doing it continuously, there will be consequences.</p>
 					</div>
-					<p className="mt-3">We recommend you to follow Discord&apos;s <a href="https://discord.com/terms" className="text-blue-300">Terms of Service</a> and <a href="https://discord.com/guidelines" className="text-blue-300">Community Guidelines</a></p>
+					<p className="mt-3">We recommend you to follow Discord&apos;s <a href="https://discord.com/terms" className="link">Terms of Service</a> and <a href="https://discord.com/guidelines" className="link">Community Guidelines</a></p>
 				</div>
 				<p>Last updated: October 14th, 2022</p>
-				<a href="#top" className="text-gray-300">Back to top</a>
+				<a href="#top" className="link">Back to top</a>
 			</div>
         </div>
     )

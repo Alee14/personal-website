@@ -12,9 +12,6 @@ module.exports = {
     extend: {
       colors: {
         'material-gray': '#212121',
-      },
-      backgroundImage: {
-        'landing': "url('/temp-landing.png')",
       }
     },
   },

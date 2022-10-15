@@ -8,6 +8,8 @@ const iconSize = "3x"
 const iconProperties = "hover:text-gray-500 transition-all ease-in-out"
 const navButton = "bg-gray-600 sm:py-4 sm:px-10 py-2 px-5 rounded-lg hover:bg-gray-400 transition ease-in-out"
 
+const isDev = process.env.NODE_ENV === 'development'
+
 export default function Home() {
   return (
     <>
@@ -24,13 +26,15 @@ export default function Home() {
                 <a href="https://instagram.com/alee14498"><FontAwesomeIcon icon={faInstagram} size={iconSize} className={iconProperties} /></a>
                 <a href="https://reddit.com/Alee1449"><FontAwesomeIcon icon={faReddit} size={iconSize} className={iconProperties} /></a>
             </div>
-            {/*<div className="flex-row font-normal space-x-3">
+            {isDev && (
+            <div className="flex-row font-normal space-x-3">
                 <Link href="#"><button className={navButton}>About Me</button></Link>
                 <Link href="#"><button className={navButton}>Projects</button></Link>
                 <Link href="#"><button className={navButton}>Blog</button></Link>
                 <Link href="#"><button className={navButton}>Downloads</button></Link>
                 <Link href="/guidelines"><button className={navButton}>Guidelines</button></Link>
-            </div> */}
+            </div>
+            )}
             <h2 className="text-lg font-normal drop-shadow-lg">Contact me at <a href="mailto:andrew@alee14.me">andrew@alee14.me</a></h2>
         </div>
     </>
