@@ -1,5 +1,4 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Meta from '../components/meta'
 import Image from "next/image";
 
 const policyList = "list-disc list-inside"
@@ -7,12 +6,7 @@ const policyList = "list-disc list-inside"
 export default function Guidelines() {
     return (
         <div>
-            <Head>
-            <title>Guidelines - Andrew Lee</title>
-            <meta name="description" content="Andrew's personal website" />
-            <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <link rel="icon" href="/favicon.ico" />
-            </Head>
+            <Meta title="Guidelines" description="Guidelines for Andrew Lee Projects Communities/Services"/>
             <div className="font-hack bg-material-gray text-white px-5 py-6 space-y-5">
 				<div id="top"/>
 				<div className="text-center items-center justify-center space-y-2">
