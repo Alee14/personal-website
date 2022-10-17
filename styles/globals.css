@@ -28,6 +28,10 @@
 
 @layer components {
     .link {
-        @apply text-blue-600 hover:text-blue-300
+        @apply text-blue-500 hover:text-blue-300 active:text-blue-100
+    }
+
+    .button {
+        @apply bg-btn-gray sm:py-4 sm:px-10 py-2 px-5 rounded-lg hover:bg-gray-700 transition ease-in-out hover:border-2 hover:border-white active:bg-gray-300 hover:scale-95 active:scale-75 shadow-lg
     }
 }

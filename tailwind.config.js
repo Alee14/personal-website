@@ -12,6 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'material-gray': '#212121',
+        'btn-gray': '#575757',
       }
     },
   },
