@@ -33,6 +33,7 @@ export default function Home() {
                     <div className="flex-row font-normal space-x-3 p-2">
                         <Link href="#"><button className="button">About Me</button></Link>
                         <Link href="#"><button className="button">Projects</button></Link>
+                        <Link href="#"><button className="button">Videos</button></Link>
                         <Link href="#"><button className="button">Blog</button></Link>
                         <Link href="#"><button className="button">Downloads</button></Link>
                         <Link href="/guidelines"><button className="button">Guidelines</button></Link>
@@ -44,7 +45,7 @@ export default function Home() {
                 <p>&copy; Copyright 2018-2022 Andrew Lee</p>
                 <p>Created using <a href="https://nextjs.org" className="link" target="_blank" rel="noopener noreferrer">Next.js</a>, and <a href="https://tailwindcss.com" className="link" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>. Hosted on <a href="https://www.netlify.com" className="link" target="_blank" rel="noopener noreferrer">Netlify</a>.</p>
 	  	<p>This website is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" className="link" target="_blank" rel="noopener noreferrer">GNU General Public License v3</a></p>
-	  	<p className="link"><a href="https://github.com/Alee14/personal-website">The source code of this website is publicly available</a></p>
+	  	<p className="link"><a href="https://github.com/Alee14/personal-website" target="_blank" rel="noopener noreferrer">The source code of this website is publicly available</a></p>
             </div>
         </div>
 

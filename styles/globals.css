@@ -4,22 +4,22 @@
 
 @layer base {
     @font-face {
-        font-family: "Hack", sans-serif;
+        font-family: "Hack", "Cascadia Mono", Consolas, monospace;
         src: url("../public/ttf/Hack-Regular.ttf");
     }
 
     @font-face {
-        font-family: "Hack", sans-serif;
+        font-family: "Hack", "Cascadia Mono", Consolas, monospace;
         src: url("../public/ttf/Hack-Italic.ttf");
         font-style: italic;
     }
     @font-face {
-        font-family: "Hack", sans-serif;
+        font-family: "Hack", "Cascadia Mono", Consolas, monospace;
         src: url("../public/ttf/Hack-Bold.ttf");
         font-weight: 700;
     }
     @font-face {
-        font-family: "Hack", sans-serif;
+        font-family: "Hack", "Cascadia Mono", Consolas, monospace;
         src: url("../public/ttf/Hack-BoldItalic.ttf");
         font-weight: 700;
     }
