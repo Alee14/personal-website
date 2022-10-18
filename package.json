@@ -23,7 +23,6 @@
     "three": "^0.145.0"
   },
   "devDependencies": {
-    "@netlify/plugin-nextjs": "^4.27.0",
     "autoprefixer": "^10.4.7",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
