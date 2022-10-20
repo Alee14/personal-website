@@ -27,11 +27,11 @@ export default function Guidelines() {
 					<li>Absolutely no blackmailing, attacking, cyberbullying, or threatening of any members.</li>
 					<li>Organized raids are not allowed. We have measures to deal with these type of situation.</li>
 					<li>Only one account per person at a time.</li>
-					<li>Any content that does not fit here (i.e. viruses, malware, adware, NSFW, etc) is strictly forbidden.</li>
+					<li>Any content that does not fit here (i.e. viruses, malware, adware, NSFW, illegal content, etc) is strictly forbidden.</li>
 					<li>Any back talk (i.e, talking negatively on a member from our community/services) is not allowed. This includes exclusive places in the community, not DMs.</li>
 					<li>If you encounter someone in this community exchanging or requesting illegal content to you (which includes any NSFW content), contact the staff team immediately and the team will handle it.</li>
 				</ul>
-				<p>By being part of here, you must respect everyone here. Anything whether its their gender, race, sexual orientation, beliefs, and opinions. Any signs of disrespect in here will result the staff taking action.</p>
+				<p>By being part of here, you must respect everyone here. Anything whether its their gender, race, sexual orientation, beliefs, and opinions. Any signs of disrespect here will result the staff taking action.</p>
 				<p>Using common sense will be useful by being here. Meaning that you are using good sense and sound judgement in practical matters.</p>
 				<p>Action will be taken against any users consistently breaking these guidelines.</p>
 				</div>
@@ -39,7 +39,7 @@ export default function Guidelines() {
 					<h1 className="text-3xl font-bold">Andrew Lee Projects Policies</h1>
 					<div id="coppa">
 						<h2 className="text-2xl font-bold">COPPA Policy</h2>
-						<p>In order to comply with the Children’s Online Privacy Protection Act (COPPA), you must be at least 13 years of age to use these services. You will be banned if found to be under 13 years of age.</p>
+						<p>In order to comply with the Children’s Online Privacy Protection Act (COPPA), you must be at least 13 years of age to use these services. You will be kicked if found to be under 13 years of age. A ban will be issued if you do not comply with the staff.</p>
 					</div>
 					<div id="delta">
 						<h2 className="text-2xl font-bold">Delta Policy</h2>
@@ -85,7 +85,7 @@ export default function Guidelines() {
 					</div>
 					<p className="mt-3">We recommend you to follow Discord&apos;s <a href="https://discord.com/terms" className="link">Terms of Service</a> and <a href="https://discord.com/guidelines" className="link">Community Guidelines</a></p>
 				</div>
-				<p>Last updated: October 20th, 2022</p>
+				<p className="font-bold">Last updated: October 20th, 2022</p>
 				<a href="#top" className="link">Back to top</a>
 			</div>
         </div>
