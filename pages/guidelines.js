@@ -7,32 +7,32 @@ export default function Guidelines() {
     return (
         <div>
             <Meta title="Guidelines" description="Guidelines for Andrew Lee Projects Communities/Services"/>
-            <div className="font-hack bg-material-gray text-white px-5 py-6 space-y-5">
+            <div className="font-hack bg-material-gray text-white px-5 py-6 space-y-5 flex flex-col">
 				<div id="top"/>
 				<div className="text-center items-center justify-center space-y-2">
 					<Image src="/Alee.svg" alt="Alee Logo" width={128} height={128} />
 					<h1 className="text-4xl font-bold">Andrew Lee Projects Guidelines</h1>
 				</div>
 				<p>These guidelines are set in place to ensure you have a great time being part of our community/services.</p>
-				<div id="main-guidelines">
+				<div id="main-guidelines" className="space-y-2">
 				<h1 className="text-3xl font-bold">Main Guidelines</h1>
 				<p>These are the main guidelines that must be followed in every community/services we own.</p>
 				<ul className={policyList}>
-					<li>Use common sense.</li>
 					<li>No spamming. Any spam will result in an official warning.</li>
 					<li>No advertisements/giveaways of any kind, unless asking staff.</li>
-					<li>Respect others.</li>
 					<li>No backseat moderating (enforcing the rules to other users).</li>
 					<li>Refrain from asking for staff.</li>
-					<li>Cursing is allowed within reason. However, racial slurs and/or using them to hurt others will result in severe punishment.</li>
+					<li>Cursing is allowed within reason. However, racial slurs and/or using them to cause damage to others will result in severe punishment.</li>
 					<li>Accusations are not tolerated. Spreading any accusations will result in an investigation from all staff, which may lead to temporary or permanent termination from our services.</li>
 					<li>Absolutely no blackmailing, attacking, cyberbullying, or threatening of any members.</li>
-					<li>Organized raids are not allowed.</li>
+					<li>Organized raids are not allowed. We have measures to deal with these type of situation.</li>
 					<li>Only one account per person at a time.</li>
-					<li>Any illegal content (i.e. viruses, malware, adware, NSFW, etc) is strictly forbidden.</li>
+					<li>Any content that does not fit here (i.e. viruses, malware, adware, NSFW, etc) is strictly forbidden.</li>
 					<li>Any back talk (i.e, talking negatively on a member from our community/services) is not allowed. This includes exclusive places in the community, not DMs.</li>
 					<li>If you encounter someone in this community exchanging or requesting illegal content to you (which includes any NSFW content), contact the staff team immediately and the team will handle it.</li>
 				</ul>
+				<p>By being part of here, you must respect everyone here. Anything whether its their gender, race, sexual orientation, beliefs, and opinions. Any signs of disrespect in here will result the staff taking action.</p>
+				<p>Using common sense will be useful by being here. Meaning that you are using good sense and sound judgement in practical matters.</p>
 				<p>Action will be taken against any users consistently breaking these guidelines.</p>
 				</div>
 				<div id="alp-policies">
@@ -51,7 +51,7 @@ export default function Guidelines() {
 							<li>Respect everyone.</li>
 						</ul>
 						<p>If you are found to violate these rules, you may receive a temporary or permanent ban. If you have been banned, and are found playing on an alt, you may be subject to an IP ban.</p>
-						<p>* If certain servers allows these actions, then these policies will not apply.</p>
+						<p>* If certain servers allows these actions, these policies will not apply.</p>
 					</div>
 				</div>
 				<div id="discord-policies">
@@ -85,7 +85,7 @@ export default function Guidelines() {
 					</div>
 					<p className="mt-3">We recommend you to follow Discord&apos;s <a href="https://discord.com/terms" className="link">Terms of Service</a> and <a href="https://discord.com/guidelines" className="link">Community Guidelines</a></p>
 				</div>
-				<p>Last updated: October 14th, 2022</p>
+				<p>Last updated: October 20th, 2022</p>
 				<a href="#top" className="link">Back to top</a>
 			</div>
         </div>
