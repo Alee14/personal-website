@@ -33,6 +33,7 @@ export default function Guidelines() {
 				</ul>
 				<p>By being part of here, you must respect everyone here. Anything whether its their gender, race, sexual orientation, beliefs, and opinions. Any signs of disrespect here will result the staff taking action.</p>
 				<p>Using common sense will be useful by being here. Meaning that you are using good sense and sound judgement in practical matters.</p>
+				<p>Staff have the rights to execute impromptu decisions if required, it is in order to maintain peace upon all communities/services.</p>
 				<p>Action will be taken against any users consistently breaking these guidelines.</p>
 				</div>
 				<div id="alp-policies">
@@ -75,17 +76,18 @@ export default function Guidelines() {
 						<ul className={policyList}>
 							<li>No offensive words</li>
 							<li>No symbols</li>
+							<li>Changing nicknames often</li>
 							<li>Nicknames must not be attention-grabbing (i.e. getting to the top of the list by using a symbol)</li>
 						</ul>
-						<p>Usernames or nickname requests found to be in violation of these guidelines will face repercussions.</p>
+						<p>Usernames or nickname requests found to be in violation of these guidelines, the staff team have the rights to change your nickname or have the changing nicknames permission be taken away.</p>
 					</div>
 					<div id="threads">
-						<h2 className="text-2xl font-bold">Threads</h2>
-						<p>Threads is a new Discord feature which allows you to make subchannels. We have set a policy to not allow to make threads with little to no value, if you made a thread in which has little to no value, it is considered to be spam and we will remove it. If caught doing it continuously, there will be consequences.</p>
+						<h2 className="text-2xl font-bold">Threads/Posts</h2>
+						<p>Threads/Posts is a new Discord feature which allows you to make subchannels. We have set a policy to not allow to make threads/posts with little to no value, if you made them with little to no value, it is considered to be spam and we will remove it. If caught doing it continuously, we will revoke your rights to make threads/posts.</p>
 					</div>
 					<p className="mt-3">We recommend you to follow Discord&apos;s <a href="https://discord.com/terms" className="link">Terms of Service</a> and <a href="https://discord.com/guidelines" className="link">Community Guidelines</a></p>
 				</div>
-				<p className="font-bold">Last updated: October 20th, 2022</p>
+				<p className="font-bold">Last updated: October 22nd, 2022</p>
 				<a href="#top" className="link">Back to top</a>
 			</div>
         </div>
