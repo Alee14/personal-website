@@ -1,6 +1,0 @@
-{
-  "staticDistDir": "out/",
-  "upload" : {
-    "target": "temporary-public-storage"
-  }
-}

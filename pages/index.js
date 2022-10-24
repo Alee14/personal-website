@@ -45,7 +45,7 @@ export default function Home() {
             <div className="text-center justify-center font-bold pb-5 flex flex-col space-y-3">
                 <p>&copy; Copyright 2018-2022 Andrew Lee</p>
                 <p>Created using <a href="https://nextjs.org" className="link" target="_blank" rel="noopener noreferrer">Next.js</a>, and <a href="https://tailwindcss.com" className="link" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>. Hosted on <a href="https://www.netlify.com" className="link" target="_blank" rel="noopener noreferrer">Netlify</a>.</p>
-                <p>Using <a href="https://fontawesome.com/">FontAwesome</a> as the main icon style for this site.</p>
+                <p>Using <a href="https://fontawesome.com">FontAwesome</a> as the main icon style for this site.</p>
 	  	        <p>This website is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" className="link" target="_blank" rel="noopener noreferrer">GNU General Public License v3</a></p>
                 <p className="link"><a href="https://github.com/Alee14/personal-website" target="_blank" rel="noopener noreferrer">The source code of this website is publicly available</a></p>
             </div>
