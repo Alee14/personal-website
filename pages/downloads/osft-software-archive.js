@@ -33,7 +33,7 @@ export default function OsftSoftwareArchive() {
                     <li>Explore 0.3.7</li>
                     <li>File Viewer (Warning jumpscare)</li>
                     <li>File Wars</li>
-                    <li>"funny nana and grampa sounds version 1.1"</li>
+                    <li>&quot;funny nana and grampa sounds version 1.1&quot;</li>
                     <li>Guess The Number</li>
                     <li>Histacom 1.8.5 (Epliespy warning)</li>
                     <li>HTMLive</li>
@@ -42,7 +42,7 @@ export default function OsftSoftwareArchive() {
                     <li>Mitosis 0.6</li>
                     <li>OSFirstTimer Blue Screen (Warning jumpscare)</li>
                     <li>Paper Math 2D</li>
-                    <li>Philip's Mario Game</li>
+                    <li>Philip&apos;s Mario Game</li>
                     <li>Phone Simulator 0.4</li>
                     <li>Picture Generator</li>
                     <li>Pixel Physics 0.3</li>
