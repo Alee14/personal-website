@@ -24,6 +24,7 @@
     "three": "^0.145.0"
   },
   "devDependencies": {
+    "@vercel/analytics": "^0.1.1",
     "autoprefixer": "^10.4.7",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
