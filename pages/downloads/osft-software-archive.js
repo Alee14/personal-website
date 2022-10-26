@@ -1,6 +1,8 @@
 import Meta from '../../components/meta'
 import Image from "next/image"
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faWarning } from '@fortawesome/free-solid-svg-icons'
 
 export default function OsftSoftwareArchive() {
     return (
@@ -15,7 +17,9 @@ export default function OsftSoftwareArchive() {
                     </div>
                     <p>These software require .NET Framework 3.5, 4.0 and/or 4.5 to function.</p>
                     <div className="bg-yellow-700 p-5 rounded-lg font-bold">
-                        <p>CONTENT WARNING: Some of the software in this pack has a jumpscare.</p>
+                        <FontAwesomeIcon icon={faWarning} size="3x" />
+                        <h1 className="text-lg">CONTENT WARNING</h1>
+                        <p>Some of the software in this pack has a jumpscare.</p>
                         <p>If you have epilepsy please be cautious with this pack.</p>
                         <p>Disable your antivirus as it can detect false positive, feel free to use a VM in case this feels not safe.</p>
                     </div>
@@ -33,7 +37,7 @@ export default function OsftSoftwareArchive() {
                         <li>Draw</li>
                         <li>Dropper</li>
                         <li>Explore 0.3.7</li>
-                        <li>File Viewer (Warning jumpscare)</li>
+                        <li>File Viewer (Jumpscare warning)</li>
                         <li>File Wars</li>
                         <li>&quot;funny nana and grampa sounds version 1.1&quot;</li>
                         <li>Guess The Number</li>
@@ -42,7 +46,7 @@ export default function OsftSoftwareArchive() {
                         <li>IIR (Interactive Infinite Road)</li>
                         <li>Infinijump 0.1</li>
                         <li>Mitosis 0.6</li>
-                        <li>OSFirstTimer Blue Screen (Warning jumpscare)</li>
+                        <li>OSFirstTimer Blue Screen (Jumpscare warning)</li>
                         <li>Paper Math 2D</li>
                         <li>Philip&apos;s Mario Game</li>
                         <li>Phone Simulator 0.4</li>
@@ -56,7 +60,7 @@ export default function OsftSoftwareArchive() {
                         <li>Time Machine 0.4</li>
                         <li>Typewriter</li>
                         <li>Vending Machine</li>
-                        <li>Visual Sound (Ear blast warning lower the volume)</li>
+                        <li>Visual Sound (Ear blast warning)</li>
                         <li>Zeon OS 0.2</li>
                     </ul>
                     <div className="font-bold text-sm">
