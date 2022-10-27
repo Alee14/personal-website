@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         'material-gray': '#212121',
         'btn-gray': '#575757',
+        'content-warning': '#ad6702',
       }
     },
   },
