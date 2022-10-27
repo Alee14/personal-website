@@ -9,7 +9,7 @@ export default function Guidelines() {
             <Meta title="Guidelines" description="Guidelines for Andrew Lee Projects Communities/Services"/>
             <div className="font-hack bg-material-gray text-white px-5 py-6 space-y-5 flex flex-col">
 				<div id="top"/>
-				<div className="text-center items-center justify-center space-y-2">
+				<div className="flex flex-col text-center justify-center items-center space-y-2">
 					<Image src="/Alee.svg" alt="Alee Logo" width={128} height={128} />
 					<h1 className="text-4xl font-bold">Andrew Lee Projects Guidelines</h1>
 				</div>

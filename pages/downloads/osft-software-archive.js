@@ -9,18 +9,18 @@ export default function OsftSoftwareArchive() {
         <div>
             <Meta title="Philip Adams Software Archive" description="The ultimate software collection of Philip Adams' software"/>
             <div className="font-hack bg-material-gray text-white">
-                <div className="py-4 px-5 bg-gray-600 font-bold rounded-lg border-2 border-white"><p>Note that this page will be revamped in the future as at the moment this site is currently going through a big rewrite...</p></div>
+                <div className="announcement"><p>Note that this page will be revamped in the future as at the moment this site is currently going through a big rewrite...</p></div>
                 <div className="px-5 py-6 space-y-5 flex flex-col">
-                    <div className="text-center items-center justify-center space-y-2">
+                    <div className="flex flex-col text-center items-center justify-center space-y-2">
                         <Image src="/Alee.svg" alt="Alee Logo" width={128} height={128} />
                         <h1 className="text-4xl font-bold">Philip Adams Software Archive</h1>
+                        <h2 className="text-xl font-bold">The ultimate software collection of Philip Adams&apos; software</h2>
+                        <p>These software require .NET Framework 3.5, 4.0 and/or 4.5 to function.</p>
                     </div>
-                    <p>These software require .NET Framework 3.5, 4.0 and/or 4.5 to function.</p>
-                    <div className="bg-yellow-700 p-5 rounded-lg font-bold">
-                        <FontAwesomeIcon icon={faWarning} size="3x" />
-                        <h1 className="text-lg">CONTENT WARNING</h1>
-                        <p>Some of the software in this pack has a jumpscare.</p>
-                        <p>If you have epilepsy please be cautious with this pack.</p>
+                    <div className="bg-yellow-700 p-5 rounded-lg text-center">
+                        <FontAwesomeIcon icon={faWarning} size="3x" className="pb-2" />
+                        <h1 className="text-lg font-bold">CONTENT WARNING</h1>
+                        <p>Some of the software in this pack contains a jumpscare. If you have epilepsy, please be cautious.</p>
                         <p>Disable your antivirus as it can detect false positive, feel free to use a VM in case this feels not safe.</p>
                     </div>
                     <p>Pack will include the following:</p>

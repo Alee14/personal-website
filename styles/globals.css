@@ -34,4 +34,8 @@
     .button {
         @apply bg-btn-gray sm:py-4 sm:px-10 py-2 px-5 rounded-lg hover:bg-gray-700 transition ease-in-out hover:border-2 hover:border-white active:bg-gray-300 hover:scale-95 active:scale-75 shadow-lg
     }
+
+    .announcement {
+        @apply py-4 px-5 bg-gray-600 font-bold rounded-lg border-2 border-white
+    }
 }

@@ -15,9 +15,9 @@ export default function Home() {
         <Meta title="Home" description="Andrew's Personal Website" />
         <div className="bg-material-gray font-hack text-white overflow-hidden">
             {isDev && (
-                <div className="py-4 px-5 bg-gray-600 font-bold rounded-lg border-2 border-white"><p>You are using the development version of this site! Certain features are hidden from the public...</p></div>
+                <div className="announcement"><p>You are using the development version of this site! Certain features are hidden from the public...</p></div>
                 )}
-            <div className="text-center flex flex-col gap-4 justify-center h-screen w-screen">
+            <div className="text-center flex flex-col gap-4 justify-center items-center h-screen w-screen">
                 <Image src="/Alee.svg" alt="Alee Logo" width={210} height={210} />
                 <h1 className="text-4xl font-bold">Andrew Lee</h1>
                 <h2 className="sm:text-xl text-lg font-bold">Computer Geek, Programmer, Content Creator</h2>
