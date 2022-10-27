@@ -15,7 +15,6 @@ export default function OsftSoftwareArchive() {
                         <Image src="/Alee.svg" alt="Alee Logo" width={128} height={128} />
                         <h1 className="text-4xl font-bold">Philip Adams Software Archive</h1>
                         <h2 className="text-xl font-bold">The ultimate software collection of Philip Adams&apos; software</h2>
-                        <p>These software require .NET Framework 3.5, 4.0 and/or 4.5 to function.</p>
                     </div>
                     <div className="bg-yellow-700 p-5 rounded-lg text-center">
                         <FontAwesomeIcon icon={faWarning} size="3x" className="pb-2" />
@@ -23,7 +22,15 @@ export default function OsftSoftwareArchive() {
                         <p>Some of the software in this pack contains a jumpscare. If you have epilepsy, please be cautious.</p>
                         <p>Disable your antivirus as it can detect false positive, feel free to use a VM in case this feels not safe.</p>
                     </div>
-                    <p>Pack will include the following:</p>
+                    <p>Minimal Software Requirements</p>
+                    <ul className="bg-gray-700 p-6 rounded-lg">
+                        <li>OS: Windows XP to 11 (Depends on each program)</li>
+                        <li>CPU: Intel Core 2 Duo</li>
+                        <li>RAM: 512 MB to 1 GB</li>
+                        <li>Storage: 500 MB</li>
+                        <li>Frameworks: Adobe Flash Player, .NET Framework 3.5, 4.0 and/or 4.5</li>
+                    </ul>
+                    <p>Programs included in this pack</p>
                     <ul className="bg-gray-700 p-6 rounded-lg">
                         <li>Artpad (from ShiftOS)</li>
                         <li>Averager</li>
