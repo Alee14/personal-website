@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'hack': ['Hack', 'sans-serif']
+      'hack': ['Hack', 'monospace']
     },
     extend: {
       colors: {
