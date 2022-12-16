@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Computer from '../components/computer'
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faYoutube, faTwitter, faDiscord, faGithub, faReddit, faInstagram, faLinkedin, faMastodon } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube, faTwitter, faDiscord, faGithub, faReddit, faInstagram, faLinkedin, faMastodon, faPaypal } from '@fortawesome/free-brands-svg-icons'
 const iconSize = "3x"
 const iconProperties = "hover:text-gray-700 transition-all ease-in-out"
 
@@ -24,16 +24,17 @@ export default function Home() {
                 <div className="sm:scale-100 scale-75 flex-row space-x-12 p-2">
                     <a href="https://github.com/Alee14" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size={iconSize} className={iconProperties} /></a>
                     {/*<a href="https://www.linkedin.com/in/andrew-lee-982b3b23a" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size={iconSize} className={iconProperties} /></a>*/}
+                    <a href="https://paypal.me/alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPaypal} size={iconSize} className={iconProperties} /></a>
                     <a href="https://discord.gg/EFhRDqG" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDiscord} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://www.youtube.com/c/AndrewLeeCAN" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://www.youtube.com/@AndrewLeeCAN" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://social.linux.pizza/@Alee" target="_blank" rel="noopener noreferrer me"><FontAwesomeIcon icon={faMastodon} size={iconSize} className={iconProperties} /></a>
                     <a href="https://twitter.com/Alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://social.linux.pizza/@Alee" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMastodon} size={iconSize} className={iconProperties} /></a>
                     <a href="https://instagram.com/alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size={iconSize} className={iconProperties} /></a>
                     <a href="https://reddit.com/u/Alee1449" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faReddit} size={iconSize} className={iconProperties} /></a>
                 </div>
                 {isDev && (
                     <div className="flex-row font-normal space-x-3 p-2">
-                        <Link href="#"><button className="button">About Me</button></Link>
+                        <Link href="/about"><button className="button">About Me</button></Link>
                         <Link href="#"><button className="button">Projects</button></Link>
                         <Link href="#"><button className="button">Videos</button></Link>
                         <Link href="#"><button className="button">Blog</button></Link>

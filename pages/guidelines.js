@@ -15,32 +15,32 @@ export default function Guidelines() {
 				</div>
 				<p>These guidelines are set in place to ensure you have a great time being part of our community/services.</p>
 				<div id="main-guidelines" className="space-y-2">
-				<h1 className="text-3xl font-bold">Main Guidelines</h1>
+				<h1 className="text-3xl font-bold">General Guidelines</h1>
 				<p>These are the main guidelines that must be followed in every community/services we own.</p>
 				<ul className={policyList}>
 					<li>No spamming. Any spam will result in an official warning.</li>
 					<li>No advertisements/giveaways of any kind, unless asking staff.</li>
-					<li>No backseat moderating (enforcing the rules to other users).</li>
+					<li>Do not attempt to enforce the rules on other users. Only staff members have the authority to do so.</li>
 					<li>Refrain from asking for staff.</li>
-					<li>Cursing is allowed within reason. However, racial slurs and/or using them to cause damage to others will result in severe punishment.</li>
-					<li>Accusations are not tolerated. Spreading any accusations will result in an investigation from all staff, which may lead to temporary or permanent termination from our services.</li>
-					<li>Absolutely no blackmailing, attacking, cyberbullying, or threatening of any members.</li>
-					<li>Organized raids are not allowed. We have measures to deal with these type of situation.</li>
+					<li>Cursing is allowed within reason, but using racial slurs or using them to harm others will result in severe punishment.</li>
+					<li>Accusations are not tolerated. Making accusations without evidence will result in an investigation by the staff and may lead to temporary or permanent removal from our services.</li>
+					<li>Do not engage in blackmail, attacks, cyberbullying, or threats against any members.</li>
+					<li>Organized raids are not allowed. We have measures in place to deal with these situations.</li>
 					<li>Only one account per person at a time.</li>
 					<li>Any content that does not fit here (i.e. viruses, malware, adware, NSFW, illegal content, etc) is strictly forbidden.</li>
-					<li>Any back talk (i.e, talking negatively on a member from our community/services) is not allowed. This includes exclusive places in the community, not DMs.</li>
-					<li>If you encounter someone in this community exchanging or requesting illegal content to you (which includes any NSFW content), contact the staff team immediately and the team will handle it.</li>
+					<li>Do not speak negatively about other members, including in private messages.</li>
+					<li>If you encounter someone requesting, sending unsolicited, or sharing illegal or NSFW content, or behaving in a way that is disrespectful or harassing, please report the behavior to the staff immediately.</li>
 				</ul>
-				<p>By being part of here, you must respect everyone here. Anything whether its their gender, race, sexual orientation, beliefs, and opinions. Any signs of disrespect here will result the staff taking action.</p>
-				<p>Using common sense will be useful by being here. Meaning that you are using good sense and sound judgement in practical matters.</p>
-				<p>Staff have the rights to execute impromptu decisions if required, it is in order to maintain peace upon all communities/services.</p>
-				<p>Action will be taken against any users consistently breaking these guidelines.</p>
+				<p>By being part of here, you must respect all members, regardless of their gender, race, sexual orientation, beliefs, or opinions. Disrespect will not be tolerated and will result in staff action.</p>
+				<p>Use common sense and good judgement while participating in our community/services.</p>
+				<p>Staff members reserve the right to make impromptu decisions as necessary to maintain a peaceful environment.</p>
+				<p>Action will be taken against any users consistently breaking these guidelines. If there is content that is extremely illegal or if someone is threatening or harming another person in real life, it is our responsibility to report it to the appropriate authorities.</p>
 				</div>
 				<div id="alp-policies">
 					<h1 className="text-3xl font-bold">Andrew Lee Projects Policies</h1>
 					<div id="coppa">
 						<h2 className="text-2xl font-bold">COPPA Policy</h2>
-						<p>In order to comply with the Children’s Online Privacy Protection Act (COPPA), you must be at least 13 years of age to use these services. You will be kicked if found to be under 13 years of age. A ban will be issued if you do not comply with the staff.</p>
+						<p>In order to comply with the Children&apos;s Online Privacy Protection Act (COPPA), you must be at least 13 years of age to use these services. You will be kicked if found to be under 13 years of age. A ban will be issued if you do not comply with the staff.</p>
 					</div>
 					<div id="delta">
 						<h2 className="text-2xl font-bold">Delta Policy</h2>
@@ -48,11 +48,11 @@ export default function Guidelines() {
 						<ul className={policyList}>
 							<li>Usage of hacked clients (including - but not limited to - Wurst, Wolfram, Sigma, etc.) is strictly prohibited.*</li>
 							<li>Griefing is not allowed.*</li>
-							<li>Combating is not allowed. Unless the target player wants to combat the other player with permission.*</li>
-							<li>Respect everyone.</li>
+							<li>Unwarranted combating is not allowed unless both parties have given permission.*</li>
+							<li>Our general guidelines applies here as well.</li>
 						</ul>
-						<p>If you are found to violate these rules, you may receive a temporary or permanent ban. If you have been banned, and are found playing on an alt, you may be subject to an IP ban.</p>
-						<p>* If certain servers allows these actions, these policies will not apply.</p>
+						<p>Violation of these rules may result in a temporary or permanent ban. If you are banned and found to be playing on an alt, you may also face an IP ban.</p>
+						<p>* These policies may not apply to servers (e.g: Anarchy) that allow these actions.</p>
 					</div>
 				</div>
 				<div id="discord-policies">
@@ -67,7 +67,7 @@ export default function Guidelines() {
 							<li>Your user ID</li>
 							<li>Members joining and leaving</li>
 						</ul>
-						<p>If you do not agree to the logging of these items, and wish to opt out, you must leave the server.</p>
+						<p>If you do not agree to the logging of these actions and wish to opt out, you must leave the server.</p>
 					</div>
 					<div id="nickname">
 						<h2 className="text-2xl font-bold">Nickname</h2>
@@ -76,18 +76,18 @@ export default function Guidelines() {
 						<ul className={policyList}>
 							<li>No offensive words</li>
 							<li>No symbols</li>
-							<li>Changing nicknames often</li>
-							<li>Nicknames must not be attention-grabbing (i.e. getting to the top of the list by using a symbol)</li>
+							<li>Do not change your nickname frequently</li>
+							<li>Nicknames should not be attention-seeking (e.g. using a special characters to appear at the top of the list)</li>
 						</ul>
-						<p>Usernames or nickname requests found to be in violation of these guidelines, the staff team have the rights to change your nickname or have the changing nicknames permission be taken away.</p>
+						<p>Users found to be in violation of these guidelines may have their nickname changed or lose the ability to change their nickname at the discretion of the staff.</p>
 					</div>
 					<div id="threads">
 						<h2 className="text-2xl font-bold">Threads/Posts</h2>
-						<p>Threads/Posts is a new Discord feature which allows you to make subchannels. We have set a policy to not allow to make threads/posts with little to no value, if you made them with little to no value, it is considered to be spam and we will remove it. If caught doing it continuously, we will revoke your rights to make threads/posts.</p>
+						<p>Threads/Posts is a new feature on Discord that allows users to create subchannels. To ensure that our community is not cluttered with low-value content, we have a policy against creating threads/posts with little to no value. If you create a thread/post that falls under this category, it will be considered spam and will be removed. If you are found to be repeatedly creating low-value threads/posts, you may lose the privilege to create them.</p>
 					</div>
 					<p className="mt-3">We recommend you to follow Discord&apos;s <a href="https://discord.com/terms" className="link">Terms of Service</a> and <a href="https://discord.com/guidelines" className="link">Community Guidelines</a></p>
 				</div>
-				<p className="font-bold">Last updated: October 22nd, 2022</p>
+				<p className="font-bold">Last updated: December 16th, 2022</p>
 				<a href="#top" className="link">Back to top</a>
 			</div>
         </div>
