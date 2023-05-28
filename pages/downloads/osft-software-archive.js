@@ -12,7 +12,7 @@ export default function OsftSoftwareArchive() {
                 <div className="announcement"><p>Note that this page will be revamped in the future as at the moment this site is currently going through a big rewrite...</p></div>
                 <div className="px-5 py-6 space-y-5 flex flex-col">
                     <div className="flex flex-col text-center items-center justify-center space-y-2">
-                        <Image src="/Alee.svg" alt="Alee Logo" width={128} height={128} />
+                        <Image src="/Alee.png" alt="Alee Logo" className="rounded-full" width={150} height={150} />
                         <h1 className="text-4xl font-bold">Philip Adams Software Archive</h1>
                         <h2 className="text-xl font-bold">The ultimate software collection of Philip Adams&apos; software</h2>
                     </div>
