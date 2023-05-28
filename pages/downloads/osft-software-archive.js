@@ -84,7 +84,7 @@ export default function OsftSoftwareArchive() {
                         <p>SHA256: c7ad3f799f14e610f8931f87e2612385ec39e2662308e7005e10715f9e94c6a0</p>
                     </div>
                     <div className="flex-col space-x-5">
-                        <button className="button"><a href="/uploads/OSFT-Software-Archive.zip">Download Archive</a></button>
+                        <button className="button"><a href="https://cloud.alee14.me/s/GjwJeNb8JBCbaHw">Download Archive</a></button>
                     </div>
                     <div className="text-center pb-2">
                         <Link href="/"><button className="button">Return Homepage</button></Link>

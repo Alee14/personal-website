@@ -13,22 +13,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-regular-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-regular-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "next": "^13.0.0",
+    "next": "^13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.145.0"
   },
   "devDependencies": {
-    "@vercel/analytics": "^0.1.1",
-    "autoprefixer": "^10.4.7",
-    "eslint": "8.25.0",
-    "eslint-config-next": "^13.0.0",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.2.0"
+    "@vercel/analytics": "^1.0.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.41.0",
+    "eslint-config-next": "^13.4.4",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
   }
 }
