@@ -27,7 +27,7 @@ export default function Home() {
                     <a href="https://paypal.me/alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPaypal} size={iconSize} className={iconProperties} /></a>
                     <a href="https://discord.gg/EFhRDqG" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDiscord} size={iconSize} className={iconProperties} /></a>
                     <a href="https://www.youtube.com/@AndrewLeeCAN" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://social.linux.pizza/@Alee" target="_blank" rel="noopener noreferrer me"><FontAwesomeIcon icon={faMastodon} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://mstdn.ca/@alee" target="_blank" rel="noopener noreferrer me"><FontAwesomeIcon icon={faMastodon} size={iconSize} className={iconProperties} /></a>
                     <a href="https://twitter.com/Alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} size={iconSize} className={iconProperties} /></a>
                     <a href="https://instagram.com/alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size={iconSize} className={iconProperties} /></a>
                     <a href="https://reddit.com/u/Alee1449" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faReddit} size={iconSize} className={iconProperties} /></a>
