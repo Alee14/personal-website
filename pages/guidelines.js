@@ -1,13 +1,15 @@
 import Meta from '../components/meta'
+import Navigation from "../components/nav";
 import Image from "next/image";
 
 const policyList = "list-disc list-inside"
 
 export default function Guidelines() {
     return (
-        <div>
+        <div className="font-hack bg-material-gray text-white">
             <Meta title="Guidelines" description="Guidelines for Andrew Lee Projects Communities/Services"/>
-            <div className="font-hack bg-material-gray text-white px-5 py-6 space-y-5 flex flex-col">
+			<Navigation />
+            <div className="px-5 py-6 space-y-5 flex flex-col">
 				<div id="top"/>
 				<div className="flex flex-col text-center justify-center items-center space-y-2">
 					<Image src="/Alee.png" alt="Alee Logo" className="rounded-full" width={150} height={150} />

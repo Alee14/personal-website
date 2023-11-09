@@ -1,5 +1,5 @@
 import Meta from '../components/meta'
-import Link from 'next/link'
+import Navigation from '../components/nav'
 import Computer from '../components/computer'
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -22,25 +22,18 @@ export default function Home() {
                 <h1 className="text-4xl font-bold">Andrew Lee</h1>
                 <h2 className="sm:text-xl text-lg font-bold">Computer Geek, Programmer, Content Creator</h2>
                 <div className="sm:scale-100 scale-75 flex-row space-x-12 p-2">
-                    <a href="https://github.com/Alee14" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://www.linkedin.com/in/AndrewLeeCAN" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://github.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://linkedin.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} size={iconSize} className={iconProperties} /></a>
                     <a href="https://paypal.me/alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPaypal} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://discord.gg/EFhRDqG" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDiscord} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://www.youtube.com/@AndrewLeeCAN" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://discord.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faDiscord} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://youtube.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faYoutube} size={iconSize} className={iconProperties} /></a>
                     <a href="https://mstdn.ca/@alee" target="_blank" rel="noopener noreferrer me"><FontAwesomeIcon icon={faMastodon} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://twitter.com/Alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://instagram.com/alee14498" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size={iconSize} className={iconProperties} /></a>
-                    <a href="https://reddit.com/u/Alee1449" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faReddit} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://twitter.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faTwitter} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://instagram.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} size={iconSize} className={iconProperties} /></a>
+                    <a href="https://reddit.alee14.me" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faReddit} size={iconSize} className={iconProperties} /></a>
                 </div>
                 {isDev && (
-                    <div className="flex-row font-normal space-x-3 p-2">
-                        <Link href="/about"><button className="button">About Me</button></Link>
-                        <Link href="#"><button className="button">Projects</button></Link>
-                        <Link href="#"><button className="button">Videos</button></Link>
-                        <Link href="#"><button className="button">Blog</button></Link>
-                        <Link href="#"><button className="button">Downloads</button></Link>
-                        <Link href="/guidelines"><button className="button">Guidelines</button></Link>
-                    </div>
+                    <Navigation/>
                 )}
                 <h2 className="text-lg font-normal drop-shadow-lg">Contact me at <a href="mailto:andrew@alee14.me">andrew@alee14.me</a> for anything.</h2>
             </div>
