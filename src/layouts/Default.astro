@@ -24,39 +24,17 @@ import Navbar from '../components/Navbar.astro';
 	<Navbar />
 		<slot />
 	<footer>
-		<p>&copy; Copyright 2018-2024</p>
+		<p>&copy; Copyright 2018-2024, Andrew Lee</p>
 	</footer>
 	</body>
 </html>
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
+		margin: 0;
+		padding: 0;
 		font-family: "Exo 2", system-ui, sans-serif;
 		background: #1B291F;
 		color: #FFFFFF;
-	}
-
-	.home {
-		text-align: center;
-	}
-
-	.avatar {
-		border-radius: 50%;
-	}
-
-	h1 {
-		font-weight: 500;
-		font-size: 2.3rem;
 	}
 
 	footer {
