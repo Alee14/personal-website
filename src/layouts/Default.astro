@@ -11,7 +11,7 @@ import Navbar from '../components/Navbar.astro';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Andrew Lee Website" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +24,7 @@ import Navbar from '../components/Navbar.astro';
 	<Navbar />
 		<slot />
 	<footer>
-		<p>&copy; Copyright 2018-2024, Andrew Lee</p>
+		<p>Copyright &copy; 2024 Andrew Lee</p>
 	</footer>
 	</body>
 </html>
@@ -39,8 +39,22 @@ import Navbar from '../components/Navbar.astro';
 
 	footer {
 		text-align: center;
-		font-size: 1.3em;
-		padding: 1rem;
+		font-size: 2.4vh;
+		padding: 1.3vh;
+	}
+
+	a {
+		text-decoration: none;
+		color: #d7fcc9;
+	}
+
+	a:hover {
+		color: #9ECD9D;
+		transition: ease-in-out 0.2s;
+	}
+
+	a:active {
+		color: #609460;
 	}
 
 	code {

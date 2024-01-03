@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Default.astro';
+import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets';
 import './index.css';
 ---
@@ -8,5 +9,27 @@ import './index.css';
 	<main class="home">
 		<Image class="avatar" src="/Alee.png" alt="Andrew Lee" height="200px" width="200px" />
 		<h1>Hey, I'm Andrew Lee!</h1>
+		<div class="social">
+			<a href="https://github.alee14.me" class="social-links">
+				<Icon name="fa6-brands:github" />
+			</a>
+			<a href="https://youtube.alee14.me" class="social-links">
+				<Icon name="fa6-brands:youtube" />
+			</a>
+			<a href="https://instagram.alee14.me" class="social-links">
+				<Icon name="fa6-brands:instagram" />
+			</a>
+			<a href="https://discord.alee14.me" class="social-links">
+				<Icon name="fa6-brands:discord" />
+			</a>
+		</div>
+		<div class="description">
+			<h2>19 Years Old</h2>
+			<h2>Student at Pearson Electrotechnology Centre</h2>
+			<h2>Living in Montreal, Quebec, Canada</h2>
+		</div>
+		<div>
+			<h3><a href="mailto:andrew@alee14.me">andrew@alee14.me</a></h3>
+		</div>
 	</main>
 </Layout>

@@ -3,7 +3,7 @@ nav {
     padding-top: 20px;
     padding-bottom: 30px;
 }
-ul {
+ul.nav-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,22 +12,23 @@ ul {
     justify-content: center;
 }
 
-li {
+li.nav-links {
     margin: 0 1rem;
 }
 
-a {
+
+a.nav-link {
     font-size: 1.2rem;
     text-decoration: none;
     color: #FFFFFF;
 }
 
-a:hover {
+a.nav-link:hover {
     font-weight: 500;
     color: #9ECD9D;
     transition: ease-in-out 0.1s;
 }
 
-a:active {
+a.nav-link:active {
     color: #609460;
 }
