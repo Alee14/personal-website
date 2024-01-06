@@ -1,4 +1,6 @@
 .home {
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -8,6 +10,9 @@
 
 h1 {
     font-weight: 500;
+}
+
+#title {
     font-size: 4vh;
 }
 
@@ -20,11 +25,6 @@ h2 {
     line-height: 0.4;
 }
 
-h3 {
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-
 .social {
     display: flex;
     flex-direction: row;
@@ -33,6 +33,20 @@ h3 {
     gap: 7vh;
 }
 
-.social-links {
-    color: #FFFFFF;
+.email-contact {
+    font-weight: 300;
+    font-size: 2.2vh;
+}
+
+.infobox {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.about {
+    padding: 1vw;
+    text-align: left;
+    background: #3B513B;
+    border-radius: 20px;
 }
