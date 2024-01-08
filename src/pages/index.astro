@@ -9,9 +9,12 @@ import '../styles/index.css';
 <Layout title="Andrew Lee">
 	<main class="home">
 		<div class="headline">
-			<Image src={Profile} class="avatar" alt="Andrew Lee" height="200px" width="200px" />
+			<Image src={Profile} class="avatar" alt="Andrew Lee" height={200} width={200} />
 			<h1 id="title">Hey, I'm Andrew Lee!</h1>
 			<div class="social">
+				<a href="https://linkedin.alee14.me">
+					<Icon name="fa6-brands:linkedin" />
+				</a>
 				<a href="https://github.alee14.me">
 					<Icon name="fa6-brands:github" />
 				</a>
@@ -20,9 +23,6 @@ import '../styles/index.css';
 				</a>
 				<a href="https://instagram.alee14.me">
 					<Icon name="fa6-brands:instagram" />
-				</a>
-				<a href="https://discord.alee14.me">
-					<Icon name="fa6-brands:discord" />
 				</a>
 			</div>
 			<div class="description">
@@ -41,6 +41,35 @@ import '../styles/index.css';
 			</div>
 			<div class="box">
 				<h1>Computer Specs</h1>
+				<h2>AleePC</h2>
+				<ul>
+					<li>OS: Fedora</li>
+					<li>CPU: AMD Ryzen 3 2200G</li>
+					<li>RAM: 16 GB DDR4</li>
+					<li>Storage: 2 TB NVME SSD, 4 TB HDD, 2 TB HDD</li>
+					<li>GPU: AMD Radeon RX 6600</li>
+				</ul>
+				<h2>Synology</h2>
+				<ul>
+					<li>Model: DS918+</li>
+					<li>CPU: Intel Celeron J3455</li>
+					<li>RAM: 8 GB</li>
+					<li>Storage: 15 TB (3x5TB, 1x4TB)</li>
+				</ul>
+				<h2>Vultr (Web Server)</h2>
+				<ul>
+					<li>OS: Ubuntu Server</li>
+					<li>CPU: Intel Xeon Processor (Skylake, IBRS)</li>
+					<li>RAM: 1 GB</li>
+					<li>Storage: 25 GB (and 50 GB for Block Storage)</li>
+				</ul>
+				<h2>Proxmox</h2>
+				<ul>
+					<li>Model: Lenovo ThinkCentre M800</li>
+					<li>CPU: Intel Core i5-6500</li>
+					<li>RAM: 16 GB RAM</li>
+					<li>Storage: 500 GB SSD, 2 TB SSD</li>
+				</ul>
 			</div>
 			<div class="box">
 				<h1>Latest Posts</h1>
