@@ -2,6 +2,9 @@
 import "../styles/Navbar.css"
 ---
 <nav>
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class='hamburger'></span>
+    </button>
     <ul class="nav-list">
         <li><a href="/" class="nav-link">Home</a></li>
         <li><a href="#" class="nav-link">Projects</a></li>
@@ -11,3 +14,10 @@ import "../styles/Navbar.css"
         <li><a href="#" class="nav-link">Contacts</a></li>
     </ul>
 </nav>
+
+<script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.nav-list').classList.toggle('show');
+    });
+</script>

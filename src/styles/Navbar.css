@@ -25,3 +25,75 @@ a.nav-link:hover {
 a.nav-link:active {
     color: #609460;
 }
+
+@media (max-width: 768px) {
+    ul.nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+}
+
+.nav-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-toggle .hamburger {
+    width: 30px;
+    height: 2px;
+    background: white;
+    display: block;
+    position: relative;
+}
+
+.nav-toggle .hamburger::before, .nav-toggle .hamburger::after {
+    content: '';
+    background: white;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-toggle .hamburger::before {
+    top: -10px;
+}
+
+.nav-toggle .hamburger::after {
+    bottom: -10px;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+        padding: 20px;
+    }
+
+
+    ul.nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        display: none;
+    }
+
+    ul.nav-list.show {
+        display: flex;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .nav-list.show a.nav-link {
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+}
