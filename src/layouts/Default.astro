@@ -1,9 +1,10 @@
 ---
 interface Props {
 	title: string;
+	description: string; 
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 import { ViewTransitions } from 'astro:transitions';
 import Navbar from '../components/Navbar.astro';
 ---
@@ -12,7 +13,7 @@ import Navbar from '../components/Navbar.astro';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Andrew Lee Website" />
+		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
