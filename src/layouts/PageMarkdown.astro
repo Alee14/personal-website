@@ -1,12 +1,12 @@
 ---
 import Layout from './Default.astro';
-const { title, description } = Astro.props;
+const { frontmatter } = Astro.props;
 ---
 
-<Layout title=`${title} - Andrew Lee` description={description}>
+<Layout title=`${frontmatter.title} - Andrew Lee` description={frontmatter.description}>
     <header>
-        <h1 class="header-text">{title}</h1>
-        <h2 class="header-text">{description}</h2>
+        <h1 class="header-text">{frontmatter.title}</h1>
+        <h2 class="header-text">{frontmatter.description}</h2>
     </header>
     <div class="container">
         <slot />
@@ -32,6 +32,7 @@ const { title, description } = Astro.props;
         font-size: 1.5em;
         font-weight: 300;
     }
+
     .container {
         margin: 10px 10em 10px 10em;
     }
@@ -41,7 +42,5 @@ const { title, description } = Astro.props;
             margin: 10px 20px 10px 20px;
         }
     }
-
-
 
 </style>
