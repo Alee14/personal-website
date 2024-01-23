@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import {defineConfig, passthroughImageService} from 'astro/config';
 import icon from "astro-icon";
 
 import vue from '@astrojs/vue';
@@ -8,5 +8,8 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   integrations: [icon(), vue()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel(),
+  image: {
+    service: passthroughImageService(),
+  }
 });
