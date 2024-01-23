@@ -7,9 +7,9 @@ import contacts from "../components/contacts.json";
     {contacts.map((contact)=> {
         let icon = "fa6-brands:" + contact.icon;
         return (
-        <a href={contact.url} target="_blank"><div class="contacts-card">
-               <Icon name={icon} class="contact-icon" />
-                {contact.platform} ({contact.username})
+        <a href={contact.url} target="_blank" title={contact.mouseover}><div class="contacts-card">
+            <Icon name={icon} class="contact-icon" />
+            {contact.platform} ({contact.username})
         </div></a>
         )
     })}
