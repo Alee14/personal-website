@@ -1,0 +1,22 @@
+[
+  {
+    "name": "AleeBot",
+    "description": "An all-in-one bot that's made from the Discord.JS API!",
+    "links": [
+      {
+        "name": "Source Code",
+        "url": "https://github.com/Alee14/AleeBot"
+      }
+    ]
+  },
+  {
+    "name": "DLAP",
+    "description": "A Discord bot that lets you play local audio tracks in your server.",
+    "links": [
+      {
+        "name": "Source Code",
+        "url": "https://github.com/Alee14/DLAP"
+      }
+    ]
+  }
+]

@@ -1,5 +1,21 @@
 ---
 import Page from "../layouts/Page.astro";
+import projects from "../components/projects.json";
 ---
 <Page title="Projects" description="Things that I have been working on in the past, and present">
+    {
+        projects.map((project) => {
+        return (
+                <div class="projects">
+                    <h1>{project.name}</h1>
+                    <p>{project.description}</p>
+                    {project.links.map((link) => {
+                        return (
+                                <a href={link.url}>{link.name}</a>
+                        )
+                    })}
+                </div>
+        )
+    })
+    }
 </Page>
