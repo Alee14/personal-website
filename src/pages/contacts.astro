@@ -1,0 +1,18 @@
+---
+import Page from '../layouts/Page.astro'
+import { Icon } from 'astro-icon/components';
+import contacts from "../components/contacts.json";
+
+//let icon = "fa6-brands:" + contacts[0].icon;
+---
+<Page title="Contacts" description="Follow me on other platforms">
+    {contacts.map((contact)=> {
+        return (
+            <div class="contacts-card"><a href={contact.url}>
+               {/*<Icon name={icon} />*/}
+                {contact.platform} ({contact.username})
+                </a>
+            </div>
+        )
+    })}
+</Page>
