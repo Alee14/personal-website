@@ -18,5 +18,15 @@
         "url": "https://github.com/Alee14/DLAP"
       }
     ]
+  },
+  {
+    "name": "Snug Cup",
+    "description": "Snug Cup was a school project that I made with my classmates back in 2021.",
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://snug-cup.alee14.me"
+      }
+    ]
   }
 ]

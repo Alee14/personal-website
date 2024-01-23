@@ -6,7 +6,7 @@ import projects from "../components/projects.json";
     {
         projects.map((project) => {
         return (
-                <div class="projects">
+                <div class="cards">
                     <h1>{project.name}</h1>
                     <p>{project.description}</p>
                     {project.links.map((link) => {
@@ -19,3 +19,31 @@ import projects from "../components/projects.json";
     })
     }
 </Page>
+<style>
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        background-color: #3B513B;
+        padding: 1.2em;
+        border-radius: 20px;
+        margin: 1em;
+    }
+
+    .cards h1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .cards p {
+        padding: 0;
+        margin: 0;
+    }
+
+    .cards a {
+        text-align: right;
+        display: inline-block;
+
+    }
+
+</style>
