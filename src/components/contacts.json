@@ -19,38 +19,38 @@
     },
     {
         "platform": "Discord",
-        "icon": "",
+        "icon": "discord",
         "username": "alee",
         "url": "https://discord.alee14.me"
     },
     {
         "platform": "YouTube",
-        "icon": "",
+        "icon": "youtube",
         "username": "AndrewLeeCAN",
         "url": "https://youtube.alee14.me"
     },
     {
         "platform": "Mastodon",
-        "icon": "",
+        "icon": "mastodon",
         "username": "@alee@mstdn.ca",
         "url": "https://mstdn.ca/@alee"
     },
     {
         "platform": "X",
         "comment": "yuck.",
-        "icon": "",
+        "icon": "x-twitter",
         "username": "alee",
         "url": "https://twitter.alee14.me"
     },
     {
         "platform": "Instagram",
-        "icon": "",
+        "icon": "instagram",
         "username": "alee14498",
         "url": "https://instagram.alee14.me"
     },
     {
         "platform": "Reddit",
-        "icon": "",
+        "icon": "reddit",
         "username": "alee1449",
         "url": "https://reddit.alee14.me"
     }
