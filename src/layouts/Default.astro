@@ -1,18 +1,19 @@
 ---
 interface Props {
 	title: string;
-	description: string; 
+	description: string;
 }
 
 const { title, description } = Astro.props;
-import { ViewTransitions } from 'astro:transitions';
-import Navbar from '../components/Navbar.astro';
+import { ViewTransitions, slide } from 'astro:transitions';
+import Navbar from '../components/Navbar.vue';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="title" content={title} />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +25,13 @@ import Navbar from '../components/Navbar.astro';
 		<title>{title}</title>
 	</head>
 	<body>
-	<Navbar />
+	<Navbar client:load />
+	<div transition:animate={slide({ duration: '0.2s' })}>
 		<slot />
-	<footer>
-		<p>Copyright &copy; 2024 Andrew Lee</p>
-	</footer>
+		<footer>
+			<p>Copyright &copy; 2024 Andrew Lee</p>
+		</footer>
+	</div>
 	</body>
 </html>
 <style is:global>
@@ -38,6 +41,11 @@ import Navbar from '../components/Navbar.astro';
 		font-family: "Exo 2", system-ui, sans-serif;
 		background: #1B291F;
 		color: #FFFFFF;
+	}
+
+	ul {
+		padding-left: 20px;
+		font-size: 1.1em;
 	}
 
 	footer {

@@ -3,15 +3,31 @@ import Layout from './Default.astro';
 const { title, description } = Astro.props;
 ---
 
-<Layout title=`${title} | Andrew Lee` description={description}>
+<Layout title=`${title} - Andrew Lee` description={description}>
     <header>
-        <h1>{title}</h1>
-        <h2>{description}</h2>
+        <h1 class="header-text">{title}</h1>
+        <h2 class="header-text">{description}</h2>
     </header>
 </Layout>
 
 <style>
     header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        margin: 0;
+        padding: 0;
         text-align: center;
     }
+
+    .header-text {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    h2.header-text {
+        font-size: 1.5em;
+        font-weight: 300;
+    }
+
 </style>
