@@ -14,13 +14,13 @@
     {
         "platform": "PayPal",
         "icon": "paypal",
-        "username": "alee14",
+        "username": "alee14498",
         "url": "https://paypal.me/alee14498"
     },
     {
         "platform": "Discord",
         "icon": "discord",
-        "username": "alee",
+        "username": "Andrew Lee Projects",
         "url": "https://discord.alee14.me"
     },
     {
@@ -32,15 +32,15 @@
     {
         "platform": "Mastodon",
         "icon": "mastodon",
-        "username": "@alee@mstdn.ca",
+        "username": "alee@mstdn.ca",
         "url": "https://mstdn.ca/@alee"
     },
     {
         "platform": "X",
-        "comment": "yuck.",
         "icon": "x-twitter",
-        "username": "alee",
-        "url": "https://twitter.alee14.me"
+        "username": "Alee14498",
+        "url": "https://twitter.alee14.me",
+        "comment": "yuck."
     },
     {
         "platform": "Instagram",

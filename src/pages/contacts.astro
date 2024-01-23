@@ -7,11 +7,10 @@ import contacts from "../components/contacts.json";
     {contacts.map((contact)=> {
         let icon = "fa6-brands:" + contact.icon;
         return (
-            <div class="contacts-card"><a href={contact.url}>
-               <Icon name={icon} />
+        <a href={contact.url} target="_blank"><div class="contacts-card">
+               <Icon name={icon} class="contact-icon" />
                 {contact.platform} ({contact.username})
-                </a>
-            </div>
+        </div></a>
         )
     })}
 </Page>
@@ -24,5 +23,10 @@ import contacts from "../components/contacts.json";
         margin: 1em;
         border-radius: 10px;
         background-color: #3B513B;
+    }
+
+    .contact-icon {
+        margin-right: 0.5em;
+        font-size: 1.3em;
     }
 </style>
