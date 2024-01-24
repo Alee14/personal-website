@@ -16,8 +16,8 @@ p {
     font-size: 1.1em;
 }
 
-.description {
-    line-height: 0.4;
+.description h2 {
+    margin: 0.1em 0;
 }
 
 .social {
@@ -33,12 +33,16 @@ p {
     font-size: 1.2em;
 }
 
+.headline h3 {
+    margin: 0.5em;
+}
+
 .information {
     display: grid;
     grid-template-columns: 1fr 0.7fr;
     grid-template-rows: auto auto;
     gap: 1em;
-    padding: 30px;
+    margin: 2em 10em 2em 10em;
 }
 
 .box {
@@ -58,13 +62,14 @@ p {
 }
 
 /* Mobile view */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .social {
         font-size: 2.6em;
         gap: 1em;
     }
 
     .information {
+        margin: 2em;
         grid: auto auto auto / 1fr;
     }
 

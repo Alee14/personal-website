@@ -1,27 +1,21 @@
 [
     {
-        "platform": "GitHub",
-        "icon": "github",
-        "username": "Alee14",
-        "url": "https://github.alee14.me"
-    },
-    {
         "platform": "LinkedIn",
         "icon": "linkedin",
         "username": "AndrewLeeCAN",
         "url": "https://linkedin.alee14.me"
     },
     {
+        "platform": "GitHub",
+        "icon": "github",
+        "username": "Alee14",
+        "url": "https://github.alee14.me"
+    },
+    {
         "platform": "PayPal",
         "icon": "paypal",
         "username": "alee14498",
         "url": "https://paypal.me/alee14498"
-    },
-    {
-        "platform": "Discord",
-        "icon": "discord",
-        "username": "Andrew Lee Projects",
-        "url": "https://discord.alee14.me"
     },
     {
         "platform": "YouTube",
@@ -36,13 +30,6 @@
         "url": "https://mstdn.ca/@alee"
     },
     {
-        "platform": "X",
-        "icon": "x-twitter",
-        "username": "Alee14498",
-        "url": "https://twitter.alee14.me",
-        "mouseover": "yuck."
-    },
-    {
         "platform": "Instagram",
         "icon": "instagram",
         "username": "alee14498",
@@ -53,5 +40,18 @@
         "icon": "reddit",
         "username": "alee1449",
         "url": "https://reddit.alee14.me"
+    },
+    {
+        "platform": "Discord",
+        "icon": "discord",
+        "username": "Andrew Lee Projects",
+        "url": "https://discord.alee14.me"
+    },
+    {
+        "platform": "X",
+        "icon": "x-twitter",
+        "username": "Alee14498",
+        "url": "https://twitter.alee14.me",
+        "mouseover": "yuck."
     }
 ]
