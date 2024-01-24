@@ -84,4 +84,4 @@ Threads/Posts is a new feature on Discord that allows users to create subchannel
 
 We recommend you to follow Discord's [Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines)
 
-**Last updated: December 16th, 2022**
+*Last updated: December 16th, 2022*

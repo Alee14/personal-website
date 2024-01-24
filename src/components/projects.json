@@ -28,5 +28,19 @@
         "url": "https://snug-cup.alee14.me"
       }
     ]
+  },
+  {
+    "name": "YouTube TV Client",
+    "description": "A electron app that goes to youtube.com/tv using a Samsung Smart TV as the user agent.",
+    "links": [
+      {
+        "name": "Download",
+        "url": "https://github.com/Alee14/YouTube-TV-Client/releases"
+      },
+      {
+        "name": "Source Code",
+        "url": "https://github.com/Alee14/YouTube-TV-Client"
+      }
+    ]
   }
 ]
