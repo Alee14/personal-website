@@ -3,9 +3,6 @@ title: Guidelines
 description: Guidelines for Andrew Lee Projects Communities/Services
 layout: ../layouts/PageMarkdown.astro
 ---
-# Andrew Lee Projects Guidelines
-These guidelines are set in place to ensure you have a great time being part of our community/services.
-
 # General Guidelines
 
 These are the main guidelines that must be followed in every community/services we own.

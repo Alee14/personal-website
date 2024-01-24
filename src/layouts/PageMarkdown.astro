@@ -9,7 +9,9 @@ const { frontmatter } = Astro.props;
         <h2 class="header-text">{frontmatter.description}</h2>
     </header>
     <div class="container">
-        <slot />
+        <article>
+            <slot />
+        </article>
     </div>
 </Layout>
 
@@ -34,7 +36,7 @@ const { frontmatter } = Astro.props;
     }
 
     .container {
-        margin: 10px 10em 10px 10em;
+        margin: 1em 10em 1em 10em;
     }
 
     @media (max-width: 992px) {
