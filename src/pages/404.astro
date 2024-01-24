@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Default.astro'
+---
+<Layout title="404" description="Page not found">
+    <div class="error">
+        <h1>404</h1>
+        <h2>Page not found</h2>
+        <h2>Whoops! You blew up the website!</h2>
+    </div>
+</Layout>
+<style>
+    .error {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.2em;
+        margin: 3em;
+    }
+
+    h1 {
+        font-size: 5em;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+</style>
