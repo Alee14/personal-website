@@ -1,8 +1,19 @@
 ---
 import Page from "../../layouts/Page.astro";
+import { getCollection } from "astro:content";
+
+const allBlogPosts = await getCollection('blog');
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
+      {allBlogPosts.map((post) => (
+         <article>
+            <h2>{post.data.title}</h2>
+            <sm>{post.data.date}</sm>
+            <p>{post.data.description}</p>
+            <a href={`/blog/${post.slug}`}>Read more</a>
+         </article>
+      ))
 
    </main>
 </Page>

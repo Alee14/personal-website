@@ -5,7 +5,7 @@ interface Props {
 }
 
 const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
-import { ViewTransitions, slide } from 'astro:transitions';
+import { ViewTransitions } from 'astro:transitions';
 import Navbar from '../components/Navbar.vue';
 ---
 
@@ -38,7 +38,7 @@ import Navbar from '../components/Navbar.vue';
 	</head>
 	<body>
 	<Navbar client:load />
-	<div transition:animate={slide({ duration: '0.2s' })}>
+	<div transition:name="initial">
 		<slot />
 		<footer>
 			<p>Made with {Astro.generator} and Hosted on Vercel</p>
