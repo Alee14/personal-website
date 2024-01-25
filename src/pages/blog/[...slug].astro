@@ -1,0 +1,22 @@
+---
+import Page from '../../layouts/BlogPost.astro';
+import { getEntry } from 'astro:content';
+const { slug } = Astro.params;
+
+if (slug === undefined) {
+    throw new Error('Slug is required');
+}
+
+const entry = await getEntry('blog', slug);
+
+if(entry === undefined) {
+    return Astro.redirect('/404');
+}
+
+const { Content } = await entry.render();
+---
+<Page title={entry.data.title} description={entry.data.description}>
+    <main>
+        <Content />
+    </main>
+</Page>

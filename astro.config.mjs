@@ -6,6 +6,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://alee14.me',
   integrations: [icon(), vue()],
   output: "server",
   adapter: vercel(),

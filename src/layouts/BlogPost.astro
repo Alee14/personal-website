@@ -1,12 +1,12 @@
 ---
 import Layout from './Default.astro';
-const { frontmatter } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
-<Layout title=`${frontmatter.title} - Andrew Lee` description={frontmatter.description}>
+<Layout title=`${title} - Andrew Lee` description={description}>
     <header>
-        <h1 class="header-text">{frontmatter.title}</h1>
-        <h2 class="header-text">{frontmatter.description}</h2>
+        <h1 class="header-text">{title}</h1>
+        <h2 class="header-text">{description}</h2>
     </header>
     <div class="container">
         <main>

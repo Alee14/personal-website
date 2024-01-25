@@ -4,7 +4,7 @@ interface Props {
 	description: string;
 }
 
-const { title, description } = Astro.props;
+const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
 import { ViewTransitions, slide } from 'astro:transitions';
 import Navbar from '../components/Navbar.vue';
 ---
@@ -13,17 +13,25 @@ import Navbar from '../components/Navbar.vue';
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="title" content={title} />
-		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/rss.xml" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Default Metadata -->
+		<meta name="title" content={title} />
+		<meta name="description" content={description} />
+
+		<!-- Open Graph Metadata -->
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content="/profile.png" />
-		<meta name="theme-color" content="#0e8106"/>
+		<meta property="og:type" content="website" />
+
+		<meta name="theme-color" content="#1B291F"/>
 		<meta name="generator" content={Astro.generator} />
 		<ViewTransitions />
 		<title>{title}</title>
@@ -33,6 +41,7 @@ import Navbar from '../components/Navbar.vue';
 	<div transition:animate={slide({ duration: '0.2s' })}>
 		<slot />
 		<footer>
+			<p>Made with {Astro.generator} and Hosted on Vercel</p>
 			<p>Copyright &copy; 2024 Andrew Lee</p>
 		</footer>
 	</div>
