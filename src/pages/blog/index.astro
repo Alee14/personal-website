@@ -1,19 +1,35 @@
 ---
 import Page from "../../layouts/Page.astro";
 import { getCollection } from "astro:content";
+import {formatDate} from "../../util";
 
-const allBlogPosts = await getCollection('blog');
+const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
       {allBlogPosts.map((post) => (
          <article>
-            <h2>{post.data.title}</h2>
-            <sm>{post.data.date}</sm>
+            <h2><a href={`/blog/${post.slug}`}>{post.data.title}</a></h2>
+            <small>{formatDate(post.data.date)}</small>
             <p>{post.data.description}</p>
             <a href={`/blog/${post.slug}`}>Read more</a>
          </article>
-      ))
+       ))
+      }
 
    </main>
 </Page>
+<style>
+   h2 {
+      margin-top: 2px;
+      margin-bottom: 2px;
+   }
+
+   article {
+      background-color: #3B513B;
+      padding: 1.2em;
+      border-radius: 20px;
+      gap: 0.5em;
+      margin: 0.5em;
+   }
+</style>

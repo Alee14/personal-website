@@ -6,8 +6,8 @@ const { title, description, date } = Astro.props;
 <Layout title=`${title} - Andrew Lee` description={description}>
     <header>
         <h1 class="header-text">{title}</h1>
-        <h2 class="header-text">{description}</h2>
         <small>{date}</small>
+        <h2 class="header-text">{description}</h2>
     </header>
     <div class="container">
         <main>
