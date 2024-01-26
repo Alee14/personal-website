@@ -33,12 +33,12 @@ import Navbar from '../components/Navbar.vue';
 
 		<meta name="theme-color" content="#1B291F"/>
 		<meta name="generator" content={Astro.generator} />
-		<ViewTransitions />
+		<ViewTransitions fallback="animate" />
 		<title>{title}</title>
 	</head>
 	<body>
 	<Navbar client:load />
-	<div transition:animate="fade">
+	<div transition:name="main" transition:animate="fade">
 		<slot />
 		<footer>
 			<p>Made with {Astro.generator} and Hosted on Vercel</p>
