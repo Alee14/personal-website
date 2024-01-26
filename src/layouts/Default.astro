@@ -38,7 +38,7 @@ import Navbar from '../components/Navbar.vue';
 	</head>
 	<body>
 	<Navbar client:load />
-	<div transition:name="initial">
+	<div transition:animate="fade">
 		<slot />
 		<footer>
 			<p>Made with {Astro.generator} and Hosted on Vercel</p>
@@ -54,6 +54,12 @@ import Navbar from '../components/Navbar.vue';
 		font-family: "Exo 2", system-ui, sans-serif;
 		background: #1B291F;
 		color: #FFFFFF;
+	}
+
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+		html {
+			scrollbar-gutter: stable;
+		}
 	}
 
 	ul {
