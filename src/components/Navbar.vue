@@ -6,7 +6,6 @@
     <ul class="nav-list">
       <li><a href="/" class="nav-link" @click="toggleNav">Home</a></li>
       <li><a href="/projects" class="nav-link" @click="toggleNav">Projects</a></li>
-      <li><a href="/downloads" class="nav-link" @click="toggleNav">Downloads</a></li>
       <li><a href="/blog" class="nav-link" @click="toggleNav">Blog</a></li>
       <li><a href="/guestbook" class="nav-link" @click="toggleNav">Guestbook</a></li>
       <li><a href="https://archive.alee14.me" class="nav-link" @click="toggleNav">Archive</a></li>

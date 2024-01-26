@@ -7,9 +7,10 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.va
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
+      <!-- Add tags selection below -->
       {allBlogPosts.map((post) => (
          <article>
-            <h2><a href={`/blog/${post.slug}`}>{post.data.title}</a></h2>
+            <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
             <small>{formatDate(post.data.date)}</small>
             <p>{post.data.description}</p>
             <a href={`/blog/${post.slug}`}>Read more</a>
@@ -20,7 +21,7 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.va
    </main>
 </Page>
 <style>
-   h2 {
+   h1 {
       margin-top: 2px;
       margin-bottom: 2px;
    }
@@ -31,5 +32,17 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.va
       border-radius: 20px;
       gap: 0.5em;
       margin: 0.5em;
+   }
+
+   main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   /* Mobile view */
+   @media (max-width: 992px) {
+      main {
+         grid-template-columns: 1fr;
+      }
    }
 </style>
