@@ -10,9 +10,7 @@ const { title, description, date } = Astro.props;
     </header>
     <div class="container">
         <main>
-            <article>
-                <slot />
-            </article>
+            <slot />
         </main>
     </div>
 </Layout>
@@ -25,6 +23,12 @@ const { title, description, date } = Astro.props;
         margin: 0;
         text-align: center;
         padding: 0 0 1em;
+    }
+
+    main {
+        background-color: #3B513B;
+        padding: 1.2em;
+        border-radius: 20px;
     }
 
     .header-text {
