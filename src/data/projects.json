@@ -5,7 +5,8 @@
     "links": [
       {
         "name": "Source Code",
-        "url": "https://github.com/Alee14/AleeBot"
+        "url": "https://github.com/Alee14/AleeBot",
+        "external": true
       }
     ]
   },
@@ -15,7 +16,24 @@
     "links": [
       {
         "name": "Source Code",
-        "url": "https://github.com/Alee14/DLAP"
+        "url": "https://github.com/Alee14/DLAP",
+        "external": true
+      }
+    ]
+  },
+  {
+    "name": "Philip Adams Software Archive",
+    "description": "The ultimate software collection of Philip Adams' software.",
+    "links": [
+      {
+        "name": "Download",
+        "url": "https://cloud.alee14.me/s/GjwJeNb8JBCbaHw",
+        "external": true
+      },
+      {
+        "name": "More Information",
+        "url": "/downloads/osft-software-archive",
+        "external": false
       }
     ]
   },
@@ -25,7 +43,8 @@
     "links": [
       {
         "name": "Website",
-        "url": "https://snug-cup.alee14.me"
+        "url": "https://snug-cup.alee14.me",
+        "external": true
       }
     ]
   },
@@ -35,11 +54,13 @@
     "links": [
       {
         "name": "Download",
-        "url": "https://github.com/Alee14/YouTube-TV-Client/releases"
+        "url": "https://github.com/Alee14/YouTube-TV-Client/releases",
+        "external": true
       },
       {
         "name": "Source Code",
-        "url": "https://github.com/Alee14/YouTube-TV-Client"
+        "url": "https://github.com/Alee14/YouTube-TV-Client",
+        "external": true
       }
     ]
   }

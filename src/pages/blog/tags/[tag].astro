@@ -3,7 +3,11 @@ import Page from '../../../layouts/Page.astro';
 
 export async function getStaticPaths() {
     const allPosts = await Astro.glob('../../../content/blog/*.md');
-    const uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+    let uniqueTags = [];
+
+    if (allPosts) {
+        uniqueTags = [...new Set(allPosts.map((post) => post.frontmatter.tags).flat())];
+    }
 
     return uniqueTags.map((tag) => {
         const filteredPosts = allPosts.filter((post) => post.frontmatter.tags.includes(tag));
@@ -18,11 +22,12 @@ const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
 <Page title={tag}>
-    {posts.map((post) => {
+    {console.log(posts)}
+    {posts && posts.map((post) => {
         return (
-            <div>
-                <a href={post.url}>{post.frontmatter.title}</a>
-            </div>
+                <div>
+                    <a href={post.url}>{post.frontmatter.title}</a>
+                </div>
         )
     })}
 </Page>

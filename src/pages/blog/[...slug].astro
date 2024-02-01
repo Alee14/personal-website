@@ -18,6 +18,14 @@ const { Content } = await entry.render();
 ---
 <Page title={entry.data.title} description={entry.data.description} date={formatDate(entry.data.date)}>
     <main>
+        <a href="/blog" class="back-link">← All articles</a>
         <Content />
     </main>
 </Page>
+<style>
+    main {
+        background-color: #3B513B;
+        padding: 1.2em;
+        border-radius: 20px;
+    }
+</style>

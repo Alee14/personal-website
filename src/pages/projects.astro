@@ -12,8 +12,7 @@ import projects from "../data/projects.json";
                             <p>{project.description}</p>
                             {project.links.map((link) => {
                                 return (
-                                        <a href={link.url} target="_blank">{link.name}</a>
-                                )
+                                        <a href={link.url} target={link.external ? "_blank" : ""}>{link.name}</a>                                )
                             })}
                         </div>
                 )
