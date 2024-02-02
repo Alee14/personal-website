@@ -12,7 +12,8 @@ import projects from "../data/projects.json";
                             <p>{project.description}</p>
                             {project.links.map((link) => {
                                 return (
-                                        <a href={link.url} target={link.external ? "_blank" : ""}>{link.name}</a>                                )
+                                        <a href={link.url} target={link.external ? "_blank" : ""}>{link.name}</a>
+                                )
                             })}
                         </div>
                 )
@@ -39,6 +40,7 @@ import projects from "../data/projects.json";
     .cards h1 {
         padding: 0;
         margin: 0;
+        font-size: 1.8em;
     }
 
     .cards p {
