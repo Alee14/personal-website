@@ -2,8 +2,9 @@
 import Page from "../../layouts/Page.astro";
 import { getCollection } from "astro:content";
 import {formatDate} from "../../util";
+import "../../styles/cards.css";
 
-const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
@@ -11,10 +12,12 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.va
       {allBlogPosts.map((post) => (
          <article>
             <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
-            <small>{formatDate(post.data.date)}</small>
+            <small>{formatDate(post.data.pubDate)}</small>
             <p>{post.data.description}</p>
             <div class="tags">
-               <a href={`/blog/${post.slug}`}>tag1</a>
+               {post.data.tags.map((tag) => (
+                  <a href={`/blog/tags/${tag}`}>{tag}</a>
+               ))}
             </div>
          </article>
        ))
@@ -23,34 +26,9 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.date.va
    </main>
 </Page>
 <style>
-   h1 {
-      margin-top: 2px;
-      margin-bottom: 2px;
-   }
-
    .tags {
       display: flex;
       flex-direction: row;
       gap: 1em;
-   }
-
-   article {
-      background-color: #3B513B;
-      padding: 1.2em;
-      border-radius: 20px;
-      gap: 0.5em;
-      margin: 0.5em;
-   }
-
-   main {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-   }
-
-   /* Mobile view */
-   @media (max-width: 992px) {
-      main {
-         grid-template-columns: 1fr;
-      }
    }
 </style>

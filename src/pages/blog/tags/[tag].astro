@@ -1,6 +1,8 @@
 ---
 import Page from '../../../layouts/Page.astro';
-
+import {formatDate} from "../../../util";
+import "../../../styles/cards.css";
+export const prerender = true;
 export async function getStaticPaths() {
     const allPosts = await Astro.glob('../../../content/blog/*.md');
     let uniqueTags = [];
@@ -21,13 +23,16 @@ export async function getStaticPaths() {
 const { tag } = Astro.params;
 const { posts } = Astro.props;
 ---
-<Page title={tag}>
-    {console.log(posts)}
-    {posts && posts.map((post) => {
-        return (
-                <div>
-                    <a href={post.url}>{post.frontmatter.title}</a>
-                </div>
-        )
-    })}
+<Page title=`Posts with ${tag}`>
+    <main>
+        {posts && posts.map((post) => {
+            return (
+                    <article>
+                        <h1><a href=`/blog/${post.frontmatter.slug}`>{post.frontmatter.title}</a></h1>
+                        <small>{formatDate(post.frontmatter.pubDate)}</small>
+                        <p>{post.frontmatter.description}</p>
+                    </article>
+            )
+        })}
+    </main>
 </Page>

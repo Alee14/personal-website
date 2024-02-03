@@ -1,7 +1,7 @@
 ---
 title: Lorem ipsum dolor sit amet
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-date: 2024-01-25
+pubDate: 2024-01-25
 tags: ["tag1", "tag2"]
 slug: lorem-ipsum
 ---

@@ -1,7 +1,7 @@
 ---
 title: Hello world
 description: This is a test post
-date: 2024-01-24
+pubDate: 2024-01-24
 tags: ["tag1", "tag2"]
 slug: hello-world
 ---

@@ -2,8 +2,13 @@
 import Layout from '../layouts/Default.astro';
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets';
+import { getCollection } from "astro:content";
+
 import Profile from '../images/Alee.png';
 import '../styles/index.css';
+import {formatDate} from "../util";
+const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 10);
+
 ---
 
 <Layout title="Andrew Lee" description="Andrew Lee Website">
@@ -73,7 +78,13 @@ import '../styles/index.css';
 			</div>
 			<div class="box latest-posts">
 				<h1>Latest Posts</h1>
-				<p>Hello world</p>
+				{allBlogPosts.map((post) => (
+					<article>
+						<h1 class="blog-title"><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
+						<small>{formatDate(post.data.pubDate)}</small>
+						<p>{post.data.description}</p>
+					</article>
+				))}
 			</div>
 		</div>
 	</main>

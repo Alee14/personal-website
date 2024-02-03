@@ -1,12 +1,14 @@
 ---
 import Layout from './Default.astro';
-const { title, description, date } = Astro.props;
+const { title, description, pubDate } = Astro.props;
+import { getCollection } from "astro:content";
+const postTags = (await getCollection('blog'));
 ---
 
 <Layout title=`${title} - Andrew Lee` description={description}>
     <header>
         <h1 class="header-text">{title}</h1>
-        <small>{date}</small>
+        <small>{pubDate}</small>
     </header>
     <div class="container">
         <main>

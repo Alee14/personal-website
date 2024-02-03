@@ -57,6 +57,10 @@
     grid-row: 1 / span 2;
 }
 
+.blog-title {
+    margin-bottom: 2px;
+}
+
 /* Mobile view */
 @media (max-width: 992px) {
     .social {
