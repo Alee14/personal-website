@@ -8,7 +8,6 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
-      <!-- Add tags selection below -->
       {allBlogPosts.map((post) => (
          <article>
             <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>

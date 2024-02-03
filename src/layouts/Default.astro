@@ -7,6 +7,7 @@ interface Props {
 const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
 import { ViewTransitions } from 'astro:transitions';
 import Navbar from '../components/Navbar.vue';
+const date = new Date();
 ---
 
 <!doctype html>
@@ -42,7 +43,7 @@ import Navbar from '../components/Navbar.vue';
 		<slot />
 		<footer>
 			<p><a href="https://github.com/Alee14/personal-website">Made with {Astro.generator} and Hosted on Vercel</a></p>
-			<p>Copyright &copy; 2024 Andrew Lee</p>
+			<p>Copyright &copy; {date.getFullYear()} Andrew Lee</p>
 		</footer>
 	</div>
 	</body>
