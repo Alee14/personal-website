@@ -1,17 +1,17 @@
-import {defineConfig, passthroughImageService} from 'astro/config';
+import { defineConfig, passthroughImageService } from 'astro/config';
 import icon from "astro-icon";
-
-import vue from '@astrojs/vue';
 import vercel from "@astrojs/vercel/serverless";
+
+import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alee14.me',
-  integrations: [icon(), vue()],
+  integrations: [icon(), preact()],
   output: "server",
   adapter: vercel(),
   image: {
-    service: passthroughImageService(),
+    service: passthroughImageService()
   },
   markdown: {
     shikiConfig: {
@@ -24,7 +24,7 @@ export default defineConfig({
       wrap: true,
       // Add custom transformers: https://shikiji.netlify.app/guide/transformers
       // Find common transformers: https://shikiji.netlify.app/packages/transformers
-      transformers: [],
-    },
-  },
+      transformers: []
+    }
+  }
 });
