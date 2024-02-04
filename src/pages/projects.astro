@@ -1,13 +1,14 @@
 ---
 import Page from "../layouts/Page.astro";
 import projects from "../data/projects.json";
+import "../styles/cards.css";
 ---
 <Page title="Projects" description="Things that I have been working on in the past, and present">
-    <main>
+    <main class="grid">
         {
             projects.map((project) => {
                 return (
-                        <div class="cards">
+                        <article class="card">
                             <h1>{project.name}</h1>
                             <p>{project.description}</p>
                             <div class="row">
@@ -17,51 +18,16 @@ import projects from "../data/projects.json";
                                     )
                                 })}
                             </div>
-                        </div>
+                        </article>
                 )
             })
         }
     </main>
 </Page>
 <style>
-    main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cards {
-        display: flex;
-        flex-direction: column;
-        background-color: #3B513B;
-        padding: 1.2em;
-        border-radius: 20px;
-        gap: 0.5em;
-        margin: 0.5em;
-    }
-
-    .cards h1 {
-        padding: 0;
-        margin: 0;
-        font-size: 1.8em;
-    }
-
-    .cards p {
-        padding: 0;
-        margin: 0;
-    }
-
     .row {
-        margin-top: 0.3em;
         display: flex;
         flex-direction: row;
         gap: 1em;
     }
-
-    /* Mobile view */
-    @media (max-width: 992px) {
-        main {
-            grid-template-columns: 1fr;
-        }
-    }
-
 </style>

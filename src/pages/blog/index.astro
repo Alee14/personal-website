@@ -8,20 +8,21 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
-      {allBlogPosts.map((post) => (
-         <article>
-            <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
-            <small>{formatDate(post.data.pubDate)}</small>
-            <p>{post.data.description}</p>
-            <div class="tags">
-               {post.data.tags.map((tag) => (
-                  <a href={`/blog/tags/${tag}`}>{tag}</a>
-               ))}
-            </div>
-         </article>
-       ))
-      }
-
+      <div class="grid">
+         {allBlogPosts.map((post) => (
+             <article class="card">
+                <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
+                <small>{formatDate(post.data.pubDate)}</small>
+                <p>{post.data.description}</p>
+                <div class="tags">
+                   {post.data.tags.map((tag) => (
+                       <a href={`/blog/tags/${tag}`}>{tag}</a>
+                   ))}
+                </div>
+             </article>
+         ))
+         }
+      </div>
    </main>
 </Page>
 <style>

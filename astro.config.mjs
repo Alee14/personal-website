@@ -9,7 +9,11 @@ export default defineConfig({
   site: 'https://alee14.me',
   integrations: [icon(), preact()],
   output: "server",
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   image: {
     service: passthroughImageService()
   },
