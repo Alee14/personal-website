@@ -1,0 +1,36 @@
+.card form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card form input,
+.card form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    background: #2c2c2c;
+    color: #FFFFFF;
+    border: 1px solid #4b4b4b;
+}
+
+.card form textarea[name="message"] {
+    height: 200px;
+}
+
+.card form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #609460;
+    color: white;
+    cursor: pointer;
+}
+
+.card form button:hover {
+    background-color: #486e48;
+    transition: ease-in-out 0.2s;
+}
+
+.card form label {
+    display: block;
+}

@@ -1,6 +1,7 @@
 import { h, Component } from 'preact';
 import { pb } from '../services/pocketbase';
 import { formatDate } from "../util";
+import sanitizeHtml from 'sanitize-html';
 
 class Guestbook extends Component {
     state = {
@@ -8,7 +9,7 @@ class Guestbook extends Component {
         error: null
     };
 
-    async componentDidMount() {
+    fetchMessages = async () => {
         try {
             const message = await pb.collection('guestbook').getFullList({
                 sort: '-created',
@@ -18,6 +19,10 @@ class Guestbook extends Component {
             this.setState({ error: `Failed to fetch data: ${error.message}` });
             console.error('Failed to fetch data:', error);
         }
+    }
+
+    async componentDidMount() {
+        await this.fetchMessages();
     }
 
     render() {
@@ -33,14 +38,16 @@ class Guestbook extends Component {
 
         return (
             <div>
-                {message.map((g) => (
-                    <article class="card">
-                        <h1>Message from: {g.name}</h1>
-                        <small>{formatDate(g.created)}</small>
-                        <p>{g.message}</p>
-                        {g.website && <a href={g.website}>Website</a>}
-                    </article>
-                ))}
+                <div class="grid">
+                    {message.map((g) => (
+                        <article class="card">
+                            <h1>Message from: {g.name}</h1>
+                            <small>{formatDate(g.created)}</small>
+                            <div dangerouslySetInnerHTML={{__html: sanitizeHtml(g.message)}}/>
+                            {g.website && <a href={g.website}>Website</a>}
+                        </article>
+                    ))}
+                </div>
             </div>
         );
     }
