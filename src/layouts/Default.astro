@@ -42,8 +42,9 @@ const date = new Date();
 	<div transition:name="main" transition:animate="fade">
 		<slot />
 		<footer>
-			<p><a href="https://github.com/Alee14/personal-website">Made with {Astro.generator} and Hosted on Vercel</a></p>
+			<p>Made with {Astro.generator} and Hosted on Vercel</p>
 			<p>Copyright &copy; {date.getFullYear()} Andrew Lee</p>
+			<p><a href="https://github.com/Alee14/personal-website">View source code.</a></p>
 		</footer>
 	</div>
 	</body>

@@ -1,20 +1,21 @@
 ---
 import Page from "../../layouts/Page.astro";
+import '../../styles/cards.css';
 ---
 <Page title="Philip Adams Software Archive" description="The ultimate software collection of Philip Adams' software.">
     <main>
         <div class="content-warning">
-            <h1>Content Warning</h1>
+            <h2>Content Warning</h2>
             <p>Some of the software in this pack contains a jumpscare. If you have epilepsy, please be cautious.</p>
             <p>Disable your antivirus as it can detect false positive, feel free to use a VM in case this feels not safe.</p>
         </div>
-        <div class="box note">
-            <h1>Note</h1>
+        <div class="card note">
+            <h2>Note</h2>
             <p>There was a mention back in the AstralPhaser Chats that the Histacom 1.8.5 (2013) copy in IndieDB is not the original copy from Phil.</p>
             <p>I have retrieved the original 2010 copy from Phil himself which has the original compile date of July 5th 2010, and I will be keeping both versions for the time being.</p>
         </div>
-        <h1>Minimal Requirements</h1>
-        <div class="box requirements">
+        <div class="card requirements">
+            <h2>Minimal Requirements</h2>
             <ul>
                 <li>OS: Windows XP SP3/Vista SP2 (Depends on each program)</li>
                 <li>CPU: Intel/AMD x86 or x64 1 GHz Processor</li>
@@ -23,8 +24,8 @@ import Page from "../../layouts/Page.astro";
                 <li>Frameworks: Adobe Flash Player, .NET Framework 3.5, 4.0 and/or 4.5</li>
             </ul>
         </div>
-        <h1>Programs</h1>
-        <div class="box programs">
+        <div class="card programs">
+            <h2>Programs</h2>
             <ul>
                 <li>Amazing Maze (Requires Flash Player)</li>
                 <li>Artpad (from ShiftOS)</li>
@@ -82,9 +83,10 @@ import Page from "../../layouts/Page.astro";
         padding: 1.2em;
         border-radius: 20px;
         gap: 0.5em;
+        margin: 0.5em;
     }
 
-    .content-warning h1 {
+    .content-warning h2 {
         margin-top: 0.2em;
     }
 
@@ -94,13 +96,6 @@ import Page from "../../layouts/Page.astro";
 
     .note h1 {
         margin-top: 0.2em;
-    }
-
-    .box {
-        background-color: #3B513B;
-        padding: 1.2em;
-        border-radius: 20px;
-        gap: 0.5em;
     }
 
     a {
