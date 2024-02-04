@@ -27,7 +27,7 @@
 
 /* Mobile view */
 @media (max-width: 992px) {
-    main {
+    .grid {
         grid-template-columns: 1fr;
     }
 }

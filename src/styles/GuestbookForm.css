@@ -15,6 +15,7 @@
 
 .card form textarea[name="message"] {
     height: 200px;
+    resize: none;
 }
 
 .card form button {
@@ -29,6 +30,10 @@
 .card form button:hover {
     background-color: #486e48;
     transition: ease-in-out 0.2s;
+}
+
+.card form button:active {
+    background-color: #243824;
 }
 
 .card form label {

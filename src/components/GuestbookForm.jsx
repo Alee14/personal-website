@@ -25,19 +25,18 @@ class GuestbookForm extends Component {
         }
 
         const messageHtml = marked(DOMPurify.sanitize(this.state.message));
-        try {
-            await createMessage({ ...this.state, message: messageHtml });
+        await createMessage({ ...this.state, message: messageHtml });
 
-            this.setState({
-                name: '',
-                email: '',
-                website: '',
-                message: '',
-                isMessageSent: true,
-                errorMessage: ''
-            });
-        } catch (error) {
-            this.setState({ errorMessage: error.message });
+        this.setState({
+            name: '',
+            email: '',
+            website: '',
+            message: '',
+            isMessageSent: true,
+        });
+
+        if (this.props.onMessageSent) {
+            this.props.onMessageSent();
         }
     }
 
@@ -47,7 +46,7 @@ class GuestbookForm extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <h2>Submit Message</h2>
                     <label>Name</label>
-                    <input type="text" name="name" placeholder="Name" required value={this.state.name}
+                    <input type="text" name="name" placeholder="John Doe" required value={this.state.name}
                            onChange={this.handleChange}/>
                     <label>Email Address</label>
                     <input type="email" name="email" placeholder="hello@example.com (optional)" value={this.state.email}
@@ -56,7 +55,7 @@ class GuestbookForm extends Component {
                     <input type="url" name="website" placeholder="https://example.com (optional)"
                            value={this.state.website} onChange={this.handleChange}/>
                     <label>Message (Supports Markdown)</label>
-                    <textarea name="message" placeholder="Message" required value={this.state.message}
+                    <textarea name="message" placeholder="This is a **message**. I can *do* this, and __this__." required value={this.state.message}
                               onChange={this.handleChange}></textarea>
                     <button type="submit">Send</button>
                 </form>
