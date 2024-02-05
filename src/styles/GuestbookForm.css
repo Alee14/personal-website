@@ -8,9 +8,9 @@
 .card form textarea {
     padding: 10px;
     border-radius: 5px;
-    background: #2c2c2c;
+    background: #253625;
     color: #FFFFFF;
-    border: 1px solid #4b4b4b;
+    border: 1px solid #253625;
 }
 
 .card form textarea[name="message"] {
@@ -34,8 +34,4 @@
 
 .card form button:active {
     background-color: #243824;
-}
-
-.card form label {
-    display: block;
 }

@@ -5,5 +5,6 @@ export async function createMessage(data) {
         return await pb.collection('guestbook').create(data);
     } catch (error) {
         console.error(error);
+        throw error;
     }
 }
