@@ -25,6 +25,7 @@
     background-color: #609460;
     color: white;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
 }
 
 .card form button:hover {

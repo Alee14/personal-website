@@ -7,7 +7,6 @@ import DOMPurify from 'dompurify';
 class GuestbookForm extends Component {
     state = {
         name: '',
-        email: '',
         website: '',
         message: '',
         isMessageSent: false,
@@ -24,13 +23,22 @@ class GuestbookForm extends Component {
             return;
         }
 
+        const urlRegex = /(https?:\/\/\S+)/g;
+        const imageRegex = /!\[.*]\(.*\)/g;
+
+        if (urlRegex.test(this.state.message) || imageRegex.test(this.state.message)) {
+            this.setState({
+                errorMessage: 'Links and images are not allowed.',
+            });
+            return;
+        }
+
         try {
             const messageHtml = marked(DOMPurify.sanitize(this.state.message));
             await createMessage({ ...this.state, message: messageHtml });
 
             this.setState({
                 name: '',
-                email: '',
                 website: '',
                 message: '',
                 isMessageSent: true,
@@ -56,14 +64,11 @@ class GuestbookForm extends Component {
                     <label for="name">Name</label>
                     <input type="text" name="name" placeholder="John Doe" required value={this.state.name}
                            onChange={this.handleChange}/>
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" placeholder="hello@example.com (optional)" value={this.state.email}
-                           onChange={this.handleChange}/>
                     <label for="website">Your Website</label>
                     <input type="url" name="website" placeholder="https://example.com (optional)"
                            value={this.state.website} onChange={this.handleChange}/>
-                    <label for="message">Message (Supports Markdown)</label>
-                    <textarea name="message" placeholder="This is a **message**. I can *do* this, and __this__." required value={this.state.message}
+                    <label for="message">Message (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
+                    <textarea name="message" placeholder="Enter your message here." required value={this.state.message}
                               onChange={this.handleChange}></textarea>
                     <button type="submit">Send</button>
                 </form>
