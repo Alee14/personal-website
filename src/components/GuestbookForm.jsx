@@ -20,6 +20,9 @@ class GuestbookForm extends Component {
         e.preventDefault();
 
         if (this.state.isMessageSent) {
+            this.setState({
+                errorMessage: 'You have already sent a message.',
+            });
             return;
         }
 
@@ -58,22 +61,20 @@ class GuestbookForm extends Component {
 
     render() {
         return (
-            <div class="card">
+            <div className="card">
                 <form onSubmit={this.handleSubmit}>
                     <h2>Submit Message</h2>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="John Doe" required value={this.state.name}
-                           onChange={this.handleChange}/>
-                    <label for="website">Your Website</label>
-                    <input type="url" name="website" placeholder="https://example.com (optional)"
-                           value={this.state.website} onChange={this.handleChange}/>
-                    <label for="message">Message (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
+                    <label htmlFor="name">Name</label>
+                    <input type="text" name="name" placeholder="John Doe" required value={this.state.name} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
+                    <label htmlFor="website">Your Website (Optional)</label>
+                    <input type="url" name="website" placeholder="https://example.com" value={this.state.website} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
+                    <label htmlFor="message">Message (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
                     <textarea name="message" placeholder="Enter your message here." required value={this.state.message}
-                              onChange={this.handleChange}></textarea>
-                    <button type="submit">Send</button>
+                              onChange={this.handleChange} disabled={this.state.isMessageSent}></textarea>
+                    <button type="submit" disabled={this.state.isMessageSent}>Send</button>
                 </form>
-                {this.state.errorMessage && <p dangerouslySetInnerHTML={{ __html: this.state.errorMessage }} />}
-                {this.state.isMessageSent && <p>Sent successfully!</p>}
+                {this.state.errorMessage && <p dangerouslySetInnerHTML={{__html: this.state.errorMessage}}/>}
+                {this.state.isMessageSent && !this.state.errorMessage && <p>Sent successfully!</p>}
             </div>
         );
     }

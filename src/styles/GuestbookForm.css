@@ -18,21 +18,12 @@
     resize: none;
 }
 
-.card form button {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #609460;
-    color: white;
-    cursor: pointer;
-    transition: ease-in-out 0.2s;
-}
 
-.card form button:hover {
-    background-color: #486e48;
-    transition: ease-in-out 0.2s;
-}
-
-.card form button:active {
-    background-color: #243824;
+.card form input:disabled,
+.card form textarea:disabled,
+.card form button:disabled {
+    background: #5a5a5a;
+    border-color: #5a5a5a;
+    color: #c7c7c7;
+    cursor: not-allowed;
 }

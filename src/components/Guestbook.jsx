@@ -7,31 +7,52 @@ import GuestbookForm from "./GuestbookForm.jsx";
 class Guestbook extends Component {
     state = {
         message: null,
-        error: null
+        error: null,
+        page: 1,
     };
 
-    fetchMessages = async () => {
+    fetchMessages = async (page) => {
+        const perPage = 10;
+
         try {
-            const message = await pb.collection('guestbook').getFullList({
+            const result = await pb.collection('guestbook').getList(page, perPage, {
                 sort: '-created',
             });
-            this.setState({ message });
+            this.setState({
+                message: result.items,
+                totalPages: result.totalPages
+            });
         } catch (error) {
             this.setState({ error: `Failed to fetch data: ${error.message}` });
             console.error('Failed to fetch data:', error);
         }
     }
 
-    async componentDidMount() {
-        await this.fetchMessages();
+    refresh = async () => {
+        await this.fetchMessages(this.state.page);
     }
 
-    refresh = async () => {
-        await this.fetchMessages();
+    async componentDidMount() {
+        await this.fetchMessages(this.state.page);
+    }
+
+    handleNext = async () => {
+        const nextPage = this.state.page + 1;
+        if (nextPage > this.state.totalPages) {
+            return;
+        }
+        this.setState({ page: nextPage });
+        await this.fetchMessages(nextPage);
+    }
+
+    handlePrevious = async () => {
+        const previousPage = this.state.page - 1;
+        this.setState({ page: previousPage });
+        await this.fetchMessages(previousPage);
     }
 
     render() {
-        const { message, error } = this.state;
+        const { message, error, page, totalPages } = this.state;
 
         return (
             <div>
@@ -52,6 +73,8 @@ class Guestbook extends Component {
                         ))}
                     </div>
                 )}
+                {page > 1 && <button class="margin" onClick={this.handlePrevious}>Previous</button>}
+                {page < totalPages && <button class="margin" onClick={this.handleNext}>Next</button>}
             </div>
         );
     }
