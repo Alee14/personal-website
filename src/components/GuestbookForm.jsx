@@ -64,11 +64,11 @@ class GuestbookForm extends Component {
             <div className="card">
                 <form onSubmit={this.handleSubmit}>
                     <h2>Submit Message</h2>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Name *</label>
                     <input type="text" name="name" placeholder="John Doe" required value={this.state.name} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
                     <label htmlFor="website">Your Website (Optional)</label>
                     <input type="url" name="website" placeholder="https://example.com" value={this.state.website} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
-                    <label htmlFor="message">Message (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
+                    <label htmlFor="message">Message * (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
                     <textarea name="message" placeholder="Enter your message here." required value={this.state.message}
                               onChange={this.handleChange} disabled={this.state.isMessageSent}></textarea>
                     <button type="submit" disabled={this.state.isMessageSent}>Send</button>

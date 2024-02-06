@@ -1,14 +1,17 @@
 ---
 import Layout from './Default.astro';
-const { title, description, pubDate } = Astro.props;
-import { getCollection } from "astro:content";
-const postTags = (await getCollection('blog'));
+const { title, description, pubDate, tags } = Astro.props;
 ---
 
 <Layout title=`${title} - Andrew Lee` description={description}>
     <header>
         <h1 class="header-text">{title}</h1>
-        <small>{pubDate}</small>
+        <span>{pubDate}</span>
+        <div class="tags">
+            {tags.map(tag => (
+                    <span class="tag"><a href={`/blog/tags/${tag}`}>{tag}</a></span>
+            ))}
+        </div>
     </header>
     <div class="container">
         <main>
@@ -42,9 +45,15 @@ const postTags = (await getCollection('blog'));
         font-size: 1.5em;
         font-weight: 300;
     }
-
     .container {
         margin: 1em 10em 1em 10em;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1em;
     }
 
     @media (max-width: 992px) {

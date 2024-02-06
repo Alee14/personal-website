@@ -16,7 +16,7 @@ if(entry === undefined) {
 
 const { Content } = await entry.render();
 ---
-<Page title={entry.data.title} description={entry.data.description} pubDate={formatDate(entry.data.pubDate)}>
+<Page title={entry.data.title} description={entry.data.description} pubDate={formatDate(entry.data.pubDate)} tags={entry.data.tags}>
     <main>
         <a href="/blog" class="back-link">← All articles</a>
         <article>

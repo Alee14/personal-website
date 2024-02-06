@@ -28,7 +28,7 @@ const { posts } = Astro.props;
         <div class="grid">
             {posts && posts.map((post) => {
                 return (
-                        <article class="card">>
+                        <article class="card">
                             <h1><a href=`/blog/${post.frontmatter.slug}`>{post.frontmatter.title}</a></h1>
                             <small>{formatDate(post.frontmatter.pubDate)}</small>
                             <p>{post.frontmatter.description}</p>
