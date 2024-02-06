@@ -71,7 +71,7 @@ class GuestbookForm extends Component {
                     <label htmlFor="message">Message * (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
                     <textarea name="message" placeholder="Enter your message here." required value={this.state.message}
                               onChange={this.handleChange} disabled={this.state.isMessageSent}></textarea>
-                    <button type="submit" disabled={this.state.isMessageSent}>Send</button>
+                    <button class="button" type="submit" disabled={this.state.isMessageSent}>Send</button>
                 </form>
                 {this.state.errorMessage && <p dangerouslySetInnerHTML={{__html: this.state.errorMessage}}/>}
                 {this.state.isMessageSent && !this.state.errorMessage && <p>Sent successfully!</p>}

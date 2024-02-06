@@ -73,8 +73,8 @@ class Guestbook extends Component {
                         ))}
                     </div>
                 )}
-                {page > 1 && <button class="margin" onClick={this.handlePrevious}>Previous</button>}
-                {page < totalPages && <button class="margin" onClick={this.handleNext}>Next</button>}
+                {page > 1 && <button class="button margin" onClick={this.handlePrevious}>Previous</button>}
+                {page < totalPages && <button class="button margin" onClick={this.handleNext}>Next</button>}
             </div>
         );
     }
