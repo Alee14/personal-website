@@ -38,7 +38,8 @@ class GuestbookForm extends Component {
 
         try {
             const messageHtml = marked(DOMPurify.sanitize(this.state.message));
-            await createMessage({ ...this.state, message: messageHtml });
+            const { isMessageSent, errorMessage, ...messageData } = this.state; // Exclude isMessageSent from the data
+            await createMessage({ ...messageData, message: messageHtml });
 
             this.setState({
                 name: '',

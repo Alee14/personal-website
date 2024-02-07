@@ -1,8 +1,18 @@
-import { pb } from './pocketbase'
+import { supabase } from "./supabase";
 
 export async function createMessage(data) {
     try {
-        return await pb.collection('guestbook').create(data);
+        const { data: insertedData, error } = await supabase
+            .from('guestbook')
+            .insert([data])
+            .select();
+
+        if (error) {
+            console.error(error);
+            throw error;
+        }
+
+        return insertedData;
     } catch (error) {
         console.error(error);
         throw error;
