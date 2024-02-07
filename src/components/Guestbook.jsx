@@ -16,9 +16,9 @@ class Guestbook extends Component {
         const start = (page - 1) * perPage;
         const end = start + perPage - 1;
 
-        let { data: messages, error } = await supabase
+        let { data: messages, error, count } = await supabase
             .from('guestbook')
-            .select('*')
+            .select('*', { count: 'exact' })
             .range(start, end)
             .order('created_at', { ascending: false });
         if (error) {
@@ -27,7 +27,7 @@ class Guestbook extends Component {
         } else {
             this.setState({
                 message: messages,
-                totalPages: Math.ceil(messages.length / perPage)
+                totalPages: Math.ceil(count / perPage)
             });
         }
     }
