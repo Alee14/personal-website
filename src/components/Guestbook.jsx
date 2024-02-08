@@ -72,7 +72,7 @@ class Guestbook extends Component {
                                 <h1>Message from: {g.name}</h1>
                                 <small>{formatDate(g.created_at)}</small>
                                 <div dangerouslySetInnerHTML={{__html: sanitizeHtml(g.message)}}/>
-                                {g.website && <a href={g.website} target="_blank">Website</a>}
+                                {g.website && <a href={g.website} target="_blank">My Website</a>}
                             </article>
                         ))}
                     </div>

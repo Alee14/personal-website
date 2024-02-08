@@ -25,9 +25,14 @@ const { Content } = await entry.render();
     </main>
 </Page>
 
-<style>
+<style is:global>
     img {
         width: 20%;
-        height: 50%;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            width: 50%;
+        }
     }
 </style>
