@@ -3,11 +3,17 @@ import Page from "../../layouts/Page.astro";
 import { getCollection } from "astro:content";
 import {formatDate} from "../../util";
 import "../../styles/cards.css";
+import {Icon} from "astro-icon/components";
 
 const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 <Page title="Blog" description="Where I post can be anything!">
    <main>
+      <div class="header">
+         <a href="/blog/rss.xml">
+            <Icon name="fa6-solid:square-rss" class="icon" />
+         </a>
+      </div>
       <div class="grid">
          {allBlogPosts.map((post) => (
              <article class="card">
@@ -30,5 +36,14 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
       display: flex;
       flex-direction: row;
       gap: 1em;
+   }
+
+   .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5em;
+      font-size: 3em;
    }
 </style>

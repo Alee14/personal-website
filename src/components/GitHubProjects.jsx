@@ -7,39 +7,45 @@ const GitHubProjects = ({ username, isOrganization }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const reposPerPage = 10;
 
-  useEffect(() => {
-    const fetchRepos = async () => {
-      const baseUrl = 'https://api.github.com';
-      const url = isOrganization
-        ? `${baseUrl}/orgs/${username}/repos`
-        : `${baseUrl}/users/${username}/repos`;
-  
-      try {
-        const response = await fetch(url);
-        const data = await response.json();
-  
-        if (response.ok) {
-          if (Array.isArray(data)) {
-            setRepos(data.filter(repo => !repo.fork));
-          } else {
-            console.error('Unexpected data format:', data);
-            setError('Unexpected data format');
-            setRepos([]);
+  const fetchRepos = async (page = 1, allRepos = []) => {
+    const baseUrl = 'https://api.github.com';
+    const url = isOrganization
+        ? `${baseUrl}/orgs/${username}/repos?page=${page}&per_page=100`
+        : `${baseUrl}/users/${username}/repos?page=${page}&per_page=100`;
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+
+      if (response.ok) {
+        if (Array.isArray(data)) {
+          allRepos = allRepos.concat(data.filter(repo => !repo.fork));
+          // If the data length is 100, there might be more repositories to fetch
+          if (data.length === 100) {
+            return fetchRepos(page + 1, allRepos);
           }
         } else {
-          console.error('API error:', data);
-          setError(data.message);
+          console.error('Unexpected data format:', data);
+          setError('Unexpected data format');
           setRepos([]);
         }
-      } catch (err) {
-        console.error('Failed to fetch projects:', err);
-        setError(err.message);
+      } else {
+        console.error('API error:', data);
+        setError(data.message);
         setRepos([]);
       }
-    };
-  
-    fetchRepos();
-  }, [username, isOrganization]); // Don't forget to include dependencies
+    } catch (err) {
+      console.error('Failed to fetch projects:', err);
+      setError(err.message);
+      setRepos([]);
+    }
+
+    return allRepos;
+  };
+
+  useEffect(() => {
+    fetchRepos().then(setRepos);
+  }, [username, isOrganization]);
 
   // Get current repos
   const indexOfLastRepo = currentPage * reposPerPage;
