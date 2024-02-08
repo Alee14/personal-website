@@ -2,19 +2,8 @@
 import Page from "../layouts/Page.astro";
 import projects from "../data/projects.json";
 import "../styles/cards.css";
+import GitHubProjects from "../components/GitHubProjects";
 
-let repos;
-let error = null;
-try {
-    const alee14_projects = await fetch('https://api.github.com/orgs/alee14-projects/repos');
-    repos = await alee14_projects.json();
-    repos = repos.filter(repo => !repo.fork);
-} catch (err) {
-    console.error('Failed to fetch projects:', err);
-    error = err.message;
-    // You can set repos to an empty array if the fetch fails
-    repos = [];
-}
 ---
 <Page title="Projects" description="Things that I have been working on in the past, and present">
     <main>
@@ -37,21 +26,11 @@ try {
                 })
             }
         </div>
+        <!--
+        <h2>Andrew Lee GitHub Repositories</h2>
+         <GitHubProjects client:visible username="Alee14" isOrganization=false />-->
         <h2>AleeCorp/Alee Productions GitHub Repositories</h2>
-        { error && <div class="error">{error}</div> }
-        <div class="grid">
-            {repos.map((repo) => {
-                return (
-                        <article class="card">
-                            <h1>{repo.name}</h1>
-                            <p>{repo.description}</p>
-                            <div class="row">
-                                <a href={repo.html_url} target="_blank">Repository</a>
-                            </div>
-                        </article>
-                )
-            })}
-        </div>
+        <GitHubProjects client:visible username="alee14-projects" isOrganization=true />
     </main>
 </Page>
 <style>
