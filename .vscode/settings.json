@@ -1,30 +1,24 @@
 {
-    "frontMatter.taxonomy.contentTypes": [
+    "[markdown]": {
+        "editor.fontSize": 14,
+        "editor.lineHeight": 26,
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 64,
+        "editor.lineNumbers": "off",
+        "editor.quickSuggestions": false,
+        "editor.minimap.enabled": false
+    },
+    "frontMatter.content.publicFolder": "public",
+    "frontMatter.content.pageFolders": [
         {
-            "name": "default",
-            "pageBundle": false,
-            "fields": [
-                {
-                    "title": "title",
-                    "name": "title",
-                    "type": "string"
-                },
-                {
-                    "title": "description",
-                    "name": "description",
-                    "type": "string"
-                },
-                {
-                    "title": "pubDate",
-                    "name": "pubDate",
-                    "type": "datetime"
-                },
-                {
-                    "title": "tags",
-                    "name": "tags",
-                    "type": "tags"
-                }
-            ]
+            "title": "blog",
+            "path": "[[workspace]]/src/content/blog"
+        },
+        {
+            "title": "pages",
+            "path": "[[workspace]]/src/pages"
         }
-    ]
+    ],
+    "frontMatter.framework.id": "astro",
+    "frontMatter.preview.host": "http://localhost:4321"
 }

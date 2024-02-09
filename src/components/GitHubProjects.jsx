@@ -4,6 +4,7 @@ import { useState, useEffect } from 'preact/hooks';
 const GitHubProjects = ({ username, isOrganization }) => {
   const [repos, setRepos] = useState([]);
   const [error, setError] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const reposPerPage = 10;
 
@@ -40,6 +41,7 @@ const GitHubProjects = ({ username, isOrganization }) => {
       setRepos([]);
     }
 
+    setIsLoading(false);
     return allRepos;
   };
 
@@ -47,34 +49,38 @@ const GitHubProjects = ({ username, isOrganization }) => {
     fetchRepos().then(setRepos);
   }, [username, isOrganization]);
 
-  // Get current repos
   const indexOfLastRepo = currentPage * reposPerPage;
   const indexOfFirstRepo = indexOfLastRepo - reposPerPage;
   const currentRepos = repos.slice(indexOfFirstRepo, indexOfLastRepo);
 
-  // Change page
   const nextPage = () => setCurrentPage(currentPage + 1);
   const prevPage = () => setCurrentPage(currentPage - 1);
 
   return (
-    <div>
-      {error && <div class="error">{error}</div>}
-      <div class="grid">
-        {currentRepos.map((repo) => (
-          <article class="card">
-            <h1>{repo.name}</h1>
-            <p>{repo.description}</p>
-            <div class="row">
-                <a href={repo.html_url} target="_blank">Repository</a>
-            </div>
-          </article>
-        ))}
-      </div>
       <div>
-        {currentPage > 1 && <button class="button margin" onClick={prevPage}>Previous</button>}
-        {currentPage < Math.ceil(repos.length / reposPerPage) && <button class="button margin" onClick={nextPage}>Next</button>}
+        {isLoading ? (
+            <div>Loading...</div>
+        ) : (
+            <>
+              {error && <div class="error">{error}</div>}
+              <div class="grid">
+                {currentRepos.map((repo) => (
+                    <article class="card">
+                      <h1>{repo.name}</h1>
+                      <p>{repo.description}</p>
+                      <div class="row">
+                        <a href={repo.html_url} target="_blank">Repository</a>
+                      </div>
+                    </article>
+                ))}
+              </div>
+              <div>
+                {currentPage > 1 && <button class="button margin" onClick={prevPage}>Previous</button>}
+                {currentPage < Math.ceil(repos.length / reposPerPage) && <button class="button margin" onClick={nextPage}>Next</button>}
+              </div>
+            </>
+        )}
       </div>
-    </div>
   );
 };
 
