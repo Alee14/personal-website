@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import { Component } from 'preact';
 import { createMessage } from '../services/GuestbookService';
 import '../styles/GuestbookForm.css';
 import { marked } from "marked";

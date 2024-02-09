@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import { Component } from 'preact';
 import { supabase } from '../services/supabase';
 import { formatDate } from "../util";
 import sanitizeHtml from 'sanitize-html';
