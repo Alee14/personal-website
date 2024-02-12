@@ -25,7 +25,7 @@ export async function GET(context) {
             link: `/blog/${post.slug}/`,
             content: sanitizeHtml(parser.render(post.body)),
             // (optional) inject custom xml
-            customData: `<language>en-us</language>`,
+            customData: `<language>en-ca</language>`,
         })),
     });
 }

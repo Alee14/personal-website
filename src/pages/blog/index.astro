@@ -1,33 +1,40 @@
 ---
-import Page from "../../layouts/Page.astro";
+import Page from "../../layouts/Default.astro";
 import { getCollection } from "astro:content";
 import {formatDate} from "../../util";
+import '../../styles/Page.css';
 import "../../styles/cards.css";
 import {Icon} from "astro-icon/components";
 
 const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
-<Page title="Blog" description="Where I post can be anything!">
+<Page title="Blog - Andrew Lee" description="Where I post can be anything!">
    <main>
-      <div class="header">
-         <a href="/blog/rss.xml">
-            <Icon name="fa6-solid:square-rss" aria-label="RSS" />
-         </a>
-      </div>
-      <div class="grid">
-         {allBlogPosts.map((post) => (
-             <article class="card">
-                <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
-                <small>{formatDate(post.data.pubDate)}</small>
-                <p>{post.data.description}</p>
-                <div class="tags">
-                   {post.data.tags.map((tag) => (
-                       <a href={`/blog/tags/${tag}`}>{tag}</a>
-                   ))}
-                </div>
-             </article>
-         ))
-         }
+      <header>
+         <h1 class="header-text">
+            Blog
+            <a href="/blog/rss.xml">
+               <Icon name="fa6-solid:square-rss" aria-label="RSS" />
+            </a>
+         </h1>
+         <h2 class="header-text">Where I post can be anything!</h2>
+      </header>
+      <div class="container">
+         <div class="grid">
+            {allBlogPosts.map((post) => (
+                <article class="card">
+                   <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
+                   <small>{formatDate(post.data.pubDate)}</small>
+                   <p>{post.data.description}</p>
+                   <div class="tags">
+                      {post.data.tags.map((tag) => (
+                          <a href={`/blog/tags/${tag}`}>{tag}</a>
+                      ))}
+                   </div>
+                </article>
+            ))
+            }
+         </div>
       </div>
    </main>
 </Page>
@@ -38,12 +45,4 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
       gap: 1em;
    }
 
-   .header {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 0.5em;
-      font-size: 3em;
-   }
 </style>

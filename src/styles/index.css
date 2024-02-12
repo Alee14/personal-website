@@ -55,11 +55,15 @@
 
 .latest-posts {
     grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 3;
 }
 
 .blog-title {
     margin-bottom: 2px;
+}
+
+.link {
+    font-size: 1.2em;
 }
 
 /* Mobile view */

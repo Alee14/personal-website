@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin: 0;
+    text-align: center;
+    padding: 0 0 1em;
+}
+
+.header-text {
+    font-size: 2em;
+    margin: 0;
+}
+
+h2.header-text {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+.container {
+    margin: 1em 10em 1em 10em;
+}
+
+@media (max-width: 992px) {
+    .container {
+        margin: 10px 20px 10px 20px;
+    }
+}
