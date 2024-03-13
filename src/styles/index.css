@@ -43,10 +43,14 @@
 }
 
 .box {
-    padding: 2px 10px 10px 25px;
+    padding: 20px 20px 20px 25px;
     text-align: left;
     background: #3B513B;
     border-radius: 20px;
+}
+
+.box h1 {
+    margin-top: 0.2em;
 }
 
 .box:nth-child(1), .box:nth-child(2) {
