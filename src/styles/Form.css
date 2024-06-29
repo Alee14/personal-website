@@ -18,6 +18,11 @@
     resize: none;
 }
 
+.card form textarea[name="comment"] {
+    height: 50px;
+    resize: none;
+}
+
 
 .card form input:disabled,
 .card form textarea:disabled,

@@ -43,7 +43,7 @@ const date = new Date();
 	<div transition:name="main" transition:animate="fade">
 		<slot />
 		<footer>
-			<p>Made with {Astro.generator} and Hosted on Vercel</p>
+			<p class="small">Made with {Astro.generator} and Hosted on Vercel</p>
 			<p>Copyright &copy; {date.getFullYear()} Andrew Lee. <a href="https://github.com/Alee14/personal-website" target="_blank">View source code.</a></p>
 		</footer>
 	</div>
@@ -74,8 +74,17 @@ const date = new Date();
 	}
 
 	footer {
+		margin: 2em;
 		text-align: center;
 		font-size: 1.3em;
+	}
+
+	footer p {
+		margin: 0.6em;
+	}
+
+	.small {
+		font-size: 0.9em;
 	}
 
 	h1, h2, h3, h4, h5, h6 {

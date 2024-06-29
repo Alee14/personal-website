@@ -3,13 +3,12 @@ import '../styles/Form.css';
 import { marked } from "marked";
 import DOMPurify from 'dompurify';
 
-class GuestbookForm extends Component {
+class BlogCommentsForm extends Component {
     state = {
-        name: '',
-        website: '',
-        message: '',
+        author: '',
+        comment: '',
         isMessageSent: false,
-        messageId: ''
+        commentId: ''
     };
 
     componentDidMount() {
@@ -45,21 +44,21 @@ class GuestbookForm extends Component {
 
         if (this.state.isMessageSent) {
             this.setState({
-                errorMessage: 'You have already sent a message.',
+                errorMessage: 'You have already sent a comment.',
             });
             return;
         }
 
         try {
-            const messageHtml = marked(DOMPurify.sanitize(this.state.message));
+            const messageHtml = marked(DOMPurify.sanitize(this.state.comment));
             const { isMessageSent, errorMessage, ...messageData } = this.state; // Exclude isMessageSent from the data
 
-            const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/guestbook`, {
+            const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/comments/${this.props.slug}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ ...messageData, message: messageHtml }),
+                body: JSON.stringify({ ...messageData, comment: messageHtml }),
             });
 
             if (!response.ok) {
@@ -67,7 +66,7 @@ class GuestbookForm extends Component {
                 const errorMessage = `HTTP Error ${response.status}: ${response.statusText}<br>${errorBody.message}`;
 
                 this.setState({
-                    errorMessage: `There was an error submitting your message.<br>Details:<br>${errorMessage}`,
+                    errorMessage: `There was an error submitting your comment.<br>Details:<br>${errorMessage}`,
                     isMessageSent: false,
                 });
                 return;
@@ -76,12 +75,11 @@ class GuestbookForm extends Component {
             const responseBody = await response.json();
 
             this.setState({
-                name: '',
-                website: '',
-                message: '',
+                author: '',
+                comment: '',
                 isMessageSent: true,
                 errorMessage: '',
-                messageId: responseBody.id,
+                commentId: responseBody.id,
             });
 
             if (this.props.onMessageSent) {
@@ -99,13 +97,11 @@ class GuestbookForm extends Component {
         return (
             <div className="card">
                 <form onSubmit={this.handleSubmit}>
-                    <h2>Submit Message</h2>
-                    <label htmlFor="name">Name *</label>
-                    <input type="text" name="name" placeholder="John Doe" required value={this.state.name} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
-                    <label htmlFor="website">Your Website (Optional)</label>
-                    <input type="url" name="website" placeholder="https://example.com" value={this.state.website} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
-                    <label htmlFor="message">Message * (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
-                    <textarea name="message" placeholder="Enter your message here." required value={this.state.message}
+                    <h2>Submit Comment</h2>
+                    <label htmlFor="author">Author *</label>
+                    <input type="text" name="author" placeholder="John Doe" required value={this.state.author} onChange={this.handleChange} disabled={this.state.isMessageSent}/>
+                    <label htmlFor="comment">Comment * (Supports <a href="https://www.markdownguide.org/cheat-sheet/" target="_blank">Markdown</a>)</label>
+                    <textarea name="comment" placeholder="Enter your comment here." required value={this.state.comment}
                               onChange={this.handleChange} disabled={this.state.isMessageSent}></textarea>
                     <div id="turnstile-container"></div>
                     <button class="button" type="submit" disabled={this.state.isMessageSent}>Send</button>
@@ -115,8 +111,8 @@ class GuestbookForm extends Component {
                     <div>
                         <p>Sent successfully!</p>
                         <p>(Optional)</p>
-                        <p>Save this message ID: {this.state.messageId}</p>
-                        <p>Then send it to me, to verify that you sent this message.</p>
+                        <p>Save this message ID: {this.state.commentId}</p>
+                        <p>Then send it to me, to verify that you sent this comment.</p>
                         <p><a href="mailto:andrew@alee14.me">Email me</a> or tag/message me on these <a href="/contacts">platforms</a>.</p>
                     </div>
                 }
@@ -125,4 +121,4 @@ class GuestbookForm extends Component {
     }
 }
 
-export default GuestbookForm;
+export default BlogCommentsForm;

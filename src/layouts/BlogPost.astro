@@ -1,6 +1,16 @@
 ---
 import Layout from './Default.astro';
+import BlogComments from '../components/BlogComments.jsx';
+import "../styles/cards.css";
 const { title, description, pubDate, tags } = Astro.props;
+const { slug } = Astro.params;
+
+let disableComments;
+
+const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/comments/${slug}/disabled`);
+const data = await response.json();
+disableComments = data.postDisabled;
+
 ---
 
 <Layout title=`${title} - Andrew Lee` description={description}>
@@ -17,6 +27,12 @@ const { title, description, pubDate, tags } = Astro.props;
         <main>
             <slot />
         </main>
+        {
+            disableComments ? null :
+                    <h1>Comments</h1>
+                    <BlogComments client:visible slug={slug} />
+        }
+
     </div>
 </Layout>
 

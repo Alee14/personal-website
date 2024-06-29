@@ -1,9 +1,9 @@
 import { Component } from 'preact';
 import { formatDate } from "../util";
 import sanitizeHtml from 'sanitize-html';
-import GuestbookForm from "./GuestbookForm.jsx";
+import BlogCommentsForm from "./BlogCommentsForm.jsx";
 
-class Guestbook extends Component {
+class BlogComments extends Component {
     state = {
         message: null,
         error: null,
@@ -12,11 +12,11 @@ class Guestbook extends Component {
 
     fetchMessages = async (page) => {
         try {
-            const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/guestbook?page=${page}`);
+            const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/comments/${this.props.slug}?page=${page}`);
 
             if (!response.ok) {
                 const errorData = await response.json();
-                this.setState({ error: `Failed to fetch data: ${errorData.message}` });
+                this.setState({ error: errorData.message });
                 console.error('Failed to fetch data:', errorData.message);
                 return;
             }
@@ -30,7 +30,7 @@ class Guestbook extends Component {
             });
 
         } catch (error) {
-            this.setState({ error: `Failed to fetch data: ${error.message}` });
+            this.setState({ error: `${error.message}` });
             console.error('Failed to fetch data:', error);
         }
     }
@@ -63,30 +63,27 @@ class Guestbook extends Component {
 
         return (
             <div>
-                <GuestbookForm onMessageSent={this.refresh} />
+                <BlogCommentsForm onMessageSent={this.refresh} slug={this.props.slug} />
                 {error ? (
                     <p>{error}</p>
                 ) : message ? (
                     <div>
-                        <div className="grid">
-                            {message.map((g) => (
-                                <article className="card">
-                                    <h1>Message from: {g.name}</h1>
-                                    <small>{formatDate(g.created_at)}</small>
-                                    <div dangerouslySetInnerHTML={{__html: sanitizeHtml(g.message)}}/>
-                                    {g.website && <a href={g.website} target="_blank">My Website</a>}
-                                </article>
-                            ))}
-                        </div>
+                        {message.map((g) => (
+                            <article className="card">
+                                <h1>{g.author}</h1>
+                                <div dangerouslySetInnerHTML={{__html: sanitizeHtml(g.comment)}}/>
+                                <small>{formatDate(g.created_at)}</small>
+                            </article>
+                        ))}
                         {page > 1 && <button class="button margin" onClick={this.handlePrevious}>Previous</button>}
                         {page < totalPages && <button class="button margin" onClick={this.handleNext}>Next</button>}
                     </div>
                 ) : (
-                    <p>Loading messages...</p>
+                    <p>Loading comments...</p>
                 )}
             </div>
         );
     }
 }
 
-export default Guestbook;
+export default BlogComments;

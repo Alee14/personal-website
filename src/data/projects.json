@@ -2,6 +2,7 @@
   {
     "name": "AleeBot",
     "description": "An all-in-one bot that's made from the Discord.JS API!",
+    "featured": true,
     "links": [
       {
         "name": "Source Code",
@@ -13,6 +14,7 @@
   {
     "name": "DLAP",
     "description": "A Discord bot that lets you play local audio tracks in your server.",
+    "featured": true,
     "links": [
       {
         "name": "Source Code",
@@ -51,6 +53,7 @@
   {
     "name": "YouTube TV Client",
     "description": "A electron app that goes to youtube.com/tv using a Samsung Smart TV as the user agent.",
+    "featured": true,
     "links": [
       {
         "name": "Download",

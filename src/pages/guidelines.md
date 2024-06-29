@@ -38,7 +38,7 @@ In order to comply with the Children's Online Privacy Protection Act (COPPA), yo
 
 These rules applies when using our Minecraft servers
 
-- Usage of hacked clients (including - but not limited to - Wurst, Wolfram, Sigma, etc.) is strictly prohibited.*
+- Usage of hacked clients (including - but not limited to - Future, Impact, Meteor, etc.) is strictly prohibited.*
 - Griefing is not allowed.*
 - Unwarranted combating is not allowed unless both parties have given permission.*
 - Our general guidelines applies here as well.
