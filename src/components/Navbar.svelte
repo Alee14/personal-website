@@ -109,7 +109,7 @@
         <li><a href="/projects" class="nav-link" on:click={toggleNav}>Projects</a></li>
         <li><a href="/blog" class="nav-link" on:click={toggleNav}>Blog</a></li>
         <li><a href="/guestbook" class="nav-link" on:click={toggleNav}>Guestbook</a></li>
-        <li><a href="https://archive.alee14.me" class="nav-link" on:click={toggleNav}>Archive</a></li>
+<!--        <li><a href="https://archive.alee14.me" class="nav-link" on:click={toggleNav}>Archive</a></li>-->
         <li><a href="/contacts" class="nav-link" on:click={toggleNav}>Contacts</a></li>
     </ul>
 </nav>

@@ -7,7 +7,7 @@ tags:
 slug: website-redesigned
 ---
 # Another website redesign?!?
-Yeah, I decided to redesign this site again. I actually had plans to complete the 2021 version for a while, but I decided to scrap that. I mean if you take a look at it, the website pretty much incomplete like the blog, downloads page, and about section were missing if you compare with the 2020 version (though I stripped blogs during the 2020 version). 
+Yeah, I decided to redesign this site again. I actually had plans to complete the 2021 version for a while, but I decided to scrap that. I mean if you take a look at it, the website pretty much incomplete like the blog, downloads page, and about section were missing if you compare with the 2020 version (though I removed blogs during the 2020 version). 
 
 These were originally planned, but it became complicated to implement and integrate. The core concept of the website is that there was no navigation bar, so I wasn't sure how navigation would work. Another thing is that this website was originally meant to be a long single page, and of course I wouldn't know how to implement that either. As you can see I had pretty ambitious plans for this site in 2021, but they ended up being canned.
 
