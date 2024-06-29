@@ -4,7 +4,7 @@ import {formatDate} from "../../../util";
 import "../../../styles/cards.css";
 export const prerender = true;
 export async function getStaticPaths() {
-    const allPosts = await Astro.glob('../../../content/blog/*.md');
+    const allPosts = await Astro.glob('../../../content/blog/**/*.md');
     let uniqueTags = [];
 
     if (allPosts) {
