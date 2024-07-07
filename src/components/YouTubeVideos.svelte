@@ -52,8 +52,8 @@
 
 <style>
     .title {
-        margin-top: .2em;
-        margin-bottom: .2em;
+        margin-top: .5em;
+        margin-bottom: .3em;
     }
 
     img {
@@ -65,7 +65,6 @@
 
     .card small {
         display: block;
-        margin-bottom: 1em;
     }
 
     .zoom {
@@ -76,7 +75,7 @@
     }
 
     .zoom:hover {
-        transform: scale(1.1); /* Scales the image to 110% of its original size on hover */
+        transform: scale(1.04); /* Scales the image to 110% of its original size on hover */
     }
 
     .container {
@@ -116,9 +115,9 @@
                     {#each videos as video}
                         <div class="card">
                             <a href={`https://youtu.be/${video.snippet.resourceId.videoId}`} target="_blank">
-                            <h3 class="title">{video.snippet.title}</h3>
-                            <small>{formatDate(video.snippet.publishedAt)}</small>
-                                <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title} class="zoom" />
+                                <img src={video.snippet.thumbnails.medium.url} class="zoom" loading="lazy" alt={video.snippet.title} width={video.snippet.thumbnails.medium.width} height={video.snippet.thumbnails.medium.height} />
+                                <h3 class="title">{video.snippet.title}</h3>
+                                <small>{formatDate(video.snippet.publishedAt)}</small>
                             </a>
                         </div>
                     {/each}
