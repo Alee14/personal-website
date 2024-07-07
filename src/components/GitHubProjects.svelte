@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import Loader from "./Loader.svelte";
     export let username;
     export let isOrganization;
     let repos = [];
@@ -54,7 +55,7 @@
 
 <div>
     {#if isLoading}
-        <div>Loading...</div>
+        <Loader />
     {:else}
         {#if error}
             <div class="error">{error}</div>

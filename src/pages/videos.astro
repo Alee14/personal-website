@@ -1,0 +1,10 @@
+---
+import Page from "../layouts/Page.astro";
+import "../styles/cards.css";
+import YouTubeVideos from "../components/YouTubeVideos.svelte";
+---
+<Page title="Videos" description="All videos that I have made on YouTube">
+    <main>
+        <YouTubeVideos client:load />
+    </main>
+</Page>
