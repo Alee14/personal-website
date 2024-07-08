@@ -13,17 +13,17 @@
         const url = `${import.meta.env.PUBLIC_API_URL}/youtube?pageToken=${pageToken}`;
         try {
             const response = await fetch(url);
-            if (!response.ok) {
-                console.error('HTTP Error: ' + response.statusText);
-                error = 'HTTP Error: ' + response.statusText;
-                return;
-            }
             const data = await response.json();
+            if (!response.ok) {
+                console.error(`HTTP Error ${data.error.code}: ${data.error.message}`);
+                error = `HTTP Error ${data.error.code}: ${data.error.message}`
+                return
+            }
             videos = [...videos, ...data.items];
             nextPageToken = data.nextPageToken || '';
         } catch (e) {
             console.error(e);
-            error = e.message;
+            error = e.error.message
         } finally {
             isLoading = false;
         }
@@ -60,7 +60,6 @@
         width: 100%;
         height: auto;
         border-radius: 1em;
-        object-fit: cover;
     }
 
     .card small {
@@ -69,8 +68,6 @@
 
     .zoom {
         transition: transform 0.2s ease; /* Smooth transition for the transform property */
-        display: block; /* Ensures the image is block-level for proper scaling */
-        margin: auto; /* Keeps the image centered */
         max-width: 100%; /* Ensures the image does not exceed its container's width */
     }
 
@@ -104,29 +101,26 @@
 </style>
 
 <div>
-    <div>
-        {#if isLoading && videos.length === 0}
-            <Loader />
+    {#if isLoading && videos.length === 0}
+        <Loader />
+    {:else}
+        {#if error}
+            <div class="error">{error}</div>
         {:else}
-            {#if error}
-                <div class="error">{error}</div>
-            {:else}
-                <div class="container">
-                    {#each videos as video}
-                        <div class="card">
-                            <a href={`https://youtu.be/${video.snippet.resourceId.videoId}`} target="_blank">
-                                <img src={video.snippet.thumbnails.medium.url} class="zoom" loading="lazy" alt={video.snippet.title} width={video.snippet.thumbnails.medium.width} height={video.snippet.thumbnails.medium.height} />
-                                <h3 class="title">{video.snippet.title}</h3>
-                                <small>{formatDate(video.snippet.publishedAt)}</small>
-                            </a>
-                        </div>
-                    {/each}
-                </div>
-                <div class="load-more"></div>
-            {/if}
+            <div class="container">
+                {#each videos as video}
+                    <div class="card">
+                        <a href={`https://youtu.be/${video.snippet.resourceId.videoId}`} target="_blank">
+                            <img src={video.snippet.thumbnails.medium.url} class="zoom" loading="lazy" alt={video.snippet.title} width={video.snippet.thumbnails.medium.width} height={video.snippet.thumbnails.medium.height} />
+                            <h3 class="title">{video.snippet.title}</h3>
+                            <small>{formatDate(video.snippet.publishedAt)}</small>
+                        </a>
+                    </div>
+                {/each}
+            </div>
         {/if}
-        {#if isLoading && videos.length > 0}
-            <Loader />
-        {/if}
-    </div>
+    {/if}
+    {#if isLoading && videos.length > 0}
+        <Loader />
+    {/if}
 </div>
