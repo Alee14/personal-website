@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import Loader from "./Loader.svelte";
+    import { formatDate } from "../util";
     export let username;
     export let isOrganization;
     let repos = [];
@@ -45,6 +46,38 @@
         return allRepos;
     };
 
+    // Sort functions
+    function sortAlphabetically(repos) {
+        return repos.sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function sortByLastUpdated(repos) {
+        return repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+    }
+
+    function sortByMostStars(repos) {
+        return repos.sort((a, b) => b.stargazers_count - a.stargazers_count);
+    }
+
+    function updateSort(method) {
+        switch (method) {
+            case 'alphabetical':
+                repos = sortAlphabetically(repos);
+                break;
+            case 'lastUpdated':
+                repos = sortByLastUpdated(repos);
+                break;
+            case 'mostStars': // Updated case
+                repos = sortByMostStars(repos);
+                break;
+        }
+    }
+
+    function handleSortClick(method, event) {
+        event.preventDefault();
+        updateSort(method);
+    }
+
     onMount(() => {
         fetchRepos().then(r => repos = r);
     });
@@ -53,6 +86,14 @@
     const prevPage = () => currentPage--;
 </script>
 
+<style>
+    .sort {
+        margin-bottom: 1em;
+        display: flex;
+        column-gap: 1em;
+    }
+</style>
+
 <div>
     {#if isLoading}
         <Loader />
@@ -60,6 +101,11 @@
         {#if error}
             <div class="error">{error}</div>
         {:else}
+            <div class="sort">
+                <a href="#" on:click={(event) => handleSortClick('alphabetical', event)}>Alphabetic</a>
+                <a href="#" on:click={(event) => handleSortClick('lastUpdated', event)}>Last Updated</a>
+                <a href="#" on:click={(event) => handleSortClick('mostStars', event)}>Most Stars</a>
+            </div>
             <div class="grid">
                 {#each repos.slice((currentPage - 1) * reposPerPage, currentPage * reposPerPage) as repo (repo.id)}
                     <article class="card">
@@ -68,6 +114,9 @@
                         <div class="row">
                             <a href={repo.html_url} target="_blank">Repository</a>
                         </div>
+                        <small>{repo.stargazers_count} Stars</small>
+                        |
+                        <small>Last updated on {formatDate(repo.updated_at)}</small>
                     </article>
                 {/each}
             </div>

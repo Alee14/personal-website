@@ -75,6 +75,10 @@
         transform: scale(1.04); /* Scales the image to 110% of its original size on hover */
     }
 
+    .zoom:active {
+        transform: scale(0.6); /* Scales the image to 110% of its original size on hover */
+    }
+
     .container {
         display: grid;
         gap: 1em; /* Adjusts the gap between grid items */
