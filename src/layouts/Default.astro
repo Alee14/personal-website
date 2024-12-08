@@ -5,7 +5,7 @@ interface Props {
 }
 
 const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 import Navbar from '../components/Navbar.svelte';
 const date = new Date();
 ---
@@ -36,7 +36,7 @@ const date = new Date();
 		<meta name="theme-color" content="#1B291F"/>
 		<meta name="generator" content={Astro.generator} />
 
-		<ViewTransitions fallback="animate" />
+		<ClientRouter fallback="animate" />
 		<title>{title}</title>
 	</head>
 	<body>

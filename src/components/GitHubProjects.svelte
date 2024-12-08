@@ -102,7 +102,7 @@
             <div class="error">{error}</div>
         {:else}
             <div class="sort">
-                <a href="#" on:click={(event) => handleSortClick('alphabetical', event)}>Alphabetic</a>
+                <a href="#" on:click={(event) => handleSortClick('alphabetical', event)}>A-Z</a>
                 <a href="#" on:click={(event) => handleSortClick('lastUpdated', event)}>Last Updated</a>
                 <a href="#" on:click={(event) => handleSortClick('mostStars', event)}>Most Stars</a>
             </div>
