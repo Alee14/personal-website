@@ -13,6 +13,7 @@
     "@astrojs/preact": "4.0.1",
     "@astrojs/rss": "4.0.10",
     "@astrojs/svelte": "7.0.2",
+    "@astrojs/vercel": "^8.0.1",
     "@iconify-json/fa6-brands": "^1.1.19",
     "@iconify-json/fa6-solid": "^1.1.21",
     "astro": "5.1.1",
