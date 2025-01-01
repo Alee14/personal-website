@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/plausible/js/script.js",
+      "destination": "https://stats.alee14.me/js/script.file-downloads.outbound-links.js"
+    },
+    {
+      "source": "/plausible/api/event",
+      "destination": "https://stats.alee14.me/api/event"
+    }
+  ]
+}
