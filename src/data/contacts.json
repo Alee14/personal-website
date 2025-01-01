@@ -21,6 +21,13 @@
         "mouseover": "YouTube"
     },
     {
+        "platform": "Bluesky",
+        "icon": "bluesky",
+        "username": "alee14.me",
+        "url": "https://bsky.app/profile/alee14.me",
+        "mouseover": "Bluesky"
+    },
+    {
         "platform": "Mastodon",
         "icon": "mastodon",
         "username": "alee@mstdn.ca",

@@ -10,13 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/preact": "4.0.0",
+    "@astrojs/preact": "4.0.1",
     "@astrojs/rss": "4.0.10",
-    "@astrojs/svelte": "7.0.1",
-    "@astrojs/vercel": "8.0.0",
+    "@astrojs/svelte": "7.0.2",
     "@iconify-json/fa6-brands": "^1.1.19",
     "@iconify-json/fa6-solid": "^1.1.21",
-    "astro": "^5.0.3",
+    "astro": "5.1.1",
     "astro-icon": "^1.1.0",
     "dompurify": "^3.1.6",
     "markdown-it": "^14.1.0",
