@@ -24,6 +24,23 @@
     ]
   },
   {
+    "name": "ShiftOS Archive",
+    "description": "ShiftOS was a game developed by Philip Adams and other developers. The original goal was to go from a bare terminal to a graphical user interface with full desktop features.",
+    "featured": false,
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://shiftos.alee14.me",
+        "external": true
+      },
+      {
+        "name": "Source Code",
+        "url": "https://git.alee14.me/shiftos-archive",
+        "external": true
+      }
+    ]
+  },
+  {
     "name": "OSFirstTimer Ultimate Old Software Archive",
     "description": "The ultimate software collection of OSFirstTimer's (Philip Adams) old software, and games.",
     "links": [
