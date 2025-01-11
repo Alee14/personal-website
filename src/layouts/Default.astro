@@ -5,7 +5,6 @@ interface Props {
 }
 
 const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
-import { ClientRouter } from 'astro:transitions';
 import Navbar from '../components/Navbar.svelte';
 const date = new Date();
 ---
@@ -41,12 +40,12 @@ const date = new Date();
 		<script defer data-domain="alee14.me" data-api="/plausible/api/event" src="/plausible/js/script.js"/>
 		<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 
-		<ClientRouter fallback="animate" />
+		<!--<ClientRouter fallback="animate" />-->
 		<title>{title}</title>
 	</head>
 	<body>
 	<Navbar client:load />
-	<div transition:name="main" transition:animate="fade">
+	<div>
 		<slot />
 		<footer>
 			<p class="small">Made with {Astro.generator} and Hosted on Vercel</p>
