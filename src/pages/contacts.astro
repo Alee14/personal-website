@@ -3,7 +3,7 @@ import Page from '../layouts/Page.astro'
 import { Icon } from 'astro-icon/components';
 import contacts from "../data/contacts.json";
 ---
-<Page title="Contacts" description="Follow me on other platforms">
+<Page title="Contacts" description="Follow me on these platforms">
     <main>
         {contacts.map((contact)=> {
             let icon = "fa6-brands:" + contact.icon;
