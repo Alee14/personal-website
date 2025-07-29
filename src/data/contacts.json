@@ -54,5 +54,12 @@
         "username": "Andrew Lee Projects",
         "url": "https://discord.alee14.me",
         "mouseover": "Discord"
+    },
+    {
+        "platform": "Steam",
+        "icon": "steam",
+        "username": "Alee14498",
+        "url": "https://steamcommunity.com/id/Alee14498",
+        "mouseover": "Steam"
     }
 ]
