@@ -2,7 +2,19 @@
   {
     "name": "Snug Cup",
     "description": "A cup for a project at school.",
-    "model": "/models/snug_cup_model.glb",
-    "fallback": "/images/snug_cup.png"
+    "model": "https://files.alee14.me/Models/snug_cup_model.glb",
+    "scale": 2,
+    "fallback": "/images/snug_cup.png",
+    "license": "CC BY-NC-SA",
+    "download": "https://files.alee14.me/Models/snug_cup_model.glb"
+  },
+  {
+    "name": "Alee Logo",
+    "description": "My 2020 logo but in 3D.",
+    "model": "https://files.alee14.me/Models/alee_logo.glb",
+    "scale": 15,
+    "fallback": "/images/snug_cup.png",
+    "license": "CC BY-NC-SA",
+    "download": "https://files.alee14.me/Models/snug_cup_model.glb"
   }
 ]

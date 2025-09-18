@@ -7,7 +7,7 @@ import svelte from "@astrojs/svelte";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alee14.me',
-  integrations: [icon(), svelte(), react()],
+  integrations: [icon(), react(), svelte()],
   output: "server",
   adapter: vercel({
     webAnalytics: {

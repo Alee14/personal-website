@@ -3,7 +3,6 @@ import Layout from '../layouts/Default.astro';
 import { Icon } from 'astro-icon/components'
 import { Image } from 'astro:assets';
 import { getCollection } from "astro:content";
-import projects from "../data/projects.json";
 
 import Profile from '../images/Alee.png';
 import '../styles/index.css';
@@ -11,7 +10,6 @@ import '../styles/Page.css';
 import "../styles/cards.css";
 import { formatDate } from "../util";
 const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()).slice(0, 10);
-const featuredProjects = projects.filter(project => project.featured);
 
 ---
 
@@ -109,36 +107,5 @@ const featuredProjects = projects.filter(project => project.featured);
 				))}
 			</div>
 		</div>
-		<div class="container">
-			<div class="featured-projects">
-				<h1>Featured Projects</h1>
-				<div class="grid">
-					{
-						featuredProjects.map((project) => {
-							return (
-								<article class="card">
-									<h1>{project.name}</h1>
-									<p>{project.description}</p>
-									<div class="row">
-										{project.links.map((link) => {
-											return (
-												<a href={link.url} target={link.external ? "_blank" : "_self"}>{link.name}</a>
-											)
-										})}
-									</div>
-								</article>
-							)
-						})
-					}
-				</div>
-			</div>
-		</div>
 	</main>
 </Layout>
-<style>
-	.row {
-		display: flex;
-		flex-direction: row;
-		gap: 1em;
-	}
-</style>
