@@ -1,4 +1,4 @@
-import { Component } from 'preact';
+import { Component } from 'react';
 
 const withMessages = (WrappedComponent, apiEndpoint, FormComponent) => {
     return class extends Component {

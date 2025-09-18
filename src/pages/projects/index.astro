@@ -1,0 +1,30 @@
+---
+import Page from "../../layouts/Page.astro";
+import "../../styles/cards.css";
+---
+<Page title="Projects" description="Things that I have been working on in the past, and present">
+    <main>
+        <div class="column">
+            <div class="card">
+                <h1><a href="/projects/3d">3D Models</a></h1>
+                <p>Things I made on Blender</p>
+            </div>
+            <div class="card">
+                <h1><a href="/projects/programming">Programming</a></h1>
+                <p>Things I programmed</p>
+            </div>
+            <div class="card">
+                <h1><a href="/projects/website">Website Archive</a></h1>
+                <p>Websites I created</p>
+            </div>
+        </div>
+    </main>
+</Page>
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+    }
+</style>
+

@@ -1,0 +1,8 @@
+[
+  {
+    "name": "Snug Cup",
+    "description": "A cup for a project at school.",
+    "model": "/models/snug_cup_model.glb",
+    "fallback": "/images/snug_cup.png"
+  }
+]
