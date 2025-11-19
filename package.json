@@ -16,7 +16,7 @@
     "@astrojs/vercel": "8.1.4",
     "@iconify-json/fa6-brands": "^1.2.5",
     "@iconify-json/fa6-solid": "^1.2.3",
-    "astro": "5.7.10",
+    "astro": "5.15.9",
     "astro-icon": "^1.1.5",
     "dompurify": "^3.2.5",
     "markdown-it": "^14.1.0",
