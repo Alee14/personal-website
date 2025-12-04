@@ -9,6 +9,24 @@
     "download": "https://files.alee14.me/Models/snug_cup_model.glb"
   },
   {
+    "name": "Face",
+    "description": "My attempt at sculpting.",
+    "model": "https://files.alee14.me/Models/Face.glb",
+    "scale": 0.3,
+    "fallback": "/images/snug_cup.png",
+    "license": "CC BY-NC-SA",
+    "download": "https://files.alee14.me/Models/Face.glb"
+  },
+  {
+    "name": "Chair",
+    "description": "Just a chair, nothing interesting.",
+    "model": "https://files.alee14.me/Models/Chair.glb",
+    "scale": 1,
+    "fallback": "/images/snug_cup.png",
+    "license": "CC BY-NC-SA",
+    "download": "https://files.alee14.me/Models/Chair.glb"
+  },
+  {
     "name": "Alee Logo",
     "description": "My 2020 logo but in 3D.",
     "model": "https://files.alee14.me/Models/alee_logo.glb",

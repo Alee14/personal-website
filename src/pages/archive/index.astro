@@ -1,21 +1,48 @@
 ---
 import Page from "../../layouts/Page.astro";
 import "../../styles/cards.css";
+import archive from '../../data/website.json';
 ---
 <Page title="Website Archive" description="Collection of my old websites">
     <main>
         <h1>Personal</h1>
         <div class="grid">
-            <article class="card">
-                <h1>First website</h1>
-                <p>Created by my dad using iFrames</p>
-                <small>2013</small>
-            </article>
-            <article class="card">
-                <h1>alee14.ga</h1>
-                <p>My first website that I made using Bootstrap 3 with a template</p>
-                <small>2017</small>
-            </article>
+        {
+            archive.personal.map((item) => {
+                return (
+                            <article class="card">
+                              <h1><a href={item.link}>{item.name} (<small>{item.year}</small>)</a></h1>
+                              <p>{item.description}</p>
+                            </article>
+                )
+            })
+        }
+        </div>
+        <h1>School Project</h1>
+        <div class="grid">
+            {
+                archive.school.map((item) => {
+                    return (
+                            <article class="card">
+                                <h1><a href={item.link}>{item.name} (<small>{item.year}</small>)</a></h1>
+                                <p>{item.description}</p>
+                            </article>
+                    )
+                })
+            }
+        </div>
+        <h1>Collaboration</h1>
+        <div class="grid">
+            {
+                archive.collaborations.map((item) => {
+                    return (
+                            <article class="card">
+                                <h1><a href={item.link}>{item.name} (<small>{item.year}</small>)</a></h1>
+                                <p>{item.description}</p>
+                            </article>
+                    )
+                })
+            }
         </div>
     </main>
 </Page>

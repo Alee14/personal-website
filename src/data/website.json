@@ -4,117 +4,117 @@
       "name": "First Website",
       "description": "Created by my dad using iFrames.",
       "year": 2013,
-      "link": "first-website.alee14.me"
+      "link": "https://first-website.alee14.me"
     },
     {
       "name": "alee14.ga (Iteration 1)",
       "description": "First personal website that I made",
       "year": 2017,
-      "link": "2017.alee14.me"
+      "link": "https://2017.alee14.me"
     },
     {
       "name": "alee14.ga (Iteration 2)",
       "description": "First personal website that I made",
       "year": 2017,
-      "link": "2017.alee14.me/index2"
+      "link": "https://2017.alee14.me/index2"
     },
     {
-      "name": "alee14.me (2018)",
+      "name": "alee14.me",
       "description": "Lorem ipsum",
       "year": 2018,
-      "link": "2018.alee14.me"
+      "link": "https://2018.alee14.me"
     },
     {
-      "name": "alee14.me (2020)",
+      "name": "alee14.me",
       "description": "Lorem ipsum",
       "year": 2020,
-      "link": "2020.alee14.me"
+      "link": "https://2020.alee14.me"
     },
     {
-      "name": "alee14.me (2021)",
+      "name": "alee14.me",
       "description": "Lorem ipsum",
       "year": 2021,
-      "link": "2021.alee14.me"
+      "link": "https://2021.alee14.me"
     },
     {
-      "name": "AleeCorp (9f5cd) (2017)",
+      "name": "AleeCorp (9f5cd)",
       "description": "Lorem ipsum",
       "year": 2017,
-      "link": "aleecorp-9f5cd.alee14.me"
+      "link": "https://aleecorp-9f5cd.alee14.me"
     },
     {
-      "name": "AleeCorp (658acd) (2017)",
+      "name": "AleeCorp (658acd)",
       "description": "Lorem ipsum",
       "year": 2017,
-      "link": "aleecorp-658acd.alee14.me"
+      "link": "https://aleecorp-658acd.alee14.me"
     },
     {
-      "name": "Alee Productions (2019)",
+      "name": "Alee Productions",
       "description": "Lorem ipsum",
       "year": 2019,
-      "link": "aleeproductions.alee14.me"
+      "link": "https://aleeproductions.alee14.me"
     }
   ],
-  "school-project": [
+  "school": [
     {
-      "name": "Weather Website (2016)",
+      "name": "Weather Website",
       "description": "Lorem ipsum",
       "year": 2016,
-      "link": "weather-website.alee14.me"
+      "link": "https://weather-website.alee14.me"
     },
     {
-      "name": "Chine (2020)",
+      "name": "Chine",
       "description": "Lorem ipsum",
       "year": 2020,
-      "link": "chine.alee14.me"
+      "link": "https://chine.alee14.me"
     },
     {
-      "name": "Lawrence Hill (2021)",
+      "name": "Lawrence Hill",
       "description": "Lorem ipsum",
       "year": 2021,
-      "link": "lawrence-hill.alee14.me"
+      "link": "https://lawrence-hill.alee14.me"
     },
     {
-      "name": "CV (VEEP) (français) (2021)",
+      "name": "CV (VEEP) (français)",
       "description": "Lorem ipsum",
       "year": 2021,
-      "link": "cv-francais.alee14.me"
+      "link": "https://cv-francais.alee14.me"
     },
     {
-      "name": "Snug Cup (2021)",
+      "name": "Snug Cup",
       "description": "Lorem ipsum",
       "year": 2021,
-      "link": "snug-cup.alee14.me"
+      "link": "https://snug-cup.alee14.me"
     },
     {
-      "name": "War of 1812 (2021)",
+      "name": "War of 1812",
       "description": "Lorem ipsum",
       "year": 2021,
-      "link": "war-of-1812.alee14.me"
+      "link": "https://war-of-1812.alee14.me"
     },
     {
-      "name": "Maitre Cuisinier (2022)",
+      "name": "Maitre Cuisinier",
       "description": "Lorem ipsum",
       "year": 2022,
-      "link": "maitre-cuisinier.alee14.me"
+      "link": "https://maitre-cuisinier.alee14.me"
     },
     {
-      "name": "Frank's Springy Shoes (2022)",
+      "name": "Frank's Springy Shoes",
       "description": "Lorem ipsum",
       "year": 2022,
-      "link": "frankspringyshoes.alee14.me"
+      "link": "https://frankspringyshoes.alee14.me"
     },
     {
-      "name": "Homelab (2023)",
+      "name": "Homelab",
       "description": "Lorem ipsum",
       "year": 2023,
-      "link": "homelab.alee14.me"
+      "link": "https://homelab.alee14.me"
     },
     {
-      "name": "Homelab Part 2 (2023)",
+      "name": "Homelab Part 2",
       "description": "Lorem ipsum",
       "year": 2023,
-      "link": "war-of-1812.alee14.me"
+      "link": "https://war-of-1812.alee14.me"
     }
   ],
   "collaborations": [
@@ -122,13 +122,13 @@
       "name": "Silicon Valley",
       "description": "Lorem ipsum",
       "year": 2018,
-      "link": "silicon-linux.alee14.me"
+      "link": "https://silicon-linux.alee14.me"
     },
     {
-      "name": "PokeWorld (2019)",
+      "name": "PokeWorld",
       "description": "Lorem ipsum",
       "year": 2019,
-      "link": "pokeworld.alee14.me"
+      "link": "https://pokeworld.alee14.me"
     }
   ]
 }
