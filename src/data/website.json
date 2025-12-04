@@ -1,0 +1,134 @@
+{
+  "personal": [
+    {
+      "name": "First Website",
+      "description": "Created by my dad using iFrames.",
+      "year": 2013,
+      "link": "first-website.alee14.me"
+    },
+    {
+      "name": "alee14.ga (Iteration 1)",
+      "description": "First personal website that I made",
+      "year": 2017,
+      "link": "2017.alee14.me"
+    },
+    {
+      "name": "alee14.ga (Iteration 2)",
+      "description": "First personal website that I made",
+      "year": 2017,
+      "link": "2017.alee14.me/index2"
+    },
+    {
+      "name": "alee14.me (2018)",
+      "description": "Lorem ipsum",
+      "year": 2018,
+      "link": "2018.alee14.me"
+    },
+    {
+      "name": "alee14.me (2020)",
+      "description": "Lorem ipsum",
+      "year": 2020,
+      "link": "2020.alee14.me"
+    },
+    {
+      "name": "alee14.me (2021)",
+      "description": "Lorem ipsum",
+      "year": 2021,
+      "link": "2021.alee14.me"
+    },
+    {
+      "name": "AleeCorp (9f5cd) (2017)",
+      "description": "Lorem ipsum",
+      "year": 2017,
+      "link": "aleecorp-9f5cd.alee14.me"
+    },
+    {
+      "name": "AleeCorp (658acd) (2017)",
+      "description": "Lorem ipsum",
+      "year": 2017,
+      "link": "aleecorp-658acd.alee14.me"
+    },
+    {
+      "name": "Alee Productions (2019)",
+      "description": "Lorem ipsum",
+      "year": 2019,
+      "link": "aleeproductions.alee14.me"
+    }
+  ],
+  "school-project": [
+    {
+      "name": "Weather Website (2016)",
+      "description": "Lorem ipsum",
+      "year": 2016,
+      "link": "weather-website.alee14.me"
+    },
+    {
+      "name": "Chine (2020)",
+      "description": "Lorem ipsum",
+      "year": 2020,
+      "link": "chine.alee14.me"
+    },
+    {
+      "name": "Lawrence Hill (2021)",
+      "description": "Lorem ipsum",
+      "year": 2021,
+      "link": "lawrence-hill.alee14.me"
+    },
+    {
+      "name": "CV (VEEP) (français) (2021)",
+      "description": "Lorem ipsum",
+      "year": 2021,
+      "link": "cv-francais.alee14.me"
+    },
+    {
+      "name": "Snug Cup (2021)",
+      "description": "Lorem ipsum",
+      "year": 2021,
+      "link": "snug-cup.alee14.me"
+    },
+    {
+      "name": "War of 1812 (2021)",
+      "description": "Lorem ipsum",
+      "year": 2021,
+      "link": "war-of-1812.alee14.me"
+    },
+    {
+      "name": "Maitre Cuisinier (2022)",
+      "description": "Lorem ipsum",
+      "year": 2022,
+      "link": "maitre-cuisinier.alee14.me"
+    },
+    {
+      "name": "Frank's Springy Shoes (2022)",
+      "description": "Lorem ipsum",
+      "year": 2022,
+      "link": "frankspringyshoes.alee14.me"
+    },
+    {
+      "name": "Homelab (2023)",
+      "description": "Lorem ipsum",
+      "year": 2023,
+      "link": "homelab.alee14.me"
+    },
+    {
+      "name": "Homelab Part 2 (2023)",
+      "description": "Lorem ipsum",
+      "year": 2023,
+      "link": "war-of-1812.alee14.me"
+    }
+  ],
+  "collaborations": [
+    {
+      "name": "Silicon Valley",
+      "description": "Lorem ipsum",
+      "year": 2018,
+      "link": "silicon-linux.alee14.me"
+    },
+    {
+      "name": "PokeWorld (2019)",
+      "description": "Lorem ipsum",
+      "year": 2019,
+      "link": "pokeworld.alee14.me"
+    }
+  ]
+}
