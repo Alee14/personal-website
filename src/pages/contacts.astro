@@ -6,10 +6,9 @@ import contacts from "../data/contacts.json";
 <Page title="Contacts" description="Follow me on these platforms">
     <main>
         {contacts.map((contact)=> {
-            let icon = "fa6-brands:" + contact.icon;
             return (
                     <a href={contact.url} target="_blank" title={contact.mouseover}><div class="contacts-card">
-                        <Icon name={icon} class="contact-icon" />
+                        <Icon name={contact.icon} class="contact-icon" />
                         {contact.platform} ({contact.username})
                     </div></a>
             )

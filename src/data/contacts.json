@@ -1,65 +1,79 @@
 [
     {
         "platform": "LinkedIn",
-        "icon": "linkedin",
+        "icon": "fa6-brands:linkedin",
         "username": "AndrewLeeCAN",
         "url": "https://linkedin.alee14.me",
         "mouseover": "LinkedIn"
     },
     {
         "platform": "GitHub",
-        "icon": "github",
+        "icon": "fa6-brands:github",
         "username": "Alee14",
         "url": "https://github.alee14.me",
         "mouseover": "GitHub"
     },
     {
         "platform": "YouTube",
-        "icon": "youtube",
+        "icon": "fa6-brands:youtube",
         "username": "AndrewLeeCAN",
         "url": "https://youtube.alee14.me",
         "mouseover": "YouTube"
     },
     {
         "platform": "Bluesky",
-        "icon": "bluesky",
+        "icon": "fa6-brands:bluesky",
         "username": "alee14.me",
         "url": "https://bsky.app/profile/alee14.me",
         "mouseover": "Bluesky"
     },
     {
         "platform": "Mastodon",
-        "icon": "mastodon",
+        "icon": "fa6-brands:mastodon",
         "username": "alee@mstdn.ca",
         "url": "https://mstdn.ca/@alee",
         "mouseover": "Mastodon"
     },
     {
         "platform": "Instagram",
-        "icon": "instagram",
+        "icon": "fa6-brands:instagram",
         "username": "alee14498",
         "url": "https://instagram.alee14.me",
         "mouseover": "Instagram"
     },
     {
         "platform": "Reddit",
-        "icon": "reddit",
+        "icon": "fa6-brands:reddit",
         "username": "alee1449",
         "url": "https://reddit.alee14.me",
         "mouseover": "Reddit"
     },
     {
+        "platform": "Steam",
+        "icon": "fa6-brands:steam",
+        "username": "Alee14498",
+        "url": "https://steamcommunity.com/id/Alee14498",
+        "mouseover": "Steam"
+    },
+    {
         "platform": "Discord",
-        "icon": "discord",
+        "icon": "fa6-brands:discord",
         "username": "Andrew Lee Projects",
         "url": "https://discord.alee14.me",
         "mouseover": "Discord"
     },
     {
-        "platform": "Steam",
-        "icon": "steam",
-        "username": "Alee14498",
-        "url": "https://steamcommunity.com/id/Alee14498",
-        "mouseover": "Steam"
+        "platform": "Matrix",
+        "icon": "simple-icons:matrix",
+        "username": "Alee",
+        "url": "https://matrix.to/#/@alee:alee14.me",
+        "mouseover": "Matrix"
+    },
+    {
+        "platform": "Matrix Space",
+        "icon": "simple-icons:matrix",
+        "username": "Andrew Lee",
+        "url": "https://matrix.to/#/#alee:alee14.me",
+        "mouseover": "Matrix Space"
     }
 ]
