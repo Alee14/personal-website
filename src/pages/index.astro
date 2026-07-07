@@ -100,7 +100,7 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
 				<h1>Latest Posts</h1>
 				{allBlogPosts.map((post) => (
 					<article>
-						<h1 class="blog-title"><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
+						<h1 class="blog-title"><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
 						<small>{formatDate(post.data.pubDate)}</small>
 						<p>{post.data.description}</p>
 					</article>
