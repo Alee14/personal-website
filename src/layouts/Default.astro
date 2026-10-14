@@ -6,6 +6,9 @@ interface Props {
 
 const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
 import { ClientRouter } from "astro:transitions";
+import { toComponentEmbedScript } from 'discord-component-embed';
+import { HomeEmbed } from '../components/discord/index.tsx';
+import { PageEmbed } from '../components/discord/page.tsx';
 import Navbar from '../components/Navbar.svelte';
 const date = new Date();
 ---
@@ -30,11 +33,21 @@ const date = new Date();
 		<!-- Open Graph Metadata -->
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="https://alee14.me/profile.png" />
+		<meta property="og:image" content="https://alee14.ca/profile.png" />
 		<meta property="og:type" content="website" />
 
 		<meta name="theme-color" content="#1B291F"/>
 		<meta name="generator" content={Astro.generator} />
+
+		<meta name="darkreader-lock">
+
+		{Astro.url.pathname == "/" &&
+		  <Fragment set:html={toComponentEmbedScript(HomeEmbed())} />
+		}
+
+		{Astro.url.pathname !== "/" &&
+		  <Fragment set:html={toComponentEmbedScript(PageEmbed())} />
+		}
 
 		<!-- Plausible Analytics -->
 
@@ -45,13 +58,18 @@ const date = new Date();
 		<title>{title}</title>
 	</head>
 	<body>
+    {(Astro.url.hostname == "alee14.me") &&
+    <div class="notice">
+        <span>NOTICE: alee14.me will be switching to alee14.ca. Links will soon start redirecting to the new domain.</span>
+    </div>
+    }
 	<Navbar client:load />
 	<div transition:name="main" transition:animate="fade">
 		<slot />
 		<footer>
 			<p class="small">Made with Astro and Hosted on Vercel</p>
 			<p>Copyright &copy; {date.getFullYear()} Andrew Lee.</p>
-			<small><a href="https://github.com/Alee14/personal-website" target="_blank">View source code</a> | <a href="/privacy">Privacy Policy</a></small>
+			<small><a href="https://github.com/Alee14/personal-website" target="_blank">View source code</a></small>
 		</footer>
 	</div>
 	</body>
@@ -150,5 +168,13 @@ const date = new Date();
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+
+	.notice {
+    	background-color: #660F0F;
+        padding: 1.2em;
+        border-radius: 20px;
+        gap: 0.5em;
+        margin: 0.5em;
 	}
 </style>

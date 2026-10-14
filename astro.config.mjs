@@ -31,4 +31,9 @@ export default defineConfig({
       transformers: []
     }
   }
+  // vite: {
+  //   server: {
+  //     allowedHosts: true
+  //   }
+  // }
 });
