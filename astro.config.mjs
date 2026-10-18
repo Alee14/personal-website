@@ -1,19 +1,12 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
 import icon from "astro-icon";
 import react from "@astrojs/react";
-import vercel from "@astrojs/vercel";
 import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alee14.me',
   integrations: [icon(), react(), svelte()],
-  output: "server",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: false
-    }
-  }),
   image: {
     service: passthroughImageService()
   },
