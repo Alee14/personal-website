@@ -1,6 +1,6 @@
 ---
 import Page from '../../layouts/BlogPost.astro';
-import { getEntry, getCollection, render } from 'astro:content';
+import { getCollection, CollectionEntry, getEntry, render } from 'astro:content';
 import { formatDate } from "../../util";
 
 export async function getStaticPaths() {
@@ -10,6 +10,7 @@ export async function getStaticPaths() {
     props: { post },
   }))
 }
+type Props = CollectionEntry<'blog'>;
 
 const { slug } = Astro.params;
 

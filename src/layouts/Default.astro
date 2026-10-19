@@ -41,6 +41,8 @@ const date = new Date();
 
 		<meta name="darkreader-lock">
 
+		<!-- Discord Component Embed -->
+
 		{Astro.url.pathname == "/" &&
 		  <Fragment set:html={toComponentEmbedScript(HomeEmbed())} />
 		}
@@ -56,15 +58,21 @@ const date = new Date();
           plausible.init()
 		</script>
 
+		<!-- Show notice div only for alee14.me -->
+		<script>
+		const notice = document.getElementById("notice");
+		if (location.hostname == "alee14.me") {
+		  notice.style.display = "block";
+		}
+		</script>
+
 		<ClientRouter fallback="animate" />
 		<title>{title}</title>
 	</head>
 	<body>
-    {(Astro.url.hostname == "alee14.me") &&
-    <div class="notice">
+	<div id="notice">
         <span>NOTICE: alee14.me will be switching to alee14.ca. Links will soon start redirecting to the new domain.</span>
     </div>
-    }
 	<Navbar client:load />
 	<div transition:name="main" transition:animate="fade">
 		<slot />
@@ -172,7 +180,8 @@ const date = new Date();
 			monospace;
 	}
 
-	.notice {
+	#notice {
+	    display: none;
     	background-color: #660F0F;
         padding: 1.2em;
         border-radius: 20px;
