@@ -1,4 +1,3 @@
-import { h } from 'preact';
 import withFormHandling from './FormHandling';
 import '../styles/Form.css';
 

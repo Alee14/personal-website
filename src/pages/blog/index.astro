@@ -14,7 +14,7 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
          <h1 class="header-text">
             Blog
             <a href="/blog/rss.xml">
-               <Icon name="fa6-solid:square-rss" aria-label="RSS" />
+               <Icon name="fa7-solid:square-rss" aria-label="RSS" />
             </a>
          </h1>
          <h2 class="header-text">Where I post can be anything!</h2>
@@ -23,7 +23,7 @@ const allBlogPosts = (await getCollection('blog')).sort((a, b) => b.data.pubDate
          <div class="grid">
             {allBlogPosts.map((post) => (
                 <article class="card">
-                   <h1><a href={`/blog/${post.slug}`}>{post.data.title}</a></h1>
+                   <h1><a href={`/blog/${post.id}`}>{post.data.title}</a></h1>
                    <small>{formatDate(post.data.pubDate)}</small>
                    <p>{post.data.description}</p>
                    <div class="tags">

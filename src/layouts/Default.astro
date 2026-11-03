@@ -5,6 +5,10 @@ interface Props {
 }
 
 const { title = "Andrew Lee", description = "Andrew Lee Website" } = Astro.props;
+import { ClientRouter } from "astro:transitions";
+import { toComponentEmbedScript } from 'discord-component-embed';
+import { HomeEmbed } from '../components/discord/index.tsx';
+import { PageEmbed } from '../components/discord/page.tsx';
 import Navbar from '../components/Navbar.svelte';
 const date = new Date();
 ---
@@ -29,29 +33,53 @@ const date = new Date();
 		<!-- Open Graph Metadata -->
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:image" content="https://alee14.me/profile.png" />
+		<meta property="og:image" content="https://alee14.ca/profile.png" />
 		<meta property="og:type" content="website" />
 
 		<meta name="theme-color" content="#1B291F"/>
 		<meta name="generator" content={Astro.generator} />
 
-		<!-- Plausible Analytics -->
+		<meta name="darkreader-lock">
 
-		<script defer data-domain="alee14.me" data-api="/plausible/api/event" src="/plausible/js/script.js"/>
-		<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+		<!-- Discord Component Embed -->
+		<!-- {Astro.url.pathname == "/" &&
+		  <Fragment set:html={toComponentEmbedScript(HomeEmbed())} />
+		}
 
-		<!--<ClientRouter fallback="animate" />-->
+		{Astro.url.pathname !== "/" &&
+		  <Fragment set:html={toComponentEmbedScript(PageEmbed())} />
+		} -->
+
+		<!-- Privacy-friendly analytics by Plausible -->
+		<script async src="https://stats.alee14.me/js/pa-JtfmJJUJHGy9kLPhK4-dv.js"></script>
+		<script>
+          window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+          plausible.init()
+		</script>
+
+		<ClientRouter fallback="animate" />
 		<title>{title}</title>
 	</head>
 	<body>
+	<div id="notice">
+        <span>NOTICE: alee14.me will be switching to alee14.ca. Links will soon start redirecting to the new domain.</span>
+    </div>
 	<Navbar client:load />
-	<div>
+	<div transition:name="main" transition:animate="fade">
 		<slot />
 		<footer>
-			<p class="small">Made with {Astro.generator} and Hosted on Vercel</p>
-			<p>Copyright &copy; {date.getFullYear()} Andrew Lee. <a href="https://github.com/Alee14/personal-website" target="_blank">View source code.</a></p>
+			<p class="small">Made with Astro and Hosted on Vercel</p>
+			<p>Copyright &copy; {date.getFullYear()} Andrew Lee.</p>
+			<small><a href="https://github.com/Alee14/personal-website" target="_blank">View source code</a></small>
 		</footer>
 	</div>
+	<!-- Show notice div only for alee14.me -->
+	<script>
+    	const notice = document.getElementById("notice");
+    	if (location.hostname == "alee14.me") {
+    	  notice!.style.display = "block";
+    	}
+	</script>
 	</body>
 </html>
 <style is:global>
@@ -148,5 +176,14 @@ const date = new Date();
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
+	}
+
+	#notice {
+	    display: none;
+    	background-color: #660F0F;
+        padding: 1.2em;
+        border-radius: 20px;
+        gap: 0.5em;
+        margin: 0.5em;
 	}
 </style>

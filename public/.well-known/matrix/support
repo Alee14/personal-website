@@ -1,0 +1,10 @@
+{
+    "contacts":
+        [
+            {
+                "role": "m.role.admin",
+                "email_address": "contact@alee14.ca",
+                "matrix_id": "@alee:alee14.ca"
+            }
+        ]
+}

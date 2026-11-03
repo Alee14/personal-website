@@ -1,38 +1,29 @@
 ---
 title: Guidelines
-description: Guidelines for Andrew Lee Projects Communities/Services
+description: Guidelines for Andrew Lee Projects
 layout: ../layouts/PageMarkdown.astro
 ---
 # General Guidelines
 
-These are the main guidelines that must be followed in every community/services we own.
+These are the main guidelines that must be followed:
 
-- No spamming. Any spam will result in an official warning.
+- Respect others.
+- Any type of spam is not allowed.
 - No advertisements/giveaways of any kind, unless asking staff.
-- Do not attempt to enforce the rules on other users. Only staff members have the authority to do so.
-- Refrain from asking for staff.
-- Cursing is allowed within reason, but using racial slurs or using them to harm others will result in severe punishment.
-- Accusations are not tolerated. Making accusations without evidence will result in an investigation by the staff and may lead to temporary or permanent removal from our services.
-- Do not engage in blackmail, attacks, cyberbullying, or threats against any members.
-- Organized raids are not allowed. We have measures in place to deal with these situations.
+- Using language that includes slurs is not allowed.
 - Only one account per person at a time.
-- Any content that does not fit here (i.e. viruses, malware, adware, NSFW, illegal content, etc) is strictly forbidden.
-- Do not speak negatively about other members, including in private messages.
-- If you encounter someone requesting, sending unsolicited, or sharing illegal or NSFW content, or behaving in a way that is disrespectful or harassing, please report the behavior to the staff immediately.
-
-By being part of here, you must respect all members, regardless of their gender, race, sexual orientation, beliefs, or opinions. Disrespect will not be tolerated and will result in staff action.
-
-Use common sense and good judgement while participating in our community/services.
+- Posting illegal/offensive material is strictly forbidden.
+- Use common sense and good judgement while participating.
 
 Staff members reserve the right to make impromptu decisions as necessary to maintain a peaceful environment.
 
-Action will be taken against any users consistently breaking these guidelines. If there is content that is extremely illegal or if someone is threatening or harming another person in real life, it is our responsibility to report it to the appropriate authorities.
+Action will be taken against any users consistently breaking these guidelines, and punishment toward the user will be adjusted based on the situation.
 
 # Andrew Lee Projects Policies
 
 ## COPPA Policy
 
-In order to comply with the Children's Online Privacy Protection Act (COPPA), you must be at least 13 years of age to use these services. You will be kicked if found to be under 13 years of age. A ban will be issued if you do not comply with the staff.
+In order to comply with the Children's Online Privacy Protection Act (COPPA), you must be at least 13 years of age to use our services. You will be kicked if found to be under 13 years of age.
 
 ## Delta Policy
 
@@ -46,6 +37,16 @@ These rules applies when using our Minecraft servers
 Violation of these rules may result in a temporary or permanent ban. If you are banned and found to be playing on an alt, you may also face an IP ban.
 
 \* These policies may not apply to servers (e.g: Anarchy) that allow these actions.
+
+## Wiki Policy
+- Any vandalism (defacing, blanking, inserting misinformation into an article) will result an immediate revert, permanent block if it is persistent.
+- Any irrelevant information that is not related to this wiki will be removed.
+- Any illegal and offensive content will immediately be removed and suppressed. Author of the change will get blocked permanently.
+### Using Generative AI
+Using generative AI has its benefits, but also it can have drawbacks.
+- It is not fine to use it to generate or rewrite an entire article.
+- It is fine to use it for translating if checked properly.
+- It is fine to use it to correct your grammar/spelling mistake if checked properly.
 
 # Discord Policies
 
@@ -81,4 +82,4 @@ Threads/Posts is a new feature on Discord that allows users to create subchannel
 
 We recommend you to follow Discord's [Terms of Service](https://discord.com/terms) and [Community Guidelines](https://discord.com/guidelines)
 
-*Last updated: December 16th, 2022*
+*Last updated: July 6th, 2026*

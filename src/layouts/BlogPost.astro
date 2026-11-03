@@ -5,11 +5,11 @@ import "../styles/cards.css";
 const { title, description, pubDate, tags } = Astro.props;
 const { slug } = Astro.params;
 
-let disableComments;
+// let disableComments: Boolean;
 
-const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/comments/${slug}/disabled`);
-const data = await response.json();
-disableComments = data.postDisabled;
+// const response = await fetch(`${import.meta.env.PUBLIC_API_URL}/comments/${slug}/disabled`);
+// const data = await response.json();
+// disableComments = data.postDisabled;
 
 ---
 
@@ -27,11 +27,11 @@ disableComments = data.postDisabled;
         <main>
             <slot />
         </main>
-        {
+        <!-- {
             disableComments ? null :
                     <h1>Comments</h1>
                     <BlogComments client:visible slug={slug} />
-        }
+        } -->
 
     </div>
 </Layout>

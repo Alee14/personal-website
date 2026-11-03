@@ -1,0 +1,35 @@
+---
+import Page from "../../layouts/Page.astro";
+import Models from "../../data/models.json";
+import "../../styles/cards.css";
+import ThreeJSModels from "../../components/3DModels.jsx";
+---
+<Page title="3D Models" description="Things that I made using Blender">
+    <main>
+        <div class="grid">
+            {
+                Models.map((model) => {
+                    return (
+                            <div class="card">
+                                <h1>{model.name}</h1>
+                                <p>{model.description}</p>
+                                <ThreeJSModels modelName={model.model} scale={model.scale} client:visible />
+                                <div class="column">
+                                    <a href={model.download}>Download</a>
+                                    <small>Licensed under {model.license}</small>
+                                </div>
+                            </div>
+                    )
+                })
+            }
+        </div>
+    </main>
+</Page>
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+    }
+</style>
+

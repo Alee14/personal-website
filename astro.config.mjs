@@ -1,17 +1,12 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
 import icon from "astro-icon";
-import preact from "@astrojs/preact";
+import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://alee14.me',
-  integrations: [icon(), preact({
-    compat: true
-  }), svelte()],
-  output: "server",
-  adapter: cloudflare(),
+  integrations: [icon(), react(), svelte()],
   image: {
     service: passthroughImageService()
   },
@@ -29,4 +24,9 @@ export default defineConfig({
       transformers: []
     }
   }
+  // vite: {
+  //   server: {
+  //     allowedHosts: true
+  //   }
+  // }
 });

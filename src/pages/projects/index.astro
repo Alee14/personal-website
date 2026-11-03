@@ -1,0 +1,59 @@
+---
+import Page from "../../layouts/Page.astro";
+import "../../styles/cards.css";
+import projects from "../../data/projects.json";
+const featuredProjects = projects.filter(project => project.featured);
+---
+<Page title="Projects" description="Things that I have been working on in the past, and present">
+    <main>
+        <div class="column">
+            <div class="card">
+                <h1><a href="/projects/3d">3D Models</a></h1>
+                <p>Things I made on Blender</p>
+            </div>
+            <div class="card">
+                <h1><a href="/projects/programming">Programming</a></h1>
+                <p>Things I programmed</p>
+            </div>
+            <!-- <div class="card">
+                <h1><a href="/projects/website">Website Archive</a></h1>
+                <p>Websites I created</p>
+            </div> -->
+        </div>
+        <div class="featured-projects">
+            <h1>Featured Projects</h1>
+            <div class="grid">
+                {
+                    featuredProjects.map((project) => {
+                        return (
+                                <article class="card">
+                                    <h1>{project.name}</h1>
+                                    <p>{project.description}</p>
+                                    <div class="row">
+                                        {project.links.map((link) => {
+                                            return (
+                                                    <a href={link.url} target={link.external ? "_blank" : "_self"}>{link.name}</a>
+                                            )
+                                        })}
+                                    </div>
+                                </article>
+                        )
+                    })
+                }
+            </div>
+        </div>
+    </main>
+</Page>
+<style>
+    .column {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1em;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+</style>

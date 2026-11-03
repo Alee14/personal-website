@@ -1,65 +1,86 @@
 [
     {
         "platform": "LinkedIn",
-        "icon": "linkedin",
+        "icon": "fa7-brands:linkedin",
         "username": "AndrewLeeCAN",
-        "url": "https://linkedin.alee14.me",
+        "url": "https://linkedin.alee14.ca",
         "mouseover": "LinkedIn"
     },
     {
         "platform": "GitHub",
-        "icon": "github",
+        "icon": "fa7-brands:github",
         "username": "Alee14",
-        "url": "https://github.alee14.me",
+        "url": "https://github.alee14.ca",
+        "mouseover": "GitHub"
+    },
+    {
+        "platform": "Codeberg",
+        "icon": "fa7-brands:codeberg",
+        "username": "Alee14",
+        "url": "https://codeberg.org/Alee14",
         "mouseover": "GitHub"
     },
     {
         "platform": "YouTube",
-        "icon": "youtube",
+        "icon": "fa7-brands:youtube",
         "username": "AndrewLeeCAN",
-        "url": "https://youtube.alee14.me",
+        "url": "https://youtube.alee14.ca",
         "mouseover": "YouTube"
     },
     {
         "platform": "Bluesky",
-        "icon": "bluesky",
-        "username": "alee14.me",
-        "url": "https://bsky.app/profile/alee14.me",
+        "icon": "fa7-brands:bluesky",
+        "username": "alee14.ca",
+        "url": "https://bsky.app/profile/alee14.ca",
         "mouseover": "Bluesky"
     },
     {
         "platform": "Mastodon",
-        "icon": "mastodon",
+        "icon": "fa7-brands:mastodon",
         "username": "alee@mstdn.ca",
         "url": "https://mstdn.ca/@alee",
         "mouseover": "Mastodon"
     },
     {
         "platform": "Instagram",
-        "icon": "instagram",
+        "icon": "fa7-brands:instagram",
         "username": "alee14498",
-        "url": "https://instagram.alee14.me",
+        "url": "https://instagram.alee14.ca",
         "mouseover": "Instagram"
     },
     {
         "platform": "Reddit",
-        "icon": "reddit",
+        "icon": "fa7-brands:reddit",
         "username": "alee1449",
-        "url": "https://reddit.alee14.me",
+        "url": "https://reddit.alee14.ca",
         "mouseover": "Reddit"
     },
     {
-        "platform": "Discord",
-        "icon": "discord",
-        "username": "Andrew Lee Projects",
-        "url": "https://discord.alee14.me",
-        "mouseover": "Discord"
-    },
-    {
         "platform": "Steam",
-        "icon": "steam",
+        "icon": "fa7-brands:steam",
         "username": "Alee14498",
         "url": "https://steamcommunity.com/id/Alee14498",
         "mouseover": "Steam"
+    },
+    {
+        "platform": "Discord",
+        "icon": "fa7-brands:discord",
+        "username": "Andrew Lee Projects",
+        "url": "https://discord.alee14.ca",
+        "mouseover": "Discord"
+    },
+    {
+        "platform": "Matrix",
+        "icon": "simple-icons:matrix",
+        "username": "Alee",
+        "url": "https://matrix.to/#/@alee:alee14.me",
+        "mouseover": "Matrix"
+    },
+    {
+        "platform": "Matrix Space",
+        "icon": "simple-icons:matrix",
+        "username": "Andrew Lee",
+        "url": "https://matrix.to/#/#alee:alee14.me",
+        "mouseover": "Matrix Space"
     }
 ]
