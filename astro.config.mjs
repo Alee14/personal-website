@@ -1,8 +1,8 @@
 import { defineConfig, passthroughImageService } from 'astro/config';
 import icon from "astro-icon";
-import vercel from "@astrojs/vercel";
 import preact from "@astrojs/preact";
 import svelte from "@astrojs/svelte";
+import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,11 +11,7 @@ export default defineConfig({
     compat: true
   }), svelte()],
   output: "server",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: false
-    }
-  }),
+  adapter: cloudflare(),
   image: {
     service: passthroughImageService()
   },
