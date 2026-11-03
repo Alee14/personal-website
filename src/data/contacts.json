@@ -73,14 +73,14 @@
         "platform": "Matrix",
         "icon": "simple-icons:matrix",
         "username": "Alee",
-        "url": "https://matrix.to/#/@alee:alee14.me",
+        "url": "https://matrix.to/#/@alee:alee14.ca",
         "mouseover": "Matrix"
     },
     {
         "platform": "Matrix Space",
         "icon": "simple-icons:matrix",
         "username": "Andrew Lee",
-        "url": "https://matrix.to/#/#alee:alee14.me",
+        "url": "https://matrix.to/#/#alee:alee14.ca",
         "mouseover": "Matrix Space"
     }
 ]
