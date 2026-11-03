@@ -2,7 +2,6 @@ import { defineConfig, passthroughImageService } from 'astro/config';
 import icon from "astro-icon";
 import react from "@astrojs/react";
 import svelte from "@astrojs/svelte";
-import cloudflare from "@astrojs/cloudflare";
 
 // https://astro.build/config
 export default defineConfig({
