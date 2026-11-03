@@ -5,7 +5,7 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://alee14.me',
+  site: 'https://alee14.ca',
   integrations: [icon(), react(), svelte()],
   image: {
     service: passthroughImageService()
