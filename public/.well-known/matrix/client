@@ -1,13 +1,13 @@
 {
   "m.homeserver": {
-    "base_url": "https://matrix.alee14.me"
+    "base_url": "https://matrix.alee14.ca"
 
   },
 
   "org.matrix.msc4143.rtc_foci": [
     {
       "type": "livekit",
-      "livekit_service_url": "https://livekit.alee14.me"
+      "livekit_service_url": "https://livekit.alee14.ca"
     }
   ]
 }
